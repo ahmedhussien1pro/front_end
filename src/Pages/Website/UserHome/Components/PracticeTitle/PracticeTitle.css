@@ -1,0 +1,20 @@
+.course-titles{
+align-self: center;
+
+}
+.course-titles::after{
+  content: "";
+  display: block;
+  width: 100px;
+  height: 2px;
+  background-color: var(--main-color);
+  margin: 10px auto;
+}
+.course-titles  .labs-title {
+  color:var(--primary-text);
+}
+.course-titles .labs-subtitle {
+  color: var(--secondary-text);
+  text-align: center;
+  font-style: italic;
+}

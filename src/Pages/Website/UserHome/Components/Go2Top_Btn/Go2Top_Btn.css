@@ -1,0 +1,40 @@
+/* Go to Top Button - Base Styles */
+.go-to-top-btn {
+  position: fixed;
+  bottom: 90px;
+  right: 30px;
+  padding: 12px 15px;
+  border-radius: 50%;
+  background-color: var(--secondary-bg);
+  color: var(--primary-text);
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px var(--glass-bg);
+  transition: all 0.3s ease-in-out;
+  opacity: 0; 
+  visibility: hidden;
+  z-index: 1000;
+}
+
+.go-to-top-btn.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.go-to-top-btn .go-to-top-btn-icon {
+  font-size: 20px;
+}
+
+.go-to-top-btn:focus,
+.go-to-top-btn:hover {
+  background-color: var(--primary-bg);
+  color: var(--hover-main-color);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px var(--glass-bg);
+}
+

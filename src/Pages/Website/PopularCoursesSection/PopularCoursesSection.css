@@ -1,0 +1,96 @@
+.popular-courses__item {
+  background-color: var(--secondary-bg);
+  border: 1px solid color-mix(in srgb, var(--primary-text), transparent 90%);
+  border-radius: 5px;
+}
+
+.popular-courses__item-content {
+  padding: 15px;
+}
+
+.popular-courses__item-title {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.popular-courses__item-link {
+  color: var(--heading-color);
+  transition: 0.3s;
+}
+
+.popular-courses__item-link:hover {
+  color: var(--main-color);
+}
+
+.popular-courses__item-category {
+  background: var(--main-color);
+  color: var(--primary-text);
+  font-size: 1rem;
+  padding: 6px 14px;
+  margin: 0;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.popular-courses__item-price {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  color: color-mix(in srgb, var(--primary-text), transparent 20%);
+}
+.popular-courses__item-price.free {
+  color: color-mix(in srgb, var(--main-color), transparent 20%);
+  letter-spacing: 1px;
+  font-style: italic;
+}
+
+.popular-courses__item-description {
+  font-size: 14px;
+  color: color-mix(in srgb, var(--primary-text), transparent 20%);
+}
+
+.popular-courses__item-trainer {
+  padding-top: 15px;
+  border-top: 1px solid color-mix(in srgb, var(--primary-text), transparent 90%);
+}
+
+.popular-courses__item-trainer-image {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.popular-courses__item-image {
+  max-height: 210px;
+  width: 100%;
+  object-fit: cover;
+}
+.popular-courses__item-trainer-image img {
+  /* border-radius: 50px; */
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.popular-courses__item-trainer-link {
+  padding-left: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  color: color-mix(in srgb, var(--primary-text), transparent 20%);
+  transition: 0.3s;
+}
+
+.popular-courses__item-trainer-link:hover {
+  color: var(--main-color);
+}
+
+.popular-courses__item-trainer-rank {
+  font-size: 18px;
+  color: color-mix(in srgb, var(--primary-text), transparent 60%);
+}
+.popular-courses__item-trainer-rank span {
+  color: color-mix(in srgb, var(--main-color), transparent 20%);
+}
+
+.popular-courses__item-trainer-icon--user {
+  font-size: 22px;
+}

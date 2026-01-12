@@ -1,0 +1,207 @@
+/* Start Course Content */
+.highlight-UnRestrict {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+.Content .faq-File-image {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 15px auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform: translateY(-50%, -50%);
+}
+.Files-first {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--primary-text);
+}
+.parag-un {
+  color: var(--primary-text);
+}
+.style-modern-fileUpload {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--primary-text);
+  margin-bottom: 1rem;
+  padding: 12px 20px;
+  border-radius: 8px;
+  display: inline-block;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.scnarios-fileUplode {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--primary-text);
+}
+.Content .faq-File-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .Content .faq-File-image {
+    max-width: 350px;
+    left: 20%;
+  }
+}
+@media (max-width: 768px) {
+  .Content .faq-File-image {
+    max-width: 100%;
+    left: 0%;
+  }
+}
+@media (max-width: 480px) {
+  .Content .faq-File-image {
+    max-width: 90%;
+    left: 5%;
+  }
+}
+/* Style for the code image */
+.faq-body .code1 {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 768px) {
+  .faq-body .code1 {
+    max-width: 100%;
+    margin: 15px 0;
+  }
+}
+.upload-location {
+  display: inline-block;
+  background-color: var(--primary-bg);
+  border: 2px solid var(--main-color);
+  border-radius: 8px;
+  padding: 5px 10px;
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: var(--primary-text);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+.upload-location:hover {
+  background-color: var(--secondary-bg);
+  border-color: var(--highlight-color);
+}
+@media (max-width: 768px) {
+  .upload-location {
+    font-size: 1rem;
+    padding: 4px 8px;
+  }
+}
+.command-url {
+  display: block;
+  background-color: var(--primary-bg);
+  border: 1px solid var(--main-color);
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-family: "poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--primary-text);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+.command-url:hover {
+  background-color: var(--secondary-bg);
+  border-color: var(--main-color2);
+}
+.command {
+  display: inline-block;
+  background-color: var(--primary-bg);
+  border: 1px solid var(--main-color);
+  border-radius: 6px;
+  padding: 4px 8px;
+  font-family: "poppins", sans-serif;
+  font-size: 1rem;
+  color: var(--primary-text);
+  margin-left: 10px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 768px) {
+  .command-url,
+  .command {
+    font-size: 0.9rem;
+    padding: 6px 10px;
+  }
+}
+.styled-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 20px 0;
+  font-family: "poppins", sans-serif;
+}
+.styled-list li {
+  font-size: 1rem;
+  padding: 10px 15px;
+  margin: 8px 0;
+  background-color: var(--primary-bg);
+  border-left: 4px solid var(--main-color2);
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+.styled-list li:hover {
+  background-color: var(--main-color3);
+  border-left-color: var(--main-color);
+  transform: translateX(5px);
+}
+@media (max-width: 768px) {
+  .styled-list li {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+}
+.security-measures-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 20px 0;
+  font-family: "poppins", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.security-measures-list li {
+  padding: 12px 20px;
+  margin-bottom: 12px;
+  background-color: var(--primary-bg);
+  border-left: 5px solid #27ae60;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+.security-measures-list li:hover {
+  background-color: var(--main-color3);
+  border-left-color: #2ecc71;
+  transform: translateX(5px);
+}
+.preventing-fileUplode {
+  color: var(--main-color);
+  font-size: 16px;
+}
+@media (max-width: 768px) {
+  .security-measures-list {
+    font-size: 0.9rem;
+    padding-left: 10px;
+  }
+
+  .security-measures-list li {
+    padding: 10px 15px;
+  }
+}
+/* End Course Content */

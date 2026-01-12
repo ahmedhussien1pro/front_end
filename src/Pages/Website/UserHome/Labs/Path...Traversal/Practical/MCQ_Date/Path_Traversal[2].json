@@ -1,0 +1,204 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is another name for a Path Traversal attack?",
+      "options": [
+        "Directory Traversal",
+        "SQL Injection",
+        "Buffer Overflow",
+        "Cross-Site Scripting (XSS)"
+      ],
+      "answer": "Directory Traversal"
+    },
+    {
+      "id": 2,
+      "question": "Which of the following is a common target for Path Traversal attacks?",
+      "options": [
+        "Web server configuration files",
+        "Database connection strings",
+        "System log files",
+        "All of the above"
+      ],
+      "answer": "All of the above"
+    },
+    {
+      "id": 3,
+      "question": "Which security mechanism can help prevent Path Traversal attacks?",
+      "options": [
+        "User input validation",
+        "Using strong passwords",
+        "Implementing two-factor authentication",
+        "Enabling browser security features"
+      ],
+      "answer": "User input validation"
+    },
+    {
+      "id": 4,
+      "question": "What is the effect of improper file permission settings in a system?",
+      "options": [
+        "It can allow unauthorized users to access sensitive files",
+        "It speeds up system performance",
+        "It prevents web applications from functioning properly",
+        "It disables logging features"
+      ],
+      "answer": "It can allow unauthorized users to access sensitive files"
+    },
+    {
+      "id": 5,
+      "question": "Which of the following is a valid encoded representation of '../' used in Path Traversal attacks?",
+      "options": ["%2E%2E%2F", "%00%00%00", "%3Cscript%3E", "%23%24%25"],
+      "answer": "%2E%2E%2F"
+    },
+    {
+      "id": 6,
+      "question": "Which of these file types are commonly targeted in Path Traversal attacks?",
+      "options": [
+        ".htpasswd",
+        "config.php",
+        "database.sqlite",
+        "All of the above"
+      ],
+      "answer": "All of the above"
+    },
+    {
+      "id": 7,
+      "question": "Which attack technique can be combined with Path Traversal to gain system access?",
+      "options": [
+        "Remote Code Execution",
+        "Clickjacking",
+        "Session Hijacking",
+        "Phishing"
+      ],
+      "answer": "Remote Code Execution"
+    },
+    {
+      "id": 8,
+      "question": "What type of user input should be restricted to prevent Path Traversal?",
+      "options": ["File paths", "Image uploads", "Usernames", "Passwords"],
+      "answer": "File paths"
+    },
+    {
+      "id": 9,
+      "question": "Which function in Python should be avoided to prevent Path Traversal vulnerabilities?",
+      "options": ["open()", "eval()", "exec()", "os.system()"],
+      "answer": "open()"
+    },
+    {
+      "id": 10,
+      "question": "Which of the following HTTP headers can help protect against Path Traversal?",
+      "options": [
+        "Content-Security-Policy (CSP)",
+        "X-Frame-Options",
+        "Strict-Transport-Security (HSTS)",
+        "None of the above"
+      ],
+      "answer": "None of the above"
+    },
+    {
+      "id": 11,
+      "question": "What is the role of a whitelist in preventing Path Traversal attacks?",
+      "options": [
+        "It defines a list of allowed file names or directories",
+        "It prevents SQL Injection",
+        "It encrypts user data",
+        "It detects network intrusions"
+      ],
+      "answer": "It defines a list of allowed file names or directories"
+    },
+    {
+      "id": 12,
+      "question": "What is a best practice for secure file access in web applications?",
+      "options": [
+        "Using absolute paths instead of relative paths",
+        "Allowing direct access to system files",
+        "Allowing users to specify full file paths",
+        "Disabling authentication for file access"
+      ],
+      "answer": "Using absolute paths instead of relative paths"
+    },
+    {
+      "id": 13,
+      "question": "Which Linux command can restrict access to sensitive files?",
+      "options": ["chmod", "cat", "grep", "echo"],
+      "answer": "chmod"
+    },
+    {
+      "id": 14,
+      "question": "Which type of web application is most at risk of Path Traversal attacks?",
+      "options": [
+        "Applications that accept user-controlled file paths",
+        "Banking applications",
+        "Social media applications",
+        "Mobile applications"
+      ],
+      "answer": "Applications that accept user-controlled file paths"
+    },
+    {
+      "id": 15,
+      "question": "How can you detect attempted Path Traversal attacks in a web application?",
+      "options": [
+        "Monitoring logs for suspicious file access patterns",
+        "Blocking all file uploads",
+        "Disabling logging",
+        "Removing file access functions"
+      ],
+      "answer": "Monitoring logs for suspicious file access patterns"
+    },
+    {
+      "id": 16,
+      "question": "What should a developer do to handle user input securely?",
+      "options": [
+        "Validate and sanitize file paths",
+        "Trust all user input",
+        "Allow direct system commands from user input",
+        "Disable input validation"
+      ],
+      "answer": "Validate and sanitize file paths"
+    },
+    {
+      "id": 17,
+      "question": "Which technique can prevent directory traversal by restricting access to specific directories?",
+      "options": [
+        "Using chroot jail",
+        "Allowing unrestricted user input",
+        "Disabling logs",
+        "Using wildcard characters in file paths"
+      ],
+      "answer": "Using chroot jail"
+    },
+    {
+      "id": 18,
+      "question": "What is a symptom of a successful Path Traversal attack?",
+      "options": [
+        "Unauthorized access to sensitive files",
+        "A sudden increase in website traffic",
+        "Users getting logged out frequently",
+        "Slow server performance"
+      ],
+      "answer": "Unauthorized access to sensitive files"
+    },
+    {
+      "id": 19,
+      "question": "Which file might an attacker target using a Path Traversal attack?",
+      "options": [
+        "/etc/shadow",
+        "/var/log/auth.log",
+        "C:\\Windows\\System32\\config\\SAM",
+        "All of the above"
+      ],
+      "answer": "All of the above"
+    },
+    {
+      "id": 20,
+      "question": "What is the first step in mitigating a Path Traversal vulnerability?",
+      "options": [
+        "Sanitizing user input",
+        "Shutting down the server",
+        "Blocking all network connections",
+        "Reinstalling the operating system"
+      ],
+      "answer": "Sanitizing user input"
+    }
+  ]
+}

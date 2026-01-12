@@ -1,0 +1,79 @@
+.faq-burp-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--main-color);
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.faq-burp-step {
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--main-color);
+  margin-top: 20px;
+}
+
+.faq-burp-description,
+.faq-burp-text {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.6;
+  color: var(--primary-text);
+  margin-bottom: 10px;
+}
+
+.faq-burp-text strong {
+  color: var(--main-color);
+}
+
+.faq-burp-image {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 15px auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.faq-burp-link {
+  color: #17a2b8;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.faq-burp-link:hover {
+  text-decoration: underline;
+}
+
+.custom-transformation-list li {
+  padding: 12px;
+  margin-bottom: 8px;
+  background: var(--secondary-bg);
+  border-left: 5px solid var(--main-color2);
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.custom-transformation-list li:hover {
+  transform: translateX(8px);
+  background: var(--main-color);
+}
+
+@media (max-width: 768px) {
+  .faq-burp-container {
+    padding: 15px;
+  }
+
+  .faq-burp-title {
+    font-size: 22px;
+  }
+
+  .faq-burp-step {
+    font-size: 18px;
+  }
+
+  .faq-burp-description,
+  .faq-burp-text {
+    font-size: 15px;
+  }
+}

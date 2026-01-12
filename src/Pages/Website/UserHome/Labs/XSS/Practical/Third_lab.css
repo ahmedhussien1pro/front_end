@@ -1,0 +1,166 @@
+.container-Third_lab {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Extra small */
+@media (min-width: 0px) {
+  .container-Third_lab {
+    max-width: 100%;
+  }
+}
+
+/* small */
+@media (min-width: 576px) {
+  .container-Third_lab {
+    max-width: 540px;
+  }
+}
+
+/*  Medium */
+@media (min-width: 768px) {
+  .container-Third_lab {
+    max-width: 750px;
+  }
+}
+
+/* Large */
+@media (min-width: 991px) {
+  .container-Third_lab {
+    max-width: 970px;
+  }
+}
+
+/* X-Large */
+@media (min-width: 1200px) {
+  .container-Third_lab {
+    max-width: 1170px;
+  }
+}
+
+/* Start Course  */
+.course-Third_lab {
+  background-color: var(--primary-bg);
+  min-height: 100vh;
+}
+
+.course-Third_lab .container-Third_lab {
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px;
+}
+
+.course-Third_lab .container-Third_lab .search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.course-Third_lab .container-Third_lab .search input {
+  padding: 5px 10px;
+  border: 3px solid var(--main-color);
+  height: 50px;
+  width: 450px;
+}
+
+.course-Third_lab .container-Third_lab .search button {
+  border: none;
+  height: 50px;
+  padding: 0;
+}
+
+.course-Third_lab .container-Third_lab .search i {
+  font-size: 20px;
+  background-color: var(--main-color);
+  color: var(--primary-text);
+  padding: 5px 10px;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.course-Third_lab .row-practice {
+  display: grid;
+  grid-template-columns: 0.7fr;
+  grid-template-rows: auto auto auto;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  gap: 20px;
+}
+
+.course-Third_lab .row-practice .card-Third_lab {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: var(--main-transition);
+}
+
+.course-Third_lab .row-practice .card-Third_lab img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.course-Third_lab .row-practice .card-Third_lab:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transform: scale(1.02);
+}
+
+.course-Third_lab .row-practice .card-Third_lab .card-text-Third_lab {
+  padding: 20px 10px;
+}
+
+.course-Third_lab .row-practice .card-Third_lab .card-text-Third_lab p {
+  font-size: 16px;
+  font-weight: lighter;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/* End Course  */
+
+/* Button to back */
+.reload-container {
+  text-align: center;
+  margin-top: 20px;
+}
+.reload-button {
+  background-color: #a3ea2a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.reload-button:hover {
+  background-color: #90cd25;
+  transform: scale(1.05);
+}
+.reload-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+}
+.search-result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.serached_text {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hidden {
+  display: none;
+}

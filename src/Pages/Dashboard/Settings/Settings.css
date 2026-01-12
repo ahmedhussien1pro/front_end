@@ -1,0 +1,129 @@
+:root {
+  --shadow-1: 0 4px 12px var(--shadow-color);
+  --input-border: var(--hover-border-color);
+}
+
+.settings-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--secondary-bg);
+}
+
+.reset-password-form {
+  background-color: var(--primary-bg);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-1);
+  max-width: 400px;
+  width: 100%;
+  margin-top: 5rem;
+  color: var(--primary-text);
+}
+
+.reset-password-form h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  color: var(--highlight-color);
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  color: var(--secondary-text);
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--input-border);
+  border-radius: var(--border-radius);
+  font-family: "Montserrat", sans-serif;
+  font-size: var(--font-size-base);
+  background-color: var(--inputColor);
+  color: var(--primary-text);
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--main-color);
+  box-shadow: 0 0 5px var(--main-color4);
+}
+
+.reset-button {
+  width: 100%;
+  padding: 0.75rem;
+  background: var(--main-color);
+  color: var(--primary-text);
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: var(--font-size-base);
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  transition: background-color var(--transition-speed);
+}
+
+.reset-button:hover {
+  background-color: var(--hover-main-color);
+}
+
+/* Success Message */
+.success-message-box {
+  background-color: var(--highlight-color);
+  color: var(--blackColor);
+  padding: 15px;
+  border-radius: var(--border-radius);
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: var(--shadow-1);
+  opacity: 0;
+  transition: opacity var(--transition-speed);
+}
+
+.success-message-box.show {
+  opacity: 1;
+}
+
+.success-message-box button {
+  background: none;
+  border: none;
+  color: var(--blackColor);
+  font-size: 16px;
+  cursor: pointer;
+  transition: color var(--transition-speed);
+}
+
+.success-message-box button:hover {
+  color: var(--burnt-orange);
+}
+
+/* Error Message */
+.error-message-settings {
+  background-color: var(--crimson-red);
+  color: var(--primary-text);
+  padding: 15px;
+  border-radius: var(--border-radius);
+  margin-bottom: 20px;
+  box-shadow: var(--shadow-1);
+  font-size: 16px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .success-message-box,
+  .error-message-settings {
+    font-size: 14px;
+    padding: 12px;
+  }
+}

@@ -1,0 +1,204 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What does CSRF stand for?",
+      "options": [
+        "Cross-Site Request Forgery",
+        "Client-Side Remote Forgery",
+        "Cross-Script Resource Fetch",
+        "Cryptographic Security Request Function"
+      ],
+      "correct_answer": "Cross-Site Request Forgery"
+    },
+    {
+      "id": 2,
+      "question": "Which of the following best describes a CSRF attack?",
+      "options": [
+        "An attack that injects malicious JavaScript into a web page",
+        "An attack that tricks the user into unknowingly submitting a request",
+        "A brute force attack on login credentials",
+        "An attack that encrypts user data for ransom"
+      ],
+      "correct_answer": "An attack that tricks the user into unknowingly submitting a request"
+    },
+    {
+      "id": 3,
+      "question": "What is the primary security risk of CSRF attacks?",
+      "options": [
+        "An attacker can execute unauthorized actions on behalf of a user",
+        "An attacker can inject SQL commands into the database",
+        "An attacker can intercept network traffic",
+        "An attacker can crack weak passwords"
+      ],
+      "correct_answer": "An attacker can execute unauthorized actions on behalf of a user"
+    },
+    {
+      "id": 4,
+      "question": "Which HTTP request method is most vulnerable to CSRF attacks?",
+      "options": ["GET", "POST", "PUT", "DELETE"],
+      "correct_answer": "POST"
+    },
+    {
+      "id": 5,
+      "question": "Which of the following is NOT a common CSRF mitigation technique?",
+      "options": [
+        "Using CSRF tokens",
+        "Enforcing SameSite cookie policies",
+        "Enabling CORS for all domains",
+        "Requiring user authentication for sensitive actions"
+      ],
+      "correct_answer": "Enabling CORS for all domains"
+    },
+    {
+      "id": 6,
+      "question": "What is the purpose of a CSRF token?",
+      "options": [
+        "To encrypt HTTP requests",
+        "To validate that a request originates from a legitimate source",
+        "To store session data in the browser",
+        "To execute malicious scripts"
+      ],
+      "correct_answer": "To validate that a request originates from a legitimate source"
+    },
+    {
+      "id": 7,
+      "question": "Where is the CSRF token typically stored?",
+      "options": [
+        "In a session cookie",
+        "In the URL as a query parameter",
+        "In a hidden form field",
+        "In a local database"
+      ],
+      "correct_answer": "In a hidden form field"
+    },
+    {
+      "id": 8,
+      "question": "Which security attribute helps prevent CSRF attacks by limiting cookie access?",
+      "options": ["SameSite", "Secure", "HttpOnly", "All of the above"],
+      "correct_answer": "All of the above"
+    },
+    {
+      "id": 9,
+      "question": "What does the 'SameSite' attribute in cookies do?",
+      "options": [
+        "Prevents cross-origin JavaScript from accessing cookies",
+        "Prevents cookies from being sent with cross-site requests",
+        "Encrypts cookies to prevent tampering",
+        "Allows cookies to persist across different websites"
+      ],
+      "correct_answer": "Prevents cookies from being sent with cross-site requests"
+    },
+    {
+      "id": 10,
+      "question": "Which type of application is MOST vulnerable to CSRF attacks?",
+      "options": [
+        "Single-page applications using JWT authentication",
+        "Web applications relying solely on session cookies for authentication",
+        "Command-line applications",
+        "Mobile applications"
+      ],
+      "correct_answer": "Web applications relying solely on session cookies for authentication"
+    },
+    {
+      "id": 11,
+      "question": "Which of the following is an example of a CSRF attack?",
+      "options": [
+        "An attacker injects JavaScript to steal user data",
+        "A victim clicks a malicious link that changes their account password",
+        "An attacker sends phishing emails to users",
+        "An attacker executes a denial-of-service attack on a website"
+      ],
+      "correct_answer": "A victim clicks a malicious link that changes their account password"
+    },
+    {
+      "id": 12,
+      "question": "How does an attacker exploit CSRF?",
+      "options": [
+        "By making a user unknowingly submit a request on an authenticated session",
+        "By injecting malicious SQL commands",
+        "By intercepting network traffic",
+        "By brute-forcing login credentials"
+      ],
+      "correct_answer": "By making a user unknowingly submit a request on an authenticated session"
+    },
+    {
+      "id": 13,
+      "question": "Which of the following security measures is LEAST effective against CSRF?",
+      "options": [
+        "Requiring user authentication",
+        "Using Captcha on sensitive actions",
+        "Verifying Referer and Origin headers",
+        "Using an HTTPS connection"
+      ],
+      "correct_answer": "Using an HTTPS connection"
+    },
+    {
+      "id": 14,
+      "question": "What happens if a CSRF token is missing in a secure application?",
+      "options": [
+        "The request is accepted as normal",
+        "The request is rejected",
+        "The user is logged out",
+        "The browser blocks the request"
+      ],
+      "correct_answer": "The request is rejected"
+    },
+    {
+      "id": 15,
+      "question": "Which HTTP header can help detect and prevent CSRF attacks?",
+      "options": ["Referer", "User-Agent", "Content-Type", "Accept-Encoding"],
+      "correct_answer": "Referer"
+    },
+    {
+      "id": 16,
+      "question": "How do CSRF tokens prevent attacks?",
+      "options": [
+        "By ensuring the request comes from the same user session",
+        "By encrypting user data",
+        "By validating the username and password",
+        "By hiding the request from attackers"
+      ],
+      "correct_answer": "By ensuring the request comes from the same user session"
+    },
+    {
+      "id": 17,
+      "question": "What is a common limitation of using Referer headers for CSRF protection?",
+      "options": [
+        "They can be easily bypassed by attackers",
+        "Some browsers and networks strip Referer headers",
+        "They are only applicable for GET requests",
+        "They only work on mobile applications"
+      ],
+      "correct_answer": "Some browsers and networks strip Referer headers"
+    },
+    {
+      "id": 18,
+      "question": "What is the BEST approach to secure a web application against CSRF?",
+      "options": [
+        "Implementing CSRF tokens and SameSite cookie policies",
+        "Using SSL/TLS encryption only",
+        "Blocking all external domains",
+        "Using JavaScript to filter requests"
+      ],
+      "correct_answer": "Implementing CSRF tokens and SameSite cookie policies"
+    },
+    {
+      "id": 19,
+      "question": "Which web framework provides built-in CSRF protection?",
+      "options": ["Django", "React", "jQuery", "Bootstrap"],
+      "correct_answer": "Django"
+    },
+    {
+      "id": 20,
+      "question": "Which CSRF defense mechanism adds a unique identifier to each user session?",
+      "options": [
+        "CSRF Token",
+        "CORS Policy",
+        "Secure Cookies",
+        "OAuth Tokens"
+      ],
+      "correct_answer": "CSRF Token"
+    }
+  ]
+}

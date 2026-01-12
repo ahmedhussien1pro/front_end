@@ -1,0 +1,52 @@
+.xss-card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.xss-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.xss-card:hover {
+  transform: scale(1.05);
+}
+
+.xss-card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.xss-card-title {
+  font-size: 1.2em;
+  margin: 15px 0;
+}
+
+.xss-card-rating {
+  font-size: 1.1em;
+  color: #ffcc00;
+  margin-bottom: 10px;
+}
+
+.xss-card-details-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.xss-card-details-button:hover {
+  background-color: #0056b3;
+}

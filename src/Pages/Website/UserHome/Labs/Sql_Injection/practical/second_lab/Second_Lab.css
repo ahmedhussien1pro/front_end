@@ -1,0 +1,136 @@
+
+.container-store {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 61px;
+  display: flex;
+  flex-direction: column;
+}
+.container-store h1{
+  color: var(--main-color);
+}
+.course-store {
+  padding: 70px 0;
+}
+
+.course-store .row-practice {
+  display: grid;
+  grid-template-columns: 0.3fr 0.3fr 0.3fr;
+  grid-template-rows: auto auto;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  gap: 20px;
+}
+
+.card-store {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px var(--glass-effect);
+  background-color:var(--secondary-bg);
+  color: var(--primary-text);
+  position: relative;
+  overflow: hidden;
+}
+.card-store .functions {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  gap: 15px;
+  padding: 0 5px;
+  box-shadow: 0 0 5px var(--glass-effect);
+  transition: 0.75s;
+  color: var(--primary-text);
+  background-color: var(--main-color);
+}
+
+.card-store:hover .functions {
+  left: 0;
+}
+
+.card-store .functions i {
+  cursor: pointer;
+}
+
+.card-store img {
+  width: 50%;
+  border-radius: 10px;
+}
+
+.card-store .card-text-store {
+  padding: 20px 10px;
+}
+
+.card-store .card-text-store p.price {
+  font-size: 16px;
+  font-weight: lighter;
+  margin-top: 30px;
+  background-color: var(--main-color);
+  color: var(--primary-text);
+  padding: 5px 10px;
+  border-radius: 25px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-store .card-text-store p.price::after {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  background-color: var(--hover-highlight-color);
+  z-index: 1;
+  transition: var(--main-transition);
+}
+
+.card-store p.price:hover::after {
+  top: 0;
+}
+
+@media (min-width: 0px) {
+  .container-store {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 576px) {
+  .container-store {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container-store {
+    max-width: 750px;
+  }
+}
+
+@media (min-width: 991px) {
+  .container-store {
+    max-width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-store {
+    max-width: 1170px;
+  }
+}
+@media (max-width: 992px) {
+  .course-store .row-practice {
+    grid-template-columns: 0.5fr 0.5fr;
+  }
+}

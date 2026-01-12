@@ -1,0 +1,155 @@
+/* ShoppingCart.css */
+.cart-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: var(--primary-bg);
+}
+@media (max-width: 768px) {
+  .cart-center {
+    margin-top: 60px;
+  }
+}
+@media (max-width: 1123px) {
+  .cart-center {
+    margin-top: 50px;
+  }
+}
+.shopping-cart {
+  background: var(--glass-bg);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.info-bar {
+  background: var(--main-color);
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container-shopping-cart {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.product-list-rc {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.product-rc {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-name {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.product-price {
+  font-size: 16px;
+  color: var(--main-color);
+  margin-bottom: 15px;
+}
+
+.add-btn {
+  background: var(--main-color2);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.add-btn:hover {
+  background: var(--main-color);
+}
+
+.coupon-section {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.coupon-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid var(--main-color);
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.apply-btn {
+  background: var(--main-color);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.apply-btn:hover {
+  background: var(--main-color2);
+}
+
+.discount-info {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.discount {
+  color: #28a745;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.total {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+  margin-top: 10px;
+}
+.reset-btn {
+  background: var(--main-color3);
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.message-box {
+  background: #ffc107;
+  color: #333;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+}

@@ -1,0 +1,133 @@
+.ssrf__course-store {
+  padding: 100px 0;
+  background: var(--primary-bg);
+}
+.ssrf__course-store h1 {
+  color: var(--primary-text);
+}
+.ssrf__course-store .text-ssrf {
+  color: var(--primary-text);
+}
+
+.ssrf__course-store--row-practice {
+  display: grid;
+  grid-template-columns: repeat(3, 0.3fr);
+  grid-template-rows: auto auto;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  gap: 20px;
+}
+
+.ssrf__course-store--card-store {
+  background-color: var(--secondary-bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.out-of-stock-message {
+  background-color: var(--primary-bg);
+}
+.ssrf__course-store__card-store--functions {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  gap: 15px;
+  padding: 0 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  transition: 0.75s;
+  color: white;
+  background-color: var(--main-color);
+}
+
+.ssrf__course-store--card-store:hover
+  .ssrf__course-store__card-store--functions {
+  left: 0;
+}
+
+.ssrf__course-store__card-store--functions i {
+  cursor: pointer;
+}
+
+.ssrf__course-store--card-store img {
+  width: 50%;
+  border-radius: 10px;
+}
+
+.ssrf__course-store__card-store--card-text-store {
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ssrf__course-store__card-store--card-text-store h4 {
+  margin-bottom: 0;
+}
+
+.ssrf__course-store__card-store--card-text-store p.price {
+  font-size: 16px;
+  font-weight: lighter;
+  margin: 0 0 0 15px;
+  background-color: var(--main-color);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 25px;
+  position: relative;
+  max-height: fit-content;
+}
+
+/* .ssrf__course-store__card-store--card-text-store p.price::after {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.15);
+  z-index: 1;
+  transition: var(--main-transition);
+} */
+
+.ssrf__course-store__card-store--card-text-store p.price:hover::after {
+  top: 0;
+}
+
+@media (max-width: 992px) {
+  .ssrf__course-store .row-practice {
+    grid-template-columns: 0.5fr 0.5fr;
+  }
+}
+
+.ssrf_user_list {
+  background-color: #eaeaee;
+  margin: 10rem auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: fit-content;
+}
+
+.ssrf_user_list button.delete_user {
+  margin-left: 30px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-color: var(--main-color);
+  border: none;
+  float: right;
+  color: white;
+}

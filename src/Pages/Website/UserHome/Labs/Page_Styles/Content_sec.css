@@ -1,0 +1,246 @@
+.container-labd {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Extra small */
+@media (min-width: 0px) {
+  .container-labd {
+    max-width: 100%;
+  }
+}
+
+/* small */
+@media (min-width: 576px) {
+  .container-labd {
+    max-width: 540px;
+  }
+}
+
+/*  Medium */
+@media (min-width: 768px) {
+  .container-labd {
+    max-width: 750px;
+  }
+}
+
+/* Large */
+@media (min-width: 992px) {
+  .container-labd {
+    max-width: 970px;
+  }
+}
+
+/* X-Large */
+@media (min-width: 1200px) {
+  .container-labd {
+    max-width: 1170px;
+  }
+}
+
+/* Start landing-labd */
+.landing-labd {
+  height: auto;
+  position: relative;
+  background-color: var(--alt-color);
+  isolation: isolate;
+  z-index: 3;
+}
+
+.landing-labd .banner {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.landing-labd .banner::after {
+  content: '';
+  position: absolute;
+  inset: 0px;
+  z-index: 1;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    var(--alt-color) 30%,
+    rgba(21, 28, 43, 0.98) 50%,
+    transparent 100%
+  );
+}
+
+.landing-labd .banner img {
+  position: absolute;
+  left: 30%;
+}
+
+.landing-labd .container-labd {
+  padding: 24px 12px;
+}
+
+/* End landing-labd */
+.go-to-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.go-to {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 5px;
+  max-width: 100%;
+  font-size: 16px;
+  padding: 7px 16px;
+  background-color: transparent;
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+  transition: var(--main-transition);
+}
+
+.go-to:hover {
+  background-color: var(--main-color);
+  color: var(--primary-text);
+  box-shadow: 2px 2px 10px 0 var(--main-color);
+}
+
+.pink-note {
+  display: inline-block !important;
+  color: #d63384;
+  font-weight: 400;
+  text-transform: capitalize;
+  background: linear-gradient(
+    90deg,
+    rgba(214, 51, 132, 0.2) 0%,
+    rgba(214, 51, 132, 0.1) 100%
+  );
+  padding: 0.2rem 0.4rem;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.pink-note:hover {
+  background: rgba(214, 51, 132, 0.3);
+}
+
+.oList {
+  padding-left: 1.2rem !important;
+  list-style: none !important;
+}
+
+.table.compare-table td,
+.table.compare-table th {
+  text-align: center !important;
+  padding: 5 10px !important;
+}
+
+.dark-note {
+  display: inline;
+  color: #eee;
+  background-color: rgb(33, 44, 66);
+  padding: 4px 5px;
+  border-radius: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 15px;
+}
+
+/* Start Course Content */
+
+/*Table*/
+#border-left,
+dd {
+  border-left: 4px solid var(--main-color) !important;
+  overflow-x: hidden;
+}
+
+/* table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  border: 3px solid #333;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+caption {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+} */
+
+/* thead th {
+  background-color: #79b01c;
+  color: white;
+  padding: 10px;
+  border: 2px solid #333;
+  text-align: center;
+}
+
+tbody td {
+  padding: 8px 10px;
+  border: 2px solid #333;
+  text-align: left;
+}
+
+tr {
+  transition: all 0.3s ease-in-out;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #a8e08e;
+} */
+
+/* Extra Styles */
+.note {
+  color: #333;
+  background-color: #eee;
+  font-size: 18px;
+  margin: 20px 0;
+  border-left: 5px solid #a3ea2a;
+  padding: 5px;
+  font-style: italic;
+  line-height: 1.8;
+}
+
+.note #note-span {
+  color: white !important;
+  background-color: #333 !important;
+  padding: 2px 5px !important;
+  border-radius: 5px !important;
+}
+
+.Content__img__box__over--hidden img {
+  margin: 30px 0;
+}
+
+.Content__img__box__over--hidden img {
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.note__new--note {
+  color: var(--primary-text);
+  background-color: var(--primary-bg);
+  font-size: 18px;
+  margin: 20px 0;
+  border-left: 5px solid var(--main-color);
+  padding: 5px;
+  padding-left: 10px;
+  font-style: italic;
+  line-height: 1.8;
+  transition: var(--transition-3);
+}
+.note__new--note:hover {
+  background-color: var(--faq-header-hover);
+  color: var(--primary-text);
+}

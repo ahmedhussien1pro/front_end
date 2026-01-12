@@ -1,0 +1,133 @@
+/* Start Content */
+.auth-issues-list,
+.impact-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.auth-issue-item,
+.impact-item {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  color: var(--primary-text);
+  font-weight: 400;
+}
+.auth-causes-list,
+.impact-detail-list {
+  list-style-type: disc;
+  margin: 0.5rem 0 0 1.5rem;
+  color: var(--primary-text);
+}
+.auth-cause-item,
+.impact-detail-item {
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+  color: var(--primary-text);
+}
+.security-item .intro-text {
+  color: var(--primary-text);
+}
+.security-item .emoji {
+  color: var(--primary-text);
+}
+.auth-consequences-title {
+  font-family: "Poppins", serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--main-color);
+  background: var(--primary-bg);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 8px var(--secondary-bg);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.special-highlight {
+  color: var(--main-color);
+  font-weight: 400;
+  background: var(--primary-bg);
+
+  padding: 0.2rem 0.4rem;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.scenario-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 1rem;
+}
+.scenario-title {
+  font-size: 25px;
+  font-weight: 400;
+  color: var(--main-color);
+  margin-bottom: 0.8rem;
+}
+.scenario-details {
+  margin: 0.6rem 0 1.2rem 1.8rem;
+  color: #666666;
+}
+.detail {
+  margin-bottom: 0.6rem;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--secondary-text);
+}
+.impact {
+  font-weight: 400;
+  color: var(--main-color);
+  margin-top: 1.2rem;
+  font-size: 16px;
+}
+.security-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-family: "poppins", sans-serif;
+}
+
+.section-title {
+  color: var(--main-color);
+  font-weight: 400;
+  background: var(--primary-bg);
+  margin-top: 12px;
+  padding: 0.2rem 0.4rem;
+  border-radius: 8px;
+  font-size: 20px;
+}
+.section-details {
+  margin: 1rem 0;
+  font-weight: 400;
+  font-size: 16px;
+}
+.detail-item {
+  margin-bottom: 1rem;
+  font-weight: 400;
+  font-size: 16px;
+}
+.detail-item strong {
+  font-size: 1.3rem;
+  color: var(--main-color);
+  font-weight: 400;
+}
+.detail-list {
+  margin-left: 1.5rem;
+  color: #555;
+}
+.detail-list li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+}

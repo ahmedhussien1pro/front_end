@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+.hacker-login {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.hacker-login::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    var(--primary-bg),
+    var(--main-color),
+    var(--primary-bg)
+  );
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+.hackerLogin-gridSpan {
+  position: relative;
+  display: block;
+  width: calc(6.25vw - 2px);
+  height: calc(6.25vw - 2px);
+  background: var(--primary-bg);
+  z-index: 2;
+  transition: 1.5s;
+}
+
+.hackerLogin-gridSpan:hover {
+  background: var(--main-color);
+  transition: 0s;
+}
+
+.hackerLogin-signin {
+  position: absolute;
+  width: 400px;
+  background: var(--secondary-bg);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  border-radius: 4px;
+  box-shadow: 0 15px 35px var(--glass-effect);
+}
+
+.hackerLogin-signin .hackerLogin-content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.hackerLogin-signin .hackerLogin-content h2 {
+  font-size: 2em;
+  color: var(--main-color);
+  text-transform: uppercase;
+}
+
+.hackerLogin-signin .hacker-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.hackerLogin-inputBox {
+  position: relative;
+  width: 100%;
+}
+
+.hackerLogin-inputBox input {
+  position: relative;
+  width: 100%;
+  background: #333;
+  border: none;
+  outline: none;
+  padding: 25px 10px 7.5px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1em;
+}
+
+.hackerLogin-inputBox i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-style: normal;
+  color: #aaa;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.hackerLogin-inputBox input:focus ~ i,
+.hackerLogin-inputBox input:valid ~ i {
+  transform: translateY(-20px);
+  font-size: 0.8em;
+  color: #fff;
+}
+
+.hackerLogin-links {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hackerLogin-links a {
+  padding: 0 !important;
+  margin: 0 !important;
+  font-size: 1rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.hackerLogin-links a:nth-child(2) {
+  color: var(--main-color);
+}
+
+.hackerLogin-inputBox input[type="submit"] {
+  padding: 10px;
+  background: var(--main-color);
+  color: var(--primary-text);
+  font-weight: 600;
+  font-size: 1.35em;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+}
+
+.hackerLogin-inputBox input[type="submit"]:active {
+  opacity: 0.6;
+}
+.hackerLogin-inputBox input[type="submit"]:hover {
+  background: transparent;
+  color: var(--main-color);
+  border: 2px solid var(--main-color);
+}
+@media (max-width: 900px) {
+  .hackerLogin-gridSpan {
+    width: calc(10vw - 2px);
+    height: calc(10vw - 2px);
+  }
+}
+
+@media (max-width: 600px) {
+  .hackerLogin-gridSpan {
+    width: calc(20vw - 2px);
+    height: calc(20vw - 2px);
+  }
+}

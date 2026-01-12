@@ -1,0 +1,54 @@
+.soonBannerContainer {
+  width: 100vw;
+  overflow: hidden;
+  background-color: var(--secondary-bg);
+  position: sticky !important;
+  top: 0 !important;
+  left: 0 !important;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  box-shadow: 1px 1px 4px 0px var(--main-color);
+}
+
+.soonBanner {
+  display: flex;
+  /* width: 200vw; */
+  animation: slideText 30s linear infinite;
+}
+
+.soonBannerText {
+  width: 100vw;
+  font-weight: bold;
+  color: var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* gap: 20px; */
+}
+@media screen and (max-width: 768px) {
+  .soonBannerText {
+    width: 150vw;
+  }
+  .soonBanner {
+    animation: slideText 40s linear infinite;
+  }
+  @keyframes slideText {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50vw);
+    }
+  }
+}
+
+@keyframes slideText {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100vw);
+  }
+}

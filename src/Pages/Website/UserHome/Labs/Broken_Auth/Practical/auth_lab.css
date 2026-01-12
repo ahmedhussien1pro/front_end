@@ -1,0 +1,146 @@
+/* auth_lab.css */
+.lab1-login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: var(--primary-bg);
+}
+
+.lab1-login-card {
+  background: var(--secondary-bg);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  max-width: 400px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.lab1-login-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: var(--primary-text);
+}
+
+.lab1-login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.lab1-input-section {
+  margin-bottom: 20px;
+}
+
+.lab1-input-label {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: var(--primary-text);
+  font-weight: bold;
+}
+
+.lab1-input-field {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid var(--main-color);
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.lab1-input-field:focus {
+  border-color: var(--main-color3);
+}
+
+.lab1-submit-btn {
+  background-color: var(--main-color);
+  color: #fff;
+  border: none;
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.lab1-submit-btn:hover {
+  background-color: var(--main-color2);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .lab1-login-card {
+    padding: 30px;
+    max-width: 350px;
+  }
+
+  .lab1-login-title {
+    font-size: 24px;
+  }
+}
+
+.lab1-words-link {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--primary-text);
+  text-decoration: none;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.lab1-words-link:hover {
+  color: var(--main-color);
+  text-decoration: underline;
+}
+
+.lab1-words-link:focus {
+  outline: none;
+  color: var(--primary-text);
+  text-decoration: underline;
+}
+
+.lab1-credentials-info {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: var(--main-color);
+}
+.lab1-credentials-info strong {
+  color: var(--primary-text);
+}
+.lab1-response-message {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.lab1-response-message.success {
+  color: #155724;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  box-shadow: 0px 4px 8px rgba(0, 128, 0, 0.2);
+}
+
+.lab1-response-message.error {
+  color: #721c24;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  box-shadow: 0px 4px 8px rgba(255, 0, 0, 0.2);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

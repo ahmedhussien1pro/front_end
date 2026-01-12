@@ -1,0 +1,10 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "There are three valid badges in this lab, with IDs ranging from 1 to 10. Find their number.",
+      "options": ["1 , 2 , 10", "3 , 6 , 9", "6 , 8 , 5", "11 , 3 , 4"],
+      "answer": "3 , 6 , 9"
+    }
+  ]
+}

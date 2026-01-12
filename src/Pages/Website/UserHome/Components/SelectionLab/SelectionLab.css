@@ -1,0 +1,343 @@
+.container-labcc {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Extra small */
+@media (min-width: 0px) {
+  .container-labcc {
+    max-width: 100%;
+  }
+}
+
+/* small */
+@media (min-width: 576px) {
+  .container-labcc {
+    max-width: 540px;
+  }
+}
+
+/*  Medium */
+@media (min-width: 768px) {
+  .container-labcc {
+    max-width: 750px;
+  }
+}
+
+/* Large */
+@media (min-width: 992px) {
+  .container-labcc {
+    max-width: 970px;
+  }
+}
+
+/* X-Large */
+@media (min-width: 1200px) {
+  .container-labcc {
+    max-width: 1170px;
+  }
+}
+
+.course-labcc {
+  position: relative;
+  min-height: calc(100vh - (102px));
+  /* height: calc(100vh - (102px)); */
+  padding-top: 50px;
+}
+
+/* Start Course Content */
+/* .course .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 70px;
+} */
+
+.course-labcc .course-section {
+  background-color: inherit;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.faq-section-labcc {
+  margin-top: 75px;
+  display: block;
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  .faq-section-labcc .section-text {
+    margin-left: 0;
+  }
+
+  .faq-section-labcc .image {
+    display: none;
+  }
+}
+
+.caution {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: #f9f9f9;
+  padding: 10px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+.caution p {
+  margin: 0;
+  margin-right: 10px;
+}
+
+.message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  transition: opacity 0.5s ease;
+  color: white;
+}
+
+.success {
+  background-color: var(--sec-main-color);
+}
+
+.fail {
+  background-color: red;
+}
+
+.firework {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: visible;
+  z-index: 10;
+}
+
+.faq-item {
+  margin-bottom: 30px;
+}
+
+.faq-section-labcc .section-text .faq-header {
+  border-radius: 5px 5px 0 0;
+  color: white;
+  background-color: #212c42;
+  font-size: 18px;
+  overflow: hidden;
+  cursor: pointer;
+  line-height: 20px;
+  padding: 10px 25px;
+  font-weight: lighter;
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+}
+
+@media (max-width: 991px) {
+  .faq-section-labcc .section-text .faq-header {
+    font-size: 16px;
+  }
+}
+
+.faq-section-labcc .section-text .faq-header span {
+  color: var(--sec-main-color);
+  margin-right: 40px;
+  position: relative;
+}
+
+.faq-section-labcc .section-text .faq-header span::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  border: 1px solid #777;
+  border-radius: 50%;
+  position: absolute;
+  right: -45%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.faq-section-labcc .section-text .faq-body {
+  font-size: 18px;
+  padding: 15px 25px;
+  line-height: 1.9;
+  border-left: 4px solid var(--sec-main-color);
+  box-shadow: 1px 2px rgb(0, 0, 0, 0.1);
+  border-radius: 0 0 5px 5px;
+  background-color: white;
+  color: rgb(21, 28, 43);
+}
+
+@media (max-width: 991px) {
+  .faq-section-labcc .section-text .faq-body {
+    font-size: 14px;
+  }
+}
+
+.faq-section-labcc a {
+  color: var(--sec-main-color);
+  text-decoration: underline;
+}
+
+.faq-section-labcc p {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.faq-section-labcc span:not([class]) {
+  color: #eee;
+  background-color: rgb(33, 44, 66);
+  padding: 4px 5px;
+  border-radius: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 15px;
+}
+
+.faq-section-labcc h2 {
+  color: var(--sec-main-color);
+  font-size: 20px;
+}
+
+.question-div {
+  margin: 50px 0;
+}
+
+.faq-section-labcc .question {
+  padding-top: 20px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.faq-section-labcc form {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.selection-style {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.selection-style select {
+  padding: 5px 45px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+}
+
+.faq-section-labcc form input {
+  flex: 3 1 0%;
+  padding: 7px 12px;
+  width: 100%;
+  height: auto;
+  font-size: 16px;
+  color: rgb(28, 37, 56);
+  border-radius: 5px;
+  background-color: white;
+  outline: none;
+  border: 0.1rem solid rgb(212, 216, 223);
+  margin-right: 20px;
+}
+
+.faq-section-labcc form button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 0%;
+  cursor: pointer;
+  gap: 6px;
+  height: 36px;
+  min-width: 300px;
+  border-radius: 5px;
+  max-width: 100%;
+  font-size: 16px;
+  padding: 7px 16px;
+  text-decoration: none;
+  pointer-events: initial;
+  border-width: 1px;
+  border-style: solid;
+  background-color: transparent;
+  color: rgb(21, 28, 43);
+  border-color: rgb(163, 234, 42);
+  transition: 0.2s ease-in-out;
+}
+
+.faq-section-labcc form button:hover:not(:disabled) {
+  background-color: rgb(163, 234, 42);
+  color: whitesmoke;
+}
+
+.capital-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.capital-info img {
+  max-width: 100%;
+  height: auto;
+}
+
+.fileViewer {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+
+/* .fileViewer .info {} */
+
+#lab-info {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.downloadButton {
+  background-color: var(--sec-main-color);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.downloadButton:hover {
+  background-color: #92d51f;
+  /* A slightly darker shade for hover effect */
+}
+
+.downloadButton i {
+  margin-right: 5px;
+}
+
+/* End Course Content */

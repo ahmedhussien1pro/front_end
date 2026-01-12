@@ -1,0 +1,236 @@
+.container-captcha {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 100px;
+}
+
+
+/* Extra small */
+@media (min-width: 0px) {
+  .container-captcha {
+    max-width: 100%;
+  }
+}
+
+
+/* small */
+@media (min-width: 576px) {
+  .container-captcha {
+    max-width: 540px;
+  }
+}
+
+
+/*  Medium */
+@media (min-width: 768px) {
+  .container-captcha {
+    max-width: 750px;
+  }
+}
+
+/* Large */
+@media (min-width: 992px) {
+  .container-captcha {
+    max-width: 970px;
+  }
+}
+
+/* X-Large */
+@media (min-width: 1200px) {
+  .container-captcha {
+    max-width: 1170px;
+  }
+}
+
+.body-captcha {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background-color: var(--primary-bg);
+  padding-top: 40px;
+}
+
+.container-captcha {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.captcha_first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95%;
+}
+
+.card-captcha {
+  padding: 20px;
+  border-radius: 10px;
+  height: fit-content;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 60%;
+  background-color: var(--secondary-bg);
+  color: #EAEAEA;
+  margin-bottom: 30px;
+}
+
+.card_content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card-captcha .card_content form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card_title {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: whitesmoke;
+}
+
+.form-group-captcha {
+  width: 100%;
+}
+
+.form-group-captcha label {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: whitesmoke;
+}
+
+.form-group-captcha .input {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  border-radius: 10px;
+  font-weight: 400;
+  padding: 0 10px;
+  width: 100%;
+  border: 1px solid #EAEAEA;
+  margin-bottom: 20px;
+}
+
+
+.form-group-captcha .input:focus {
+  outline: none;
+  border: 1px solid var(--primary-bg);
+}
+
+.form-group-captcha button,
+.form-group-captcha a {
+  width: 100%;
+  height: 50px;
+  border-radius: 50px;
+  /* background: linear-gradient(300deg,var(--main-color),var(--main-color4)); */
+  background-color: var(--main-color);
+  text-align: center;
+  border: none;
+  color: #EAEAEA;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.form-group-captcha button::after,
+.form-group-captcha a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  background-color: rgb(255, 255, 255, .1);
+  top: 100%;
+  left: 0;
+  transition: var(--main-transition);
+}
+
+.form-group-captcha button:hover::after,
+.form-group-captcha a:hover::after {
+  top: 0;
+}
+.captcha_reset_btn {
+  /* background: linear-gradient(300deg,var(--crimson-red),var(--burnt-orange)); */
+  background-color: var(--main-color);
+  color: whitesmoke;
+  text-align: center;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.error {
+  background-color: #f8d7da;
+  color: red;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.right {
+  background-color: green;
+  color: greenyellow;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+.container-captcha .comment-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-direction: column;
+  width: 100%;
+  max-height: 240px;
+  overflow-y: scroll;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.container-captcha .comment-section .comment-card {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  padding: 20px 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #112D4E;
+  color: #EAEAEA;
+  border-bottom: 2px solid #EAEAEA;
+}
+.container-captcha .comment-section .comment-card .comment-header {
+  margin-right: 20px;
+  padding-right: 10px;
+  border-right: 2px solid white;
+}
+.container-captcha .comment-section .comment-card .comment-header .name {
+  margin-bottom: 0;
+}
+.container-captcha .comment-section .comment-card .comment-text {
+  margin-bottom: 0;
+}

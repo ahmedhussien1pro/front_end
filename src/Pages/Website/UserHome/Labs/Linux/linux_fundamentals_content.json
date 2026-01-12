@@ -1,0 +1,1804 @@
+{
+  "landingData": {
+    "title": {
+      "en": "Linux Fundamentals - Essential Skills for Beginners",
+      "ar": "أساسيات نظام التشغيل لينكس - مهارات أساسية للمبتدئين"
+    },
+    "description": {
+      "en": "Master the essential skills of Linux operating system. Learn commands, file management, permissions, and system administration basics. This comprehensive course covers everything you need to start working with Linux confidently.",
+      "ar": "تعلم المهارات الأساسية لنظام التشغيل لينكس. اكتشف الأوامر وإدارة الملفات والأذونات. دليلك الكامل لبدء العمل مع لينكس بثقة."
+    },
+    "difficulty": {
+      "en": "Beginner",
+      "ar": "مبتدئ"
+    },
+    "duration": {
+      "en": "120 Minutes",
+      "ar": "120 دقيقة"
+    },
+    "instructor": "CyberLab",
+    "rating": 4.8,
+    "students": 1250,
+    "courseImage": "https://pub-cb38e65ea6bd411eb827a8641fdcc72d.r2.dev/Linux%20Fundamentals/linux_logo.png",
+    "labsLink": {
+      "link": "/linux/linux_lab"
+    }
+  },
+  "topics": [
+    {
+      "id": "topic-01-introduction",
+      "title": {
+        "en": "What is Linux and Getting Started",
+        "ar": "ما هو لينكس والبدء به"
+      },
+      "elements": [
+        {
+          "id": 1767467025987.5703,
+          "type": "image",
+          "srcKey": "",
+          "size": "small",
+          "imageMode": "url",
+          "imageUrl": "https://pub-cb38e65ea6bd411eb827a8641fdcc72d.r2.dev/Linux%20Fundamentals/topic-01-introduction.webp"
+        },
+        {
+          "id": 1,
+          "type": "title",
+          "value": {
+            "en": "Understanding Linux",
+            "ar": "فهم نظام لينكس"
+          }
+        },
+        {
+          "id": 2,
+          "type": "text",
+          "value": {
+            "en": "Linux is a free and open-source operating system. It works like the control system of a building. Just as a building manager controls electricity, water, and security, Linux controls your computer's resources like memory, storage, and programs. Linux runs on many devices: laptops, servers, phones, and even smart devices.",
+            "ar": "لينكس هو نظام تشغيل مجاني ومفتوح المصدر. يعمل مثل نظام التحكم في المبنى. تماماً كما يتحكم مدير المبنى بالكهرباء والماء والأمان، يتحكم لينكس بموارد الكمبيوتر مثل الذاكرة والتخزين والبرامج. يعمل لينكس على أجهزة كثيرة: أجهزة كمبيوتر محمولة وخوادم وهواتف وحتى أجهزة ذكية."
+          }
+        },
+        {
+          "id": 3,
+          "type": "note",
+          "noteType": "info",
+          "value": {
+            "en": "Linux kernel is the core of Linux. It's like the heart of the system - it controls all communication between programs and hardware.",
+            "ar": "نواة لينكس هي قلب النظام. هي تتحكم في جميع الاتصالات بين البرامج والأجهزة."
+          },
+          "link": "",
+          "isLab": false
+        },
+        {
+          "id": 4,
+          "type": "text",
+          "value": {
+            "en": "Linux Distributions (or 'flavors') are different versions of Linux created by different organizations. For example: Ubuntu, Debian, CentOS, and Fedora. They all use the same Linux kernel but have different tools and interfaces.",
+            "ar": "توزيعات لينكس هي نسخ مختلفة من لينكس أنشأتها منظمات مختلفة. مثل: Ubuntu و Debian و CentOS و Fedora. كلها تستخدم نواة لينكس نفسها لكن بأدوات وواجهات مختلفة."
+          }
+        },
+        {
+          "id": 5,
+          "type": "table",
+          "title": {
+            "en": "Popular Linux Distributions",
+            "ar": "توزيعات لينكس الشهيرة"
+          },
+          "headers": {
+            "en": [
+              "Distribution",
+              "Based On",
+              "Usage",
+              "Features"
+            ],
+            "ar": [
+              "التوزيع",
+              "مشتق من",
+              "الاستخدام",
+              "الميزات"
+            ]
+          },
+          "rows": [
+            {
+              "en": [
+                "Ubuntu",
+                "Debian",
+                "Beginners & Desktop",
+                "User-friendly, Good support"
+              ],
+              "ar": [
+                "أوبنتو",
+                "ديبيان",
+                "للمبتدئين والحاسوب الشخصي",
+                "سهل الاستخدام، دعم جيد"
+              ]
+            },
+            {
+              "en": [
+                "Debian",
+                "Independent",
+                "Servers & Stability",
+                "Very stable, Conservative"
+              ],
+              "ar": [
+                "ديبيان",
+                "مستقل",
+                "الخوادم والاستقرار",
+                "مستقر جداً، متحفظ"
+              ]
+            },
+            {
+              "en": [
+                "CentOS",
+                "Red Hat",
+                "Enterprise Servers",
+                "Professional, Secure"
+              ],
+              "ar": [
+                "سنتوس",
+                "Red Hat",
+                "خوادم المؤسسات",
+                "احترافي، آمن"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "type": "note",
+          "noteType": "tip",
+          "value": {
+            "en": "Ubuntu is recommended for beginners. It has the largest community and most help is available online.",
+            "ar": "أوبنتو موصى بها للمبتدئين. لديها أكبر مجتمع وأكثر المساعدة متوفرة على الإنترنت."
+          },
+          "link": "",
+          "isLab": false
+        },
+        {
+          "id": 7,
+          "type": "title",
+          "value": {
+            "en": "Why Learn Linux?",
+            "ar": "لماذا نتعلم لينكس؟"
+          }
+        },
+        {
+          "id": 8,
+          "type": "text",
+          "value": {
+            "en": "Linux powers most of the internet, cloud servers, and cybersecurity tools. Learning Linux gives you skills that are in high demand in tech jobs. Whether you become a system administrator, developer, or cybersecurity expert, Linux knowledge is essential.",
+            "ar": "لينكس يشغل معظم الإنترنت والخوادم السحابية وأدوات الأمن السيبراني. تعلم لينكس يعطيك مهارات مطلوبة بشدة في وظائف التكنولوجيا. سواء أصبحت مسؤول نظام أو مطوراً أو خبير أمان سيبراني، معرفة لينكس ضرورية."
+          }
+        }
+      ]
+    },
+    {
+      "id": "topic-02-terminal",
+      "title": {
+        "en": "The Terminal and Your First Commands",
+        "ar": "نافذة الأوامر والأوامر الأولى"
+      },
+      "elements": [
+        {
+          "id": 1767468459958.5244,
+          "type": "image",
+          "srcKey": "",
+          "size": "medium",
+          "imageMode": "url",
+          "imageUrl": "https://pub-cb38e65ea6bd411eb827a8641fdcc72d.r2.dev/Linux%20Fundamentals/topic-02-terminal.webp"
+        },
+        {
+          "id": 1,
+          "type": "title",
+          "value": {
+            "en": "What is the Terminal?",
+            "ar": "ما هي نافذة الأوامر؟"
+          }
+        },
+        {
+          "id": 2,
+          "type": "text",
+          "value": {
+            "en": "The terminal is a text-based interface to interact with Linux. Instead of clicking buttons with a mouse, you type commands and press Enter. Think of it as a phone call to your computer - you give instructions in words, and it responds. The terminal is very powerful because you can do many things quickly by typing commands.",
+            "ar": "نافذة الأوامر هي واجهة نصية للتفاعل مع لينكس. بدلاً من النقر على الأزرار بالفأرة، تكتب الأوامر وتضغط Enter. فكر فيها كمكالمة هاتفية مع جهازك - تعطيه تعليمات بالكلمات، ويستجيب. نافذة الأوامر قوية جداً لأنك تستطيع فعل أشياء كثيرة بسرعة بكتابة الأوامر."
+          }
+        },
+        {
+          "id": 3,
+          "type": "terminal",
+          "label": {
+            "en": "Terminal Example",
+            "ar": "مثال نافذة الأوامر"
+          },
+          "value": "student@ubuntu:~$ "
+        },
+        {
+          "id": 4,
+          "type": "text",
+          "value": {
+            "en": "Let's understand the terminal prompt: 'student' is your username, 'ubuntu' is the computer name, '~' means you are in your home directory, and '$' means you are a regular user (not administrator).",
+            "ar": "دعنا نفهم رموز نافذة الأوامر: 'student' هو اسم المستخدم، 'ubuntu' هو اسم الكمبيوتر، '~' يعني أنك في مجلد البيت الخاص بك، و '$' يعني أنت مستخدم عادي (ليس مسؤول)."
+          }
+        },
+        {
+          "id": 5,
+          "type": "title",
+          "value": {
+            "en": "Your First Commands",
+            "ar": "أوامرك الأولى"
+          }
+        },
+        {
+          "id": 6,
+          "type": "table",
+          "title": {
+            "en": "Basic Commands",
+            "ar": "الأوامر الأساسية"
+          },
+          "headers": {
+            "en": [
+              "Command",
+              "Description",
+              "Example"
+            ],
+            "ar": [
+              "الأمر",
+              "الشرح",
+              "مثال"
+            ]
+          },
+          "rows": [
+            {
+              "en": [
+                "whoami",
+                "Shows your current username",
+                "whoami"
+              ],
+              "ar": [
+                "whoami",
+                "يعرض اسم المستخدم الحالي",
+                "whoami"
+              ]
+            },
+            {
+              "en": [
+                "echo",
+                "Prints text to the screen",
+                "echo Hello World"
+              ],
+              "ar": [
+                "echo",
+                "يطبع نصاً على الشاشة",
+                "echo Hello World"
+              ]
+            },
+            {
+              "en": [
+                "date",
+                "Shows the current date and time",
+                "date"
+              ],
+              "ar": [
+                "date",
+                "يعرض التاريخ والوقت الحالي",
+                "date"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "type": "terminal",
+          "label": {
+            "en": "Using whoami command",
+            "ar": "استخدام أمر whoami"
+          },
+          "value": "student@ubuntu:~$ whoami\nstudent"
+        },
+        {
+          "id": 8,
+          "type": "terminal",
+          "label": {
+            "en": "Using echo command",
+            "ar": "استخدام أمر echo"
+          },
+          "value": "student@ubuntu:~$ echo Welcome to Linux\nWelcome to Linux"
+        },
+        {
+          "id": 9,
+          "type": "note",
+          "noteType": "important",
+          "value": {
+            "en": "Linux is case-sensitive! 'Echo' is different from 'echo'. Always use lowercase for commands.",
+            "ar": "لينكس يميز بين الأحرف الكبيرة والصغيرة! 'Echo' مختلف عن 'echo'. استخدم دائماً الأحرف الصغيرة للأوامر."
+          },
+          "link": "",
+          "isLab": false
+        },
+        {
+          "id": 10,
+          "type": "note",
+          "noteType": "tip",
+          "value": {
+            "en": "You can use the up arrow key to recall previous commands quickly. This saves time when you need to repeat a command.",
+            "ar": "يمكنك استخدام مفتاح السهم لأعلى لاستدعاء الأوامر السابقة بسرعة. هذا يوفر الوقت عندما تحتاج لتكرار أمر."
+          },
+          "link": "",
+          "isLab": false
+        }
+      ]
+    },
+    {
+      "id": "topic-03-filesystem",
+      "title": {
+        "en": "The File System and Navigation",
+        "ar": "نظام الملفات والتنقل بينها"
+      },
+      "elements": [
+        {
+          "id": 1767469265718.4038,
+          "type": "image",
+          "srcKey": "",
+          "size": "small",
+          "imageUrl": "https://pub-cb38e65ea6bd411eb827a8641fdcc72d.r2.dev/Linux%20Fundamentals/topic-03-filesystem.webp",
+          "imageMode": "url"
+        },
+        {
+          "id": 1,
+          "type": "title",
+          "value": {
+            "en": "Understanding the Linux File System",
+            "ar": "فهم نظام الملفات في لينكس"
+          }
+        },
+        {
+          "id": 2,
+          "type": "text",
+          "value": {
+            "en": "The Linux file system is like a library with many books stored in different shelves. The root directory '/' is the main shelf. All files and folders are organized under it in a tree structure. Unlike Windows, Linux doesn't have separate drives like C: or D:. Everything starts from the root directory '/'.",
+            "ar": "نظام الملفات في لينكس مثل مكتبة فيها كتب كثيرة مرتبة على رفوف مختلفة. مجلد الجذر '/' هو الرف الرئيسي. جميع الملفات والمجلدات مرتبة تحته في هيكل شجري. بخلاف Windows، لينكس ليس لديه محركات منفصلة مثل C: أو D:. كل شيء يبدأ من مجلد الجذر '/'."
+          }
+        },
+        {
+          "id": 3,
+          "type": "title",
+          "value": {
+            "en": "Important Directories",
+            "ar": "المجلدات المهمة"
+          }
+        },
+        {
+          "id": 4,
+          "type": "table",
+          "title": {
+            "en": "Key System Directories",
+            "ar": "مجلدات النظام الرئيسية"
+          },
+          "headers": {
+            "en": [
+              "Directory",
+              "Purpose",
+              "Example"
+            ],
+            "ar": [
+              "المجلد",
+              "الغرض",
+              "مثال"
+            ]
+          },
+          "rows": [
+            {
+              "en": [
+                "/",
+                "Root directory - starting point",
+                "/ (represents the beginning)"
+              ],
+              "ar": [
+                "/",
+                "مجلد الجذر - نقطة البداية",
+                "/ (يمثل البداية)"
+              ]
+            },
+            {
+              "en": [
+                "/home",
+                "User home directories",
+                "/home/student"
+              ],
+              "ar": [
+                "/home",
+                "مجلدات المنزل",
+                "/home/student"
+              ]
+            },
+            {
+              "en": [
+                "/bin",
+                "Essential system commands",
+                "/bin/bash"
+              ],
+              "ar": [
+                "/bin",
+                "أوامر النظام الأساسية",
+                "/bin/bash"
+              ]
+            },
+            {
+              "en": [
+                "/etc",
+                "System configuration files",
+                "/etc/hostname"
+              ],
+              "ar": [
+                "/etc",
+                "ملفات إعدادات النظام",
+                "/etc/hostname"
+              ]
+            },
+            {
+              "en": [
+                "/tmp",
+                "Temporary files",
+                "/tmp/tempfile"
+              ],
+              "ar": [
+                "/tmp",
+                "الملفات المؤقتة",
+                "/tmp/tempfile"
+              ]
+            },
+            {
+              "en": [
+                "/var",
+                "Variable files and logs",
+                "/var/log/syslog"
+              ],
+              "ar": [
+                "/var",
+                "الملفات المتغيرة والسجلات",
+                "/var/log/syslog"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "type": "title",
+          "value": {
+            "en": "Navigation Commands",
+            "ar": "أوامر التنقل"
+          }
+        },
+        {
+          "id": 6,
+          "type": "table",
+          "title": {
+            "en": "Navigation Commands",
+            "ar": "أوامر التنقل"
+          },
+          "headers": {
+            "en": [
+              "Command",
+              "Full Name",
+              "What it does"
+            ],
+            "ar": [
+              "الأمر",
+              "الاسم الكامل",
+              "ما يفعله"
+            ]
+          },
+          "rows": [
+            {
+              "en": [
+                "pwd",
+                "Print Working Directory",
+                "Shows your current location"
+              ],
+              "ar": [
+                "pwd",
+                "طباعة مجلد العمل الحالي",
+                "يعرض موقعك الحالي"
+              ]
+            },
+            {
+              "en": [
+                "ls",
+                "List",
+                "Shows files in current directory"
+              ],
+              "ar": [
+                "ls",
+                "الترتيب",
+                "يعرض الملفات في المجلد الحالي"
+              ]
+            },
+            {
+              "en": [
+                "cd",
+                "Change Directory",
+                "Move to a different folder"
+              ],
+              "ar": [
+                "cd",
+                "تغيير المجلد",
+                "الانتقال إلى مجلد مختلف"
+              ]
+            },
+            {
+              "en": [
+                "mkdir",
+                "Make Directory",
+                "Create a new folder"
+              ],
+              "ar": [
+                "mkdir",
+                "إنشاء مجلد",
+                "إنشاء مجلد جديد"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "type": "terminal",
+          "label": {
+            "en": "Finding your location with pwd",
+            "ar": "معرفة موقعك مع pwd"
+          },
+          "value": "student@ubuntu:~$ pwd\n/home/student"
+        },
+        {
+          "id": 8,
+          "type": "terminal",
+          "label": {
+            "en": "Listing files with ls",
+            "ar": "عرض الملفات مع ls"
+          },
+          "value": "student@ubuntu:~$ ls\nDocuments  Downloads  Pictures  Desktop"
+        },
+        {
+          "id": 9,
+          "type": "terminal",
+          "label": {
+            "en": "Changing directory with cd",
+            "ar": "تغيير المجلد مع cd"
+          },
+          "value": "student@ubuntu:~$ cd Documents\nstudent@ubuntu:~/Documents$ pwd\n/home/student/Documents"
+        },
+        {
+          "id": 10,
+          "type": "note",
+          "noteType": "tip",
+          "value": {
+            "en": "Use 'cd ..' to go up one level (like using the back button). Use 'cd ~' to go to your home directory quickly.",
+            "ar": "استخدم 'cd ..' للصعود مستوى واحد للأعلى. استخدم 'cd ~' للذهاب سريعاً إلى مجلد البيت."
+          },
+          "link": "",
+          "isLab": false
+        }
+      ]
+    },
+    {
+      "id": "topic-04-file-management",
+      "title": {
+        "en": "File and Directory Management",
+        "ar": "إدارة الملفات والمجلدات"
+      },
+      "elements": [
+        {
+          "id": 1767469551336.7708,
+          "type": "image",
+          "srcKey": "",
+          "size": "medium",
+          "imageUrl": "https://pub-cb38e65ea6bd411eb827a8641fdcc72d.r2.dev/Linux%20Fundamentals/topic-04-file-management.webp",
+          "imageMode": "url"
+        },
+        {
+          "id": 1,
+          "type": "title",
+          "value": {
+            "en": "Working with Files",
+            "ar": "العمل مع الملفات"
+          }
+        },
+        {
+          "id": 2,
+          "type": "table",
+          "title": {
+            "en": "File Management Commands",
+            "ar": "أوامر إدارة الملفات"
+          },
+          "headers": {
+            "en": [
+              "Command",
+              "Description"
+            ],
+            "ar": [
+              "الأمر",
+              "الشرح"
+            ]
+          },
+          "rows": [
+            {
+              "en": [
+                "touch file.txt",
+                "Create an empty file"
+              ],
+              "ar": [
+                "touch file.txt",
+                "إنشاء ملف فارغ"
+              ]
+            },
+            {
+              "en": [
+                "cat file.txt",
+                "Show contents of a file"
+              ],
+              "ar": [
+                "cat file.txt",
+                "عرض محتويات الملف"
+              ]
+            },
+            {
+              "en": [
+                "cp source.txt copy.txt",
+                "Copy a file"
+              ],
+              "ar": [
+                "cp source.txt copy.txt",
+                "نسخ ملف"
+              ]
+            },
+            {
+              "en": [
+                "mv old.txt new.txt",
+                "Move or rename a file"
+              ],
+              "ar": [
+                "mv old.txt new.txt",
+                "نقل أو إعادة تسمية ملف"
+              ]
+            },
+            {
+              "en": [
+                "rm file.txt",
+                "Delete a file"
+              ],
+              "ar": [
+                "rm file.txt",
+                "حذف ملف"
+              ]
+            },
+            {
+              "en": [
+                "rm -r folder",
+                "Delete a folder and contents"
+              ],
+              "ar": [
+                "rm -r folder",
+                "حذف مجلد وكل محتوياته"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "type": "terminal",
+          "label": {
+            "en": "Creating and viewing files",
+            "ar": "إنشاء وعرض الملفات"
+          },
+          "value": "student@ubuntu:~$ touch myfile.txt\nstudent@ubuntu:~$ ls\nmyfile.txt\nstudent@ubuntu:~$ cat myfile.txt"
+        },
+        {
+          "id": 4,
+          "type": "note",
+          "noteType": "warning",
+          "value": {
+            "en": "Be careful with 'rm' command! It permanently deletes files. Unlike Windows, there's no Recycle Bin in Linux.",
+            "ar": "كن حذراً مع أمر 'rm'! يحذف الملفات بشكل دائم. بخلاف Windows، لا توجد سلة مهملات في لينكس."
+          },
+          "link": "",
+          "isLab": false
+        },
+        {
+          "id": 5,
+          "type": "title",
+          "value": {
+            "en": "Text Editors",
+            "ar": "محررات النصوص"
+          }
+        },
+        {
+          "id": 6,
+          "type": "text",
+          "value": {
+            "en": "To edit files, you need a text editor. Think of it like Microsoft Word but simpler and for code. Linux has three popular editors: nano (easiest for beginners), vim (powerful but has a learning curve), and vi (similar to vim but older).",
+            "ar": "لتعديل الملفات، تحتاج إلى محرر نصوص. فكر فيه مثل Microsoft Word لكن أبسط ولكتابة الأكواد. لينكس يحتوي على ثلاثة محررات شهيرة: nano و vim و vi."
+          }
+        },
+        {
+          "id": 7,
+          "type": "title",
+          "value": {
+            "en": "Using Nano Editor",
+            "ar": "استخدام محرر nano"
+          }
+        },
+        {
+          "id": 8,
+          "type": "table",
+          "title": {
+            "en": "Nano Basic Commands",
+            "ar": "أوامر nano الأساسية"
+          },
+          "headers": {
+            "en": [
+              "Keys",
+              "Action"
+            ],
+            "ar": [
+              "المفاتيح",
+              "الإجراء"
+            ]
+          },
+          "rows": [
+            {
+              "en": [
+                "Ctrl + O",
+                "Save file"
+              ],
+              "ar": [
+                "Ctrl + O",
+                "حفظ الملف"
+              ]
+            },
+            {
+              "en": [
+                "Ctrl + X",
+                "Exit nano"
+              ],
+              "ar": [
+                "Ctrl + X",
+                "الخروج من nano"
+              ]
+            },
+            {
+              "en": [
+                "Ctrl + W",
+                "Search for text"
+              ],
+              "ar": [
+                "Ctrl + W",
+                "البحث عن نص"
+              ]
+            },
+            {
+              "en": [
+                "Ctrl + K",
+                "Cut line"
+              ],
+              "ar": [
+                "Ctrl + K",
+                "قطع سطر"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "type": "terminal",
+          "label": {
+            "en": "Opening nano editor",
+            "ar": "فتح محرر nano"
+          },
+          "value": "student@ubuntu:~$ nano myfile.txt\n(Nano editor opens with an empty file)"
+        },
+        {
+          "id": 10,
+          "type": "note",
+          "noteType": "info",
+          "value": {
+            "en": "Nano is user-friendly and recommended for beginners. All commands are shown at the bottom of the screen.",
+            "ar": "Nano سهل الاستخدام وموصى به للمبتدئين. يمكنك رؤية جميع الأوامر في أسفل الشاشة."
+          },
+          "link": "",
+          "isLab": false
+        }
+      ]
+    },
+    {
+      "id": "topic-05-permissions",
+      "title": {
+        "en": "File Permissions and Ownership",
+        "ar": "أذونات الملفات والملكية"
+      },
+      "elements": [
+        {
+          "id": 1767469797759.1665,
+          "type": "image",
+          "srcKey": "",
+          "size": "medium",
+          "imageUrl": "https://pub-cb38e65ea6bd411eb827a8641fdcc72d.r2.dev/Linux%20Fundamentals/topic-05-permissions.webp",
+          "imageMode": "url"
+        },
+        {
+          "id": 1,
+          "type": "title",
+          "value": {
+            "en": "Understanding Permissions",
+            "ar": "فهم الأذونات"
+          }
+        },
+        {
+          "id": 2,
+          "type": "text",
+          "value": {
+            "en": "File permissions are like keys to a house. Just as a homeowner controls who can enter, read letters, or make changes, Linux permissions control who can read, write, or execute files. Permissions protect your important files from being changed or deleted by accident.",
+            "ar": "أذونات الملفات مثل مفاتيح البيت. تماماً كما يتحكم مالك البيت بمن يمكنه الدخول، تتحكم أذونات لينكس بمن يمكنه قراءة الملفات أو كتابتها أو تشغيلها."
+          }
+        },
+        {
+          "id": 3,
+          "type": "title",
+          "value": {
+            "en": "Permission Types",
+            "ar": "أنواع الأذونات"
+          }
+        },
+        {
+          "id": 4,
+          "type": "table",
+          "title": {
+            "en": "Permission Categories",
+            "ar": "فئات الأذونات"
+          },
+          "headers": {
+            "en": [
+              "Permission",
+              "Symbol",
+              "Means",
+              "Example"
+            ],
+            "ar": [
+              "الأذن",
+              "الرمز",
+              "المعنى",
+              "مثال"
+            ]
+          },
+          "rows": [
+            {
+              "en": [
+                "Read",
+                "r",
+                "Can view file contents",
+                "View a document"
+              ],
+              "ar": [
+                "قراءة",
+                "r",
+                "يمكنك مشاهدة محتوى الملف",
+                "عرض المستند"
+              ]
+            },
+            {
+              "en": [
+                "Write",
+                "w",
+                "Can edit file contents",
+                "Edit a document"
+              ],
+              "ar": [
+                "كتابة",
+                "w",
+                "يمكنك تعديل محتوى الملف",
+                "تعديل المستند"
+              ]
+            },
+            {
+              "en": [
+                "Execute",
+                "x",
+                "Can run file as program",
+                "Run a script"
+              ],
+              "ar": [
+                "تنفيذ",
+                "x",
+                "يمكنك تشغيل الملف كبرنامج",
+                "تشغيل سكريبت"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "type": "title",
+          "value": {
+            "en": "Three Levels of Users",
+            "ar": "ثلاثة مستويات من المستخدمين"
+          }
+        },
+        {
+          "id": 6,
+          "type": "table",
+          "title": {
+            "en": "User Categories",
+            "ar": "فئات المستخدمين"
+          },
+          "headers": {
+            "en": [
+              "Category",
+              "Symbol",
+              "Meaning"
+            ],
+            "ar": [
+              "الفئة",
+              "الرمز",
+              "المعنى"
+            ]
+          },
+          "rows": [
+            {
+              "en": [
+                "Owner/User",
+                "u",
+                "The person who owns the file"
+              ],
+              "ar": [
+                "المالك/المستخدم",
+                "u",
+                "الشخص الذي يملك الملف"
+              ]
+            },
+            {
+              "en": [
+                "Group",
+                "g",
+                "A group of users with same permissions"
+              ],
+              "ar": [
+                "المجموعة",
+                "g",
+                "مجموعة مستخدمين بنفس الأذونات"
+              ]
+            },
+            {
+              "en": [
+                "Others",
+                "o",
+                "Everyone else on the system"
+              ],
+              "ar": [
+                "الآخرون",
+                "o",
+                "جميع الآخرين في النظام"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "type": "terminal",
+          "label": {
+            "en": "Viewing file permissions",
+            "ar": "عرض أذونات الملف"
+          },
+          "value": "student@ubuntu:~$ ls -l myfile.txt\n-rw-r--r-- 1 student students 1024 Jan 3 10:30 myfile.txt"
+        },
+        {
+          "id": 8,
+          "type": "text",
+          "value": {
+            "en": "Breaking down '-rw-r--r--': First '-' means it's a file. Next 'rw-' is owner permissions (read, write, no execute). Next 'r--' is group permissions. Last 'r--' is others permissions.",
+            "ar": "شرح الأذونات '-rw-r--r--': الحرف الأول '-' يعني أنه ملف. الـ 3 أحرف التالية 'rw-' هي أذونات المالك. الـ 3 التالية 'r--' هي أذونات المجموعة. الـ 3 الأخيرة 'r--' أذونات الآخرين."
+          }
+        },
+        {
+          "id": 9,
+          "type": "title",
+          "value": {
+            "en": "Changing Permissions",
+            "ar": "تغيير الأذونات"
+          }
+        },
+        {
+          "id": 10,
+          "type": "table",
+          "title": {
+            "en": "chmod Command Examples",
+            "ar": "أمثلة على أمر chmod"
+          },
+          "headers": {
+            "en": [
+              "Command",
+              "Meaning"
+            ],
+            "ar": [
+              "الأمر",
+              "المعنى"
+            ]
+          },
+          "rows": [
+            {
+              "en": [
+                "chmod +x script.sh",
+                "Add execute permission to everyone"
+              ],
+              "ar": [
+                "chmod +x script.sh",
+                "أضف إذن التنفيذ للجميع"
+              ]
+            },
+            {
+              "en": [
+                "chmod 755 file.txt",
+                "Owner: rwx",
+                "Group: rx",
+                "Others: rx"
+              ],
+              "ar": [
+                "chmod 755 file.txt",
+                "المالك: كل شيء، المجموعة: قراءة+تنفيذ، الآخرون: قراءة+تنفيذ"
+              ]
+            },
+            {
+              "en": [
+                "chmod 644 file.txt",
+                "Owner: rw",
+                "Group: r",
+                "Others: r"
+              ],
+              "ar": [
+                "chmod 644 file.txt",
+                "المالك: قراءة+كتابة، المجموعة: قراءة، الآخرون: قراءة"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "type": "note",
+          "noteType": "info",
+          "value": {
+            "en": "Numeric permissions: 4=read, 2=write, 1=execute. So 7=all permissions, 5=read+execute, 4=read only.",
+            "ar": "الأذونات الرقمية: 4=قراءة، 2=كتابة، 1=تنفيذ. إذاً 7=كل الأذونات، 5=قراءة+تنفيذ، 4=قراءة فقط."
+          },
+          "link": "",
+          "isLab": false
+        }
+      ]
+    },
+    {
+      "id": "topic-06-users-groups",
+      "title": {
+        "en": "Users and Groups Management",
+        "ar": "إدارة المستخدمين والمجموعات"
+      },
+      "elements": [
+        {
+          "id": 1767471338017.3174,
+          "type": "image",
+          "srcKey": "",
+          "size": "medium",
+          "imageUrl": "https://pub-cb38e65ea6bd411eb827a8641fdcc72d.r2.dev/Linux%20Fundamentals/topic-06-users-groups.webp",
+          "imageMode": "url"
+        },
+        {
+          "id": 1,
+          "type": "title",
+          "value": {
+            "en": "Understanding Users and Groups",
+            "ar": "فهم المستخدمين والمجموعات"
+          }
+        },
+        {
+          "id": 2,
+          "type": "text",
+          "value": {
+            "en": "Linux is a multi-user system. Like a bank with different employees having different access levels, Linux allows multiple users on one computer. A group is a collection of users. Think of it like a team at work - team members have different roles but are organized as one group.",
+            "ar": "لينكس نظام متعدد المستخدمين. مثل البنك الذي يحتوي على موظفين مختلفين، يسمح لينكس لعدة مستخدمين بالعمل على نفس الكمبيوتر. المجموعة هي مجموعة من المستخدمين."
+          }
+        },
+        {
+          "id": 3,
+          "type": "title",
+          "value": {
+            "en": "User Types",
+            "ar": "أنواع المستخدمين"
+          }
+        },
+        {
+          "id": 4,
+          "type": "table",
+          "title": {
+            "en": "User Categories",
+            "ar": "فئات المستخدمين"
+          },
+          "headers": {
+            "en": [
+              "User Type",
+              "Description",
+              "UID"
+            ],
+            "ar": [
+              "نوع المستخدم",
+              "الوصف",
+              "معرّف المستخدم"
+            ]
+          },
+          "rows": [
+            {
+              "en": [
+                "Root User",
+                "Administrator with full access",
+                "0"
+              ],
+              "ar": [
+                "مستخدم جذر",
+                "مسؤول لديه وصول كامل",
+                "0"
+              ]
+            },
+            {
+              "en": [
+                "Regular User",
+                "Normal user with limited permissions",
+                "1000+"
+              ],
+              "ar": [
+                "مستخدم عادي",
+                "مستخدم عادي بأذونات محدودة",
+                "1000+"
+              ]
+            },
+            {
+              "en": [
+                "System User",
+                "Special account for services",
+                "1-999"
+              ],
+              "ar": [
+                "مستخدم النظام",
+                "حساب خاص للخدمات",
+                "1-999"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "type": "terminal",
+          "label": {
+            "en": "View current user information",
+            "ar": "عرض معلومات المستخدم الحالي"
+          },
+          "value": "student@ubuntu:~$ id\nuid=1000(student) gid=1000(student) groups=1000(student),4(adm)"
+        },
+        {
+          "id": 6,
+          "type": "title",
+          "value": {
+            "en": "Basic User Commands",
+            "ar": "أوامر المستخدمين الأساسية"
+          }
+        },
+        {
+          "id": 7,
+          "type": "table",
+          "title": {
+            "en": "User Management Commands",
+            "ar": "أوامر إدارة المستخدمين"
+          },
+          "headers": {
+            "en": [
+              "Command",
+              "Purpose"
+            ],
+            "ar": [
+              "الأمر",
+              "الغرض"
+            ]
+          },
+          "rows": [
+            {
+              "en": [
+                "whoami",
+                "Show current logged-in user"
+              ],
+              "ar": [
+                "whoami",
+                "عرض المستخدم المسجل الحالي"
+              ]
+            },
+            {
+              "en": [
+                "id",
+                "Show user ID and groups"
+              ],
+              "ar": [
+                "id",
+                "عرض معرّف المستخدم والمجموعات"
+              ]
+            },
+            {
+              "en": [
+                "groups",
+                "List all groups you belong to"
+              ],
+              "ar": [
+                "groups",
+                "قائمة بجميع المجموعات التي تنتمي إليها"
+              ]
+            },
+            {
+              "en": [
+                "sudo command",
+                "Run command with admin privileges"
+              ],
+              "ar": [
+                "sudo command",
+                "تشغيل أمر بصلاحيات المسؤول"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "type": "title",
+          "value": {
+            "en": "Understanding sudo",
+            "ar": "فهم sudo"
+          }
+        },
+        {
+          "id": 9,
+          "type": "text",
+          "value": {
+            "en": "sudo stands for 'superuser do'. It's like borrowing the manager's access card temporarily. When you use 'sudo', you run a command with admin privileges. You need to enter your password for security. Regular users with 'sudo' permission become temporary administrators.",
+            "ar": "sudo تعني 'أفعل كمسؤول'. مثل استعارة بطاقة مفاتيح المدير مؤقتاً. عندما تستخدم 'sudo'، تقوم بتشغيل أمر بصلاحيات المسؤول. تحتاج إلى إدخال كلمة المرور للأمان."
+          }
+        },
+        {
+          "id": 10,
+          "type": "terminal",
+          "label": {
+            "en": "Using sudo for admin tasks",
+            "ar": "استخدام sudo لمهام المسؤول"
+          },
+          "value": "student@ubuntu:~$ sudo apt update\n[sudo] password for student: \nApt packages updated successfully"
+        },
+        {
+          "id": 11,
+          "type": "note",
+          "noteType": "warning",
+          "value": {
+            "en": "Be careful with sudo! Commands run with sudo have root access. Always understand what you're running.",
+            "ar": "كن حذراً مع sudo! الأوامر التي تعمل مع sudo لها وصول جذر. افهم دائماً ما تقوم بتشغيله."
+          },
+          "link": "",
+          "isLab": false
+        },
+        {
+          "id": 12,
+          "type": "note",
+          "noteType": "info",
+          "value": {
+            "en": "Not all users have sudo access. Only users in the 'sudo' group or configured in /etc/sudoers can use sudo.",
+            "ar": "ليس كل المستخدمين لديهم صلاحية sudo. فقط المستخدمون في مجموعة sudo يمكنهم استخدام sudo."
+          },
+          "link": "",
+          "isLab": false
+        }
+      ]
+    },
+    {
+      "id": "topic-07-package-management",
+      "title": {
+        "en": "Installing Software with Package Managers",
+        "ar": "تثبيت البرامج باستخدام مديري الحزم"
+      },
+      "elements": [
+        {
+          "id": 1767471742513.622,
+          "type": "image",
+          "srcKey": "",
+          "size": "medium",
+          "imageUrl": "https://pub-cb38e65ea6bd411eb827a8641fdcc72d.r2.dev/Linux%20Fundamentals/topic-07-package-management.webp",
+          "imageMode": "url"
+        },
+        {
+          "id": 1,
+          "type": "title",
+          "value": {
+            "en": "What is a Package Manager?",
+            "ar": "ما هو مدير الحزم؟"
+          }
+        },
+        {
+          "id": 2,
+          "type": "text",
+          "value": {
+            "en": "A package manager is like a store that sells software. Just as you buy items from a grocery store instead of making everything yourself, a package manager downloads and installs software for you. It also handles updates and removes old versions. Two common package managers are APT (for Ubuntu/Debian) and YUM (for CentOS/RHEL).",
+            "ar": "مدير الحزم مثل متجر يبيع البرامج. تماماً كما تشتري أشياء من متجر البقالة بدلاً من صنع كل شيء بنفسك، يقوم مدير الحزم بتحميل وتثبيت البرامج لك."
+          }
+        },
+        {
+          "id": 3,
+          "type": "title",
+          "value": {
+            "en": "APT Package Manager (Ubuntu/Debian)",
+            "ar": "مدير الحزم APT (Ubuntu/Debian)"
+          }
+        },
+        {
+          "id": 4,
+          "type": "table",
+          "title": {
+            "en": "APT Commands",
+            "ar": "أوامر APT"
+          },
+          "headers": {
+            "en": [
+              "Command",
+              "Purpose"
+            ],
+            "ar": [
+              "الأمر",
+              "الغرض"
+            ]
+          },
+          "rows": [
+            {
+              "en": [
+                "apt update",
+                "Update package list"
+              ],
+              "ar": [
+                "apt update",
+                "تحديث قائمة الحزم"
+              ]
+            },
+            {
+              "en": [
+                "apt upgrade",
+                "Upgrade installed packages"
+              ],
+              "ar": [
+                "apt upgrade",
+                "ترقية الحزم المثبتة"
+              ]
+            },
+            {
+              "en": [
+                "apt install package",
+                "Install a new package"
+              ],
+              "ar": [
+                "apt install package",
+                "تثبيت حزمة جديدة"
+              ]
+            },
+            {
+              "en": [
+                "apt remove package",
+                "Remove a package"
+              ],
+              "ar": [
+                "apt remove package",
+                "إزالة حزمة"
+              ]
+            },
+            {
+              "en": [
+                "apt search keyword",
+                "Search for a package"
+              ],
+              "ar": [
+                "apt search keyword",
+                "البحث عن حزمة"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "type": "terminal",
+          "label": {
+            "en": "Installing a package with apt",
+            "ar": "تثبيت حزمة مع apt"
+          },
+          "value": "student@ubuntu:~$ sudo apt install git\nReading package lists... Done\nSetting up git (2.25.1)\nGit successfully installed!"
+        },
+        {
+          "id": 6,
+          "type": "title",
+          "value": {
+            "en": "YUM Package Manager (CentOS/RHEL)",
+            "ar": "مدير الحزم YUM (CentOS/RHEL)"
+          }
+        },
+        {
+          "id": 7,
+          "type": "table",
+          "title": {
+            "en": "YUM Commands",
+            "ar": "أوامر YUM"
+          },
+          "headers": {
+            "en": [
+              "Command",
+              "Purpose"
+            ],
+            "ar": [
+              "الأمر",
+              "الغرض"
+            ]
+          },
+          "rows": [
+            {
+              "en": [
+                "yum update",
+                "Update package list"
+              ],
+              "ar": [
+                "yum update",
+                "تحديث قائمة الحزم"
+              ]
+            },
+            {
+              "en": [
+                "yum install package",
+                "Install a new package"
+              ],
+              "ar": [
+                "yum install package",
+                "تثبيت حزمة جديدة"
+              ]
+            },
+            {
+              "en": [
+                "yum remove package",
+                "Remove a package"
+              ],
+              "ar": [
+                "yum remove package",
+                "إزالة حزمة"
+              ]
+            },
+            {
+              "en": [
+                "yum search keyword",
+                "Search for a package"
+              ],
+              "ar": [
+                "yum search keyword",
+                "البحث عن حزمة"
+              ]
+            },
+            {
+              "en": [
+                "yum list installed",
+                "List installed packages"
+              ],
+              "ar": [
+                "yum list installed",
+                "قائمة بجميع الحزم المثبتة"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "type": "note",
+          "noteType": "important",
+          "value": {
+            "en": "Remember: apt is for Debian-based systems (Ubuntu, Debian), yum is for Red Hat-based systems (CentOS, RHEL).",
+            "ar": "تذكر: apt مخصص لأنظمة Debian، yum مخصص لأنظمة Red Hat."
+          },
+          "link": "",
+          "isLab": false
+        },
+        {
+          "id": 9,
+          "type": "note",
+          "noteType": "info",
+          "value": {
+            "en": "Always run 'apt update' or 'yum update' before installing packages to get the latest versions available.",
+            "ar": "قم دائماً بتشغيل 'apt update' قبل التثبيت للحصول على أحدث الإصدارات."
+          },
+          "link": "",
+          "isLab": false
+        }
+      ]
+    },
+    {
+      "id": "topic-08-processes-services",
+      "title": {
+        "en": "Managing Processes and Services",
+        "ar": "إدارة العمليات والخدمات"
+      },
+      "elements": [
+        {
+          "id": 1767472295933.128,
+          "type": "image",
+          "srcKey": "",
+          "size": "medium",
+          "imageMode": "url",
+          "imageUrl": "https://pub-cb38e65ea6bd411eb827a8641fdcc72d.r2.dev/Linux%20Fundamentals/topic-08-processes-services.webp"
+        },
+        {
+          "id": 1,
+          "type": "title",
+          "value": {
+            "en": "Understanding Processes",
+            "ar": "فهم العمليات"
+          }
+        },
+        {
+          "id": 2,
+          "type": "text",
+          "value": {
+            "en": "A process is a running program. Think of it like a person working in an office. When you open an application, it becomes a process. Each process has a Process ID (PID) - like an ID card for identification. You can view, control, and stop processes from the terminal.",
+            "ar": "العملية هي برنامج يعمل. فكر فيها مثل شخص يعمل في المكتب. عندما تفتح تطبيقاً، يصبح عملية. لكل عملية معرّف العملية (PID)."
+          }
+        },
+        {
+          "id": 3,
+          "type": "title",
+          "value": {
+            "en": "Viewing Running Processes",
+            "ar": "عرض العمليات قيد التشغيل"
+          }
+        },
+        {
+          "id": 4,
+          "type": "table",
+          "title": {
+            "en": "Process Viewing Commands",
+            "ar": "أوامر عرض العمليات"
+          },
+          "headers": {
+            "en": [
+              "Command",
+              "Purpose"
+            ],
+            "ar": [
+              "الأمر",
+              "الغرض"
+            ]
+          },
+          "rows": [
+            {
+              "en": [
+                "ps",
+                "Show current processes"
+              ],
+              "ar": [
+                "ps",
+                "عرض العمليات الحالية"
+              ]
+            },
+            {
+              "en": [
+                "ps aux",
+                "Show all processes"
+              ],
+              "ar": [
+                "ps aux",
+                "عرض جميع العمليات"
+              ]
+            },
+            {
+              "en": [
+                "top",
+                "Real-time process monitor"
+              ],
+              "ar": [
+                "top",
+                "مراقب العمليات في الوقت الفعلي"
+              ]
+            },
+            {
+              "en": [
+                "htop",
+                "Better version of top"
+              ],
+              "ar": [
+                "htop",
+                "نسخة أفضل من top"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "type": "terminal",
+          "label": {
+            "en": "Viewing processes",
+            "ar": "عرض العمليات"
+          },
+          "value": "student@ubuntu:~$ ps aux | head\nUSER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND\nroot         1  0.0  0.3  77840  6352 ?        Ss   10:30   0:00 /sbin/init"
+        },
+        {
+          "id": 6,
+          "type": "title",
+          "value": {
+            "en": "Stopping Processes",
+            "ar": "إيقاف العمليات"
+          }
+        },
+        {
+          "id": 7,
+          "type": "table",
+          "title": {
+            "en": "Process Control Commands",
+            "ar": "أوامر التحكم في العمليات"
+          },
+          "headers": {
+            "en": [
+              "Command",
+              "Purpose"
+            ],
+            "ar": [
+              "الأمر",
+              "الغرض"
+            ]
+          },
+          "rows": [
+            {
+              "en": [
+                "kill PID",
+                "Terminate a process gracefully"
+              ],
+              "ar": [
+                "kill PID",
+                "إيقاف عملية بشكل لطيف"
+              ]
+            },
+            {
+              "en": [
+                "kill -9 PID",
+                "Force kill a process"
+              ],
+              "ar": [
+                "kill -9 PID",
+                "فرض إيقاف عملية فوراً"
+              ]
+            },
+            {
+              "en": [
+                "pkill name",
+                "Kill process by name"
+              ],
+              "ar": [
+                "pkill name",
+                "إيقاف عملية باسمها"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "type": "terminal",
+          "label": {
+            "en": "Stopping a process",
+            "ar": "إيقاف عملية"
+          },
+          "value": "student@ubuntu:~$ ps aux | grep firefox\nstudent   2345  5.2  3.1 1234567 456789 ?  Sl   10:35   0:15 /usr/bin/firefox\nstudent@ubuntu:~$ kill 2345"
+        },
+        {
+          "id": 9,
+          "type": "title",
+          "value": {
+            "en": "Services and systemd",
+            "ar": "الخدمات و systemd"
+          }
+        },
+        {
+          "id": 10,
+          "type": "text",
+          "value": {
+            "en": "Services are special programs that run in the background. Like a security guard who works all day, services run continuously. systemd is the system manager that controls services. Common services include web servers, databases, and SSH.",
+            "ar": "الخدمات هي برامج خاصة تعمل في الخلفية. مثل حارس الأمان الذي يعمل طوال اليوم، الخدمات تعمل بشكل مستمر."
+          }
+        },
+        {
+          "id": 11,
+          "type": "table",
+          "title": {
+            "en": "systemctl Commands",
+            "ar": "أوامر systemctl"
+          },
+          "headers": {
+            "en": [
+              "Command",
+              "Purpose"
+            ],
+            "ar": [
+              "الأمر",
+              "الغرض"
+            ]
+          },
+          "rows": [
+            {
+              "en": [
+                "systemctl start service",
+                "Start a service"
+              ],
+              "ar": [
+                "systemctl start service",
+                "بدء خدمة"
+              ]
+            },
+            {
+              "en": [
+                "systemctl stop service",
+                "Stop a service"
+              ],
+              "ar": [
+                "systemctl stop service",
+                "إيقاف خدمة"
+              ]
+            },
+            {
+              "en": [
+                "systemctl restart service",
+                "Restart a service"
+              ],
+              "ar": [
+                "systemctl restart service",
+                "إعادة تشغيل خدمة"
+              ]
+            },
+            {
+              "en": [
+                "systemctl status service",
+                "Check service status"
+              ],
+              "ar": [
+                "systemctl status service",
+                "التحقق من حالة الخدمة"
+              ]
+            },
+            {
+              "en": [
+                "systemctl enable service",
+                "Start on boot"
+              ],
+              "ar": [
+                "systemctl enable service",
+                "الخدمة تبدأ عند التشغيل"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "type": "terminal",
+          "label": {
+            "en": "Managing services with systemctl",
+            "ar": "إدارة الخدمات مع systemctl"
+          },
+          "value": "student@ubuntu:~$ sudo systemctl status ssh\n● ssh.service - OpenBSD Secure Shell server\n   Active: active (running) since Fri 2024-01-03 10:30:00 UTC"
+        },
+        {
+          "id": 13,
+          "type": "note",
+          "noteType": "info",
+          "value": {
+            "en": "systemd has replaced older init systems in most modern Linux distributions. It manages services more efficiently.",
+            "ar": "systemd استبدل الأنظمة القديمة في معظم توزيعات لينكس الحديثة. يدير الخدمات بكفاءة أكثر."
+          },
+          "link": "",
+          "isLab": false
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "createdAt": "2026-01-03T20:35:24.417Z",
+    "totalTopics": 8,
+    "totalElements": 91
+  }
+}

@@ -1,0 +1,188 @@
+.obu_body {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  overflow-y: hidden;
+  background-color: #212121;
+  padding-top: 40px;
+}
+
+.obfuscation_lab_body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95%;
+}
+
+.obu-card {
+  padding: 20px;
+  border-radius: 10px;
+  height: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: max-content;
+  background-color: #323232;
+  color: #EAEAEA;
+}
+
+.obu-card_content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.obu-card_form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.obu-card_title {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.obu-card_field {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.obu-card_field label {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #eaeaea;
+}
+
+.obu-card_field .input {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.obu-card_field .input i {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #0D7377;
+  padding: 10px;
+  color: #EAEAEA;
+}
+
+.obu-card_field .input input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 0;
+  border-radius: 50px;
+  border: 1px solid #EAEAEA;
+  font-size: 16px;
+}
+
+.obu-card_field .input input:focus {
+  outline: none;
+  border: 1px solid #225693;
+}
+
+.obu-card_field button,
+.obu-card_field a {
+  width: 100%;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #0D7377;
+  text-align: center;
+  border: none;
+  color: #EAEAEA;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.obu-card_field button::after,
+.obu-card_field a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  background-color: rgb(255, 255, 255, .1);
+  top: 100%;
+  left: 0;
+  transition: var(--main-transition);
+}
+
+.obu-card_field button:hover::after,
+.obu-card_field a:hover::after {
+  top: 0;
+}
+
+.obu-card_field.hint {
+  position: absolute;
+  top: 5%;
+  right: 3%;
+  width: max-content;
+}
+
+.obu-card_field.back {
+  position: absolute;
+  top: 5%;
+  left: 3%;
+  width: max-content;
+}
+
+.obu-card_field.hint .source {
+  padding: 10px 35px;
+  position: relative;
+  overflow: hidden;
+}
+
+.obu-card_field.hint .source::before {
+  content: "Check Inspect";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3F72AF;
+  top: 100%;
+  left: 0;
+  z-index: 3;
+  transition: var(--main-transition);
+}
+
+.obu-card_field.hint .source:focus::before {
+  top: 0;
+}
+
+.error {
+  background-color: #f8d7da;
+  color: red;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.right {
+  background-color: green;
+  color: greenyellow;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 10px;
+}

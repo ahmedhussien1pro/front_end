@@ -1,0 +1,178 @@
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "Match all of the following characters: c, o, g",
+            "correctAnswer": "[cog]",
+            "hint": "Match any of the characters c, o, or g"
+        },
+        {
+            "id": 2,
+            "question": "Match all of the following words: cat, fat, hat",
+            "correctAnswer": "[cfh]at",
+            "hint": "Use a character set to match c, f, or h, followed by 'at'"
+        },
+        {
+            "id": 3,
+            "question": "Match all of the following words: Cat, cat, Hat, hat",
+            "correctAnswer": "[CcHh]at",
+            "hint": "Include both uppercase and lowercase variations in the set"
+        },
+        {
+            "id": 4,
+            "question": "Match all of the following filenames: File1, File2, file3, file4, file5, File7, file9",
+            "correctAnswer": "[Ff]ile[1-9]",
+            "hint": "Match both uppercase and lowercase 'File' and digits from 1 to 9"
+        },
+        {
+            "id": 5,
+            "question": "Match all of the filenames of question 4, except File7 (use the hat symbol)",
+            "correctAnswer": "[Ff]ile(?!7)[1-9]",
+            "hint": "Use a negative lookahead to exclude '7'"
+        },
+        {
+            "id": 6,
+            "question": "Match all of the following words: Cat, fat, hat, rat",
+            "correctAnswer": "[Ccfhr]at",
+            "hint": "Match c, f, h, or r followed by 'at'; include uppercase for 'Cat'"
+        },
+        {
+            "id": 7,
+            "question": "Match all of the following words: Cat, cats",
+            "correctAnswer": "[Cc]ats?",
+            "hint": "Use '?' to indicate an optional 's' at the end"
+        },
+        {
+            "id": 8,
+            "question": "Match the following domain name: cat.xyz",
+            "correctAnswer": "cat\\.xyz",
+            "hint": "Escape the dot in 'cat.xyz' since it's a special character"
+        },
+        {
+            "id": 9,
+            "question": "Match all of the following domain names: cat.xyz, cats.xyz, hats.xyz",
+            "correctAnswer": "(cats?|hats?)\\.xyz",
+            "hint": "Use groups and an optional 's' for cats and hats"
+        },
+        {
+            "id": 10,
+            "question": "Match every 4-letter string that doesn't end in any letter from n to z",
+            "correctAnswer": "^.{3}[a-mA-M]$",
+            "hint": "Exclude n to z by specifying a range within the set"
+        },
+        {
+            "id": 11,
+            "question": "Match bat, bats, hat, hats, but not rat or rats (use the hat symbol)",
+            "correctAnswer": "^[bh]ats?$",
+            "hint": "Start the pattern with b or h and end with optional 's'"
+        },
+        {
+            "id": 12,
+            "question": "Match the following word: catssss",
+            "correctAnswer": "catssss",
+            "hint": "Match the exact string 'catssss'"
+        },
+        {
+            "id": 13,
+            "question": "Match all of the following words (use the * sign): Cat, cats, catsss",
+            "correctAnswer": "[Cc]ats*",
+            "hint": "Use '*' to match zero or more occurrences of 's'"
+        },
+        {
+            "id": 14,
+            "question": "Match all of the following sentences (use the + sign): regex go br, regex go brrrrrr",
+            "correctAnswer": "regex go br+",
+            "hint": "Use '+' to match one or more occurrences of 'r'"
+        },
+        {
+            "id": 15,
+            "question": "Match all of the following filenames: ab0001, bb0000, abc1000, cba0110, c0000 (don't use a metacharacter)",
+            "correctAnswer": "ab0001|bb0000|abc1000|cba0110|c0000",
+            "hint": "Use the pipe '|' to match each filename explicitly"
+        },
+        {
+            "id": 16,
+            "question": "Match all of the following filenames: File01, File2, file12, File20, File99",
+            "correctAnswer": "[Ff]ile(0?[1-9]|[1-9][0-9])",
+            "hint": "Match single digits or two-digit numbers with an optional leading zero"
+        },
+        {
+            "id": 17,
+            "question": "Match all of the following folder names: kali tools, kali     tools",
+            "correctAnswer": "kali\\s+tools",
+            "hint": "Use '\\s+' to match one or more spaces"
+        },
+        {
+            "id": 18,
+            "question": "Match all of the following filenames: notes~, stuff@, gtfob#, lmaoo!",
+            "correctAnswer": "notes~|stuff@|gtfob#|lmaoo!",
+            "hint": "Use the pipe '|' to match each filename explicitly"
+        },
+        {
+            "id": 19,
+            "question": "Match the string in quotes (use the * sign and the \\s, \\S metacharacters): \"2f0h@f0j0%!     a)K!F49h!FFOK\"",
+            "correctAnswer": "\".*\"",
+            "hint": "Use '.*' to match everything within the quotes"
+        },
+        {
+            "id": 20,
+            "question": "Match every 9-character string (with letters, numbers, and symbols) that doesn't end in a ! sign",
+            "correctAnswer": "^.{8}[^!]$",
+            "hint": "Match 8 characters followed by one that isn't '!'"
+        },
+        {
+            "id": 21,
+            "question": "Match all of these filenames (use the + symbol): .bash_rc, .unnecessarily_long_filename, and note1",
+            "correctAnswer": "\\.+\\w+|\\bnote1",
+            "hint": "Use '+' to indicate one or more characters"
+        },
+        {
+            "id": 22,
+            "question": "Match every string that starts with \"Password:\" followed by any 10 characters excluding \"0\"",
+            "correctAnswer": "^Password:[^0]{10}",
+            "hint": "Exclude '0' by using a negated character set"
+        },
+        {
+            "id": 23,
+            "question": "Match \"username: \" in the beginning of a line (note the space!)",
+            "correctAnswer": "^username:\\s",
+            "hint": "Match 'username:' followed by a space at the start of the line"
+        },
+        {
+            "id": 24,
+            "question": "Match every line that doesn't start with a digit (use a metacharacter)",
+            "correctAnswer": "^[^\\d]",
+            "hint": "Use '[^\\d]' to exclude digits at the start of a line"
+        },
+        {
+            "id": 25,
+            "question": "Match this string at the end of a line: EOF$",
+            "correctAnswer": "EOF\\$",
+            "hint": "Escape the dollar sign to match it literally at the end"
+        },
+        {
+            "id": 26,
+            "question": "Match all of the following sentences: I use nano, I use vim",
+            "correctAnswer": "I use (nano|vim)",
+            "hint": "Use a group '(nano|vim)' to match either word"
+        },
+        {
+            "id": 27,
+            "question": "Match all lines that start with $, followed by any single digit, followed by $, followed by one or more non-whitespace characters",
+            "correctAnswer": "^\\$\\d\\$\\S+",
+            "hint": "Use '\\d' for digits and '\\S+' for non-whitespace characters"
+        },
+        {
+            "id": 28,
+            "question": "Match every possible IPv4 IP address (use metacharacters and groups)",
+            "correctAnswer": "\\b(?:\\d{1,3}\\.){3}\\d{1,3}\\b",
+            "hint": "Group each segment as digits (1-3) separated by dots"
+        },
+        {
+            "id": 29,
+            "question": "Match all of these emails while also adding the username and the domain name (not the TLD) in separate groups",
+            "correctAnswer": "(\\w+)@(\\w+)\\.\\w+",
+            "hint": "Group the username and domain separately using '(\\w+)'"
+        }
+    ]
+}

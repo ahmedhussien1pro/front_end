@@ -1,0 +1,39 @@
+.wallpaper-thumbnail {
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.wallpaper-thumbnail:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px var(--glass-effect);
+  opacity: 0.95;
+}
+
+
+.delete-wallpaper-btn {
+  background: var(--neon-red);
+  border: none;
+  color: var(--primary-text);
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.delete-wallpaper-btn:hover {
+  background: var(--crimson-red);
+}
+
+.delete-wallpaper-btn svg {
+  margin-left: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.no-wallpapers-message {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  text-align: center;
+  margin-top: 2rem;
+}
+

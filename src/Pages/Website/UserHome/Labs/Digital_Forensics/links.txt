@@ -1,0 +1,14 @@
+https://www.techtarget.com/searchsecurity/definition/computer-forensics
+https://www.eccouncil.org/cybersecurity-exchange/computer-forensics/mobile-device-forensics/
+https://www.itpro.com/cyber-attacks/31660/what-is-network-forensics
+https://www.sciencedirect.com/topics/computer-science/memory-forensics
+https://www.eccouncil.org/cybersecurity-exchange/computer-forensics/what-is-cloud-forensics/
+https://www.salvationdata.com/knowledge/what-is-database-forensics/
+https://www.envistaforensics.com/services/digital-forensics-services/internet-of-things-iot-forensics/
+https://www.forensicfocus.com/articles/email-forensics-investigation-techniques/
+https://www.forensicsinsider.com/digital-forensics/social-media-forensics/
+https://www.tutorialspoint.com/multimedia-forensics
+https://www.salvationdata.com/knowledge/what-is-digital-vehicle-forensics/
+https://www.salvationdata.com/knowledge/what-is-drone-forensics/
+https://info-savvy.com/what-is-malware-forensics/
+https://www.cadosecurity.com/wiki/data-recovery-in-digital-forensics-methods-and-tips

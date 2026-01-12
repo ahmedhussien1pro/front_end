@@ -1,0 +1,42 @@
+
+/* Ribbon Badge Styles */
+.ribbon {
+  position: absolute;
+  top: 2rem;
+  left: -2.9rem;
+  width: 200px;
+  padding: 8px 0;
+  text-align: center;
+  background-color: #ff4757;
+  transform: rotate(-45deg);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.ribbon span {
+  display: block;
+  color: #fff;
+  font-size: 1rem;
+  text-transform: capitalize;
+  font-family: monospace;
+  text-align: center;
+}
+
+.ribbon.coming-soon {
+  background-color: #ff4757;
+}
+
+.ribbon.published {
+  background-color: #2ed573;
+}
+.ribbon.semi-published {
+  background-color: #0267ff;
+}
+.ribbon.pending {
+  background-color: #ffa502;
+}
+.course-image {
+  position: relative;
+  overflow: hidden;
+}
+

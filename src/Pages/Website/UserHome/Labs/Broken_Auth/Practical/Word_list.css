@@ -1,0 +1,16 @@
+.words-list-container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: var(--primary-text);
+}
+
+.words-list-container p {
+  line-height: 1.6;
+  white-space: pre-wrap;
+  margin: 0;
+  padding: 0;
+  color: var(--primary-text);
+}
+.words-list-container {
+  background-color: var(--primary-bg);
+}

@@ -1,0 +1,702 @@
+{
+  "landingData": {
+    "title": {
+      "en": "HTTP Cookies: Your Passport to the Web",
+      "ar": "HTTP Cookies: جوازك السفر عبر الويب"
+    },
+    "description": {
+      "en": "Learn how websites remember you without asking for your password every time. Understand cookies like you understand a library ID card—simple, powerful, and something to protect.",
+      "ar": "تعلم كيف تتذكرك المواقع دون طلب كلمة مرورك في كل مرة. افهم الكوكيز مثل فهمك لبطاقة هويتك في المكتبة—بسيطة وقوية وشيء يجب حمايته."
+    },
+    "difficulty": {
+      "en": "Beginner",
+      "ar": "مبتدئ"
+    },
+    "duration": {
+      "en": "75 Minutes",
+      "ar": "75 دقيقة"
+    },
+    "instructor": "CyberLab",
+    "rating": 4.9,
+    "students": 520,
+    "courseImage": "https://pub-cb38e65ea6bd411eb827a8641fdcc72d.r2.dev/course_image.fc78ecb6739355855ae7.png",
+    "labsLink": {
+      "link": "/cookies/cookies_lab"
+    }
+  },
+  "topics": [
+    {
+      "id": "topic-1-the-memory-problem",
+      "title": {
+        "en": "1. The Problem: Why Does the Web Forget You?",
+        "ar": "1. المشكلة: لماذا ينسى الويب هويتك؟"
+      },
+      "elements": [
+        {
+          "id": 1,
+          "type": "title",
+          "value": {
+            "en": "The Airport Security Desk Analogy",
+            "ar": "تشبيه مكتب الأمان في المطار"
+          }
+        },
+        {
+          "id": 2,
+          "type": "text",
+          "value": {
+            "en": "Think of an airport security desk. You show your passport to the first agent. They check your name and let you pass. You go to get your boarding pass at desk #2. The agent there says 'Who are you? I need to see your passport again.' This happens at every desk.\n\nThis is exactly what the web does. Every page you visit is like a new desk. Without something to remember you, the web forgets who you are in less than a second.",
+            "ar": "تخيل مكتب أمان المطار. تظهر جوازك للعامل الأول. يتحقق من اسمك ويسمح لك بالمرور. تذهب لطلب بطاقة الصعود في المكتب رقم 2. يقول العامل 'من أنت؟ أحتاج لرؤية جوازك مجددًا'. هذا يحدث في كل مكتب.\n\nهذا بالضبط ما يفعله الويب. كل صفحة تزورها تشبه مكتبًا جديدًا. بدون شيء يتذكرك، ينسى الويب من أنت في أقل من ثانية."
+          }
+        },
+        {
+          "id": 3,
+          "type": "subtitle",
+          "value": {
+            "en": "What is HTTP Protocol?",
+            "ar": "ما هو بروتوكول HTTP؟"
+          }
+        },
+        {
+          "id": 4,
+          "type": "text",
+          "value": {
+            "en": "HTTP stands for HyperText Transfer Protocol. It is the language that your web browser uses to talk to web servers (powerful computers that store data). \n\nKey fact: HTTP is 'stateless'. This means it does not keep memories. Each time your browser sends a message to the server, the server treats it as a brand new visitor. It forgets everything about the previous message.",
+            "ar": "HTTP اختصار ل HyperText Transfer Protocol. هو اللغة التي يستخدمها متصفحك للتحدث مع خوادم الويب (حواسيب قوية تخزن البيانات).\n\nحقيقة مهمة: HTTP 'عديم الحالة' (Stateless). هذا يعني أنه لا يحتفظ بالذكريات. في كل مرة يرسل فيها متصفحك رسالة للخادم، يتعامل الخادم معها كزائر جديد تماماً. ينسى كل شيء عن الرسالة السابقة."
+          }
+        },
+        {
+          "id": 5,
+          "type": "note",
+          "noteType": "warning",
+          "value": {
+            "en": "Without a fix for this problem, you would need to type your password on every single page of every website. Imagine typing your password 50 times just to use your email!",
+            "ar": "بدون حل لهذه المشكلة، ستحتاج لكتابة كلمة مرورك في كل صفحة من كل موقع. تخيل أنك تكتب كلمة مرورك 50 مرة فقط لاستخدام بريدك الإلكتروني!"
+          },
+          "link": "",
+          "isLab": false
+        },
+        {
+          "id": 6,
+          "type": "table",
+          "title": {
+            "en": "The Problem: Without Cookies",
+            "ar": "المشكلة: بدون Cookies"
+          },
+          "headers": {
+            "en": [
+              "What You Do",
+              "Without Cookies (Bad)",
+              "With Cookies (Good)"
+            ],
+            "ar": ["ما تفعله", "بدون Cookies (سيء)", "مع Cookies (جيد)"]
+          },
+          "rows": [
+            {
+              "en": [
+                "Login to Gmail",
+                "Type password | Server checks | You log in",
+                "Type password ONCE | Cookie saves your session | You stay logged in"
+              ],
+              "ar": [
+                "تسجيل دخول Gmail",
+                "اكتب كلمة المرور | الخادم يفحص | تسجيل الدخول",
+                "اكتب كلمة المرور مرة واحدة فقط | كوكي يحفظ جلستك | تبقى مسجل دخول"
+              ]
+            },
+            {
+              "en": [
+                "Read 5 emails",
+                "Must login 5 times",
+                "Login once, cookie keeps you logged in"
+              ],
+              "ar": [
+                "قراءة 5 رسائل بريد",
+                "يجب تسجيل دخول 5 مرات",
+                "تسجيل دخول مرة واحدة، الكوكي يبقيك مسجل دخول"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "topic-2-the-solution",
+      "title": {
+        "en": "2. The Solution: Meet the Cookie",
+        "ar": "2. الحل: قابل الـ Cookie"
+      },
+      "elements": [
+        {
+          "id": 1,
+          "type": "title",
+          "value": {
+            "en": "What is a Cookie? Simple Answer",
+            "ar": "ما هي الـ Cookie؟ إجابة بسيطة"
+          }
+        },
+        {
+          "id": 2,
+          "type": "text",
+          "value": {
+            "en": "A cookie is a small text file. It is like a library ID card that the library gives you.\n\nWhen you get a library card, the library says: 'Here is your card. Keep it safe. Every time you come back, show me this card and I will know who you are and what books you have borrowed.'\n\nA cookie works the same way. A website says: 'Here is your special ticket. Your browser should save it. Every time you visit me, send me this ticket and I will remember who you are.'",
+            "ar": "الـ Cookie هي ملف نصي صغير. إنها مثل بطاقة هويتك في المكتبة التي تعطيها لك المكتبة.\n\nعندما تحصل على بطاقة مكتبة، تقول المكتبة: 'إليك بطاقتك. احرص عليها. في كل مرة تعود فيها، أظهر لي هذه البطاقة وسأعرف من أنت والكتب التي استعرتها.'\n\nتعمل الـ Cookie بنفس الطريقة. يقول الموقع: 'إليك تذكرتك الخاصة. يجب على متصفحك حفظها. في كل مرة تزورني، أرسل لي هذه التذكرة وسأتذكر من أنت.'"
+          }
+        },
+        {
+          "id": 1767138664621.8337,
+          "type": "image",
+          "srcKey": "im",
+          "size": "medium",
+          "imageMode": "url",
+          "imageUrl": "https://pub-cb38e65ea6bd411eb827a8641fdcc72d.r2.dev/inLab3.02ade791262375f0e5d7.png  "
+        },
+        {
+          "id": 3,
+          "type": "subtitle",
+          "value": {
+            "en": "How a Cookie Gets Created and Used",
+            "ar": "كيف يتم إنشاء الـ Cookie واستخدامها"
+          }
+        },
+        {
+          "id": 4,
+          "type": "list",
+          "title": {
+            "en": "The Three Main Steps",
+            "ar": "الخطوات الثلاث الرئيسية"
+          },
+          "items": {
+            "en": [
+              "Step 1 - Creation: You log into a website with your password. The server creates a special token (a secret code) and sends it to your browser.",
+              "Step 2 - Storage: Your browser saves this token in a safe place (the cookie jar).",
+              "Step 3 - Reuse: Every time you visit the same website, your browser automatically sends this token back. The server checks the token and says 'You are the person who logged in before. Welcome back!'"
+            ],
+            "ar": [
+              "الخطوة 1 - الإنشاء: تسجل دخولك إلى موقع بكلمة مرورك. يقوم الخادم بإنشاء رمز خاص (كود سري) ويرسله إلى متصفحك.",
+              "الخطوة 2 - التخزين: يقوم متصفحك بحفظ هذا الرمز في مكان آمن (برطمان الكوكيز).",
+              "الخطوة 3 - إعادة الاستخدام: في كل مرة تزور نفس الموقع، يرسل متصفحك هذا الرمز تلقائيًا. يتحقق الخادم من الرمز ويقول 'أنت الشخص الذي سجل دخوله من قبل. أهلاً بك!'"
+            ]
+          }
+        },
+        {
+          "id": 5,
+          "type": "note",
+          "noteType": "info",
+          "value": {
+            "en": "Fun Fact: You can see all your cookies right now! Press F12 on your keyboard. Go to 'Application' → 'Cookies'. You will see hundreds of cookies from websites you have visited!",
+            "ar": "حقيقة: يمكنك رؤية كل الكوكيز الخاصة بك الآن! اضغط F12 على لوحة المفاتيح. انتقل إلى 'Application' → 'Cookies'. ستشاهد مئات الكوكيز من المواقع التي زرتها!"
+          },
+          "link": "",
+          "isLab": false
+        },
+        {
+          "id": 6,
+          "type": "terminal",
+          "label": {
+            "en": "Real Example: How Server Creates a Cookie",
+            "ar": "مثال حقيقي: كيف ينشئ الخادم Cookie"
+          },
+          "value": "You: I want to log in\nYou send: email=user@example.com, password=secret123\n\nServer says:\nHTTP/1.1 200 OK\nSet-Cookie: session_id=xyz789abc123\n\nMeaning: 'I created a token for you. Save it!'"
+        }
+      ]
+    },
+    {
+      "id": "topic-3-cookie-anatomy",
+      "title": {
+        "en": "3. Inside a Cookie: What Makes It Work?",
+        "ar": "3. داخل الـ Cookie: ما الذي يجعلها تعمل؟"
+      },
+      "elements": [
+        {
+          "id": 1767138852590.0461,
+          "type": "image",
+          "srcKey": "",
+          "size": "medium",
+          "imageMode": "url",
+          "imageUrl": "https://pub-cb38e65ea6bd411eb827a8641fdcc72d.r2.dev/course_image.fc78ecb6739355855ae7.png"
+        },
+        {
+          "id": 1,
+          "type": "title",
+          "value": {
+            "en": "The Parts of a Cookie",
+            "ar": "أجزاء الـ Cookie"
+          }
+        },
+        {
+          "id": 2,
+          "type": "text",
+          "value": {
+            "en": "A cookie has two main parts: the data and the rules.\n\nThe data is like your library card number. The rules tell the browser when to use it and how to protect it.",
+            "ar": "الـ Cookie لها جزآن رئيسيان: البيانات والقواعد.\n\nالبيانات تشبه رقم بطاقة المكتبة الخاصة بك. القواعد تخبر المتصفح متى يستخدمها وكيفية حمايتها."
+          }
+        },
+        {
+          "id": 3,
+          "type": "subtitle",
+          "value": {
+            "en": "Simple Cookie Example",
+            "ar": "مثال بسيط للـ Cookie"
+          }
+        },
+        {
+          "id": 4,
+          "type": "terminal",
+          "label": {
+            "en": "A Real Cookie from a Website",
+            "ar": "كوكي حقيقية من موقع"
+          },
+          "value": "session_id=xyz789abc123; Expires=Wed, 31 Dec 2025; Secure; HttpOnly\n\nBreakdown:\n- session_id=xyz789abc123   ← The ticket (data)\n- Expires=Wed, 31 Dec 2025  ← When to throw it away\n- Secure                     ← Safety rule (use HTTPS only)\n- HttpOnly                   ← Safety rule (hide from JavaScript)"
+        },
+        {
+          "id": 5,
+          "type": "title",
+          "value": {
+            "en": "Important Cookie Properties",
+            "ar": "خصائص الـ Cookie المهمة"
+          }
+        },
+        {
+          "id": 6,
+          "type": "table",
+          "title": {
+            "en": "Cookie Parts and What They Do",
+            "ar": "أجزاء Cookie وما تفعله"
+          },
+          "headers": {
+            "en": ["Property", "What It Does", "Real Life Example"],
+            "ar": ["الخاصية", "ما الذي تفعله", "مثال من الحياة الواقعية"]
+          },
+          "rows": [
+            {
+              "en": [
+                "Name=Value",
+                "The actual data",
+                "session_id=abc123 (your ID)"
+              ],
+              "ar": [
+                "الاسم=القيمة",
+                "البيانات الفعلية",
+                "session_id=abc123 (معرفك)"
+              ]
+            },
+            {
+              "en": [
+                "Expires",
+                "When cookie stops working",
+                "Like an expiry date on a bank card"
+              ],
+              "ar": [
+                "انتهاء الصلاحية",
+                "متى تتوقف الكوكي عن العمل",
+                "مثل تاريخ انتهاء الصلاحية على بطاقة البنك"
+              ]
+            },
+            {
+              "en": [
+                "Path",
+                "Which pages can use it",
+                "Path=/ means all pages of the website"
+              ],
+              "ar": [
+                "المسار",
+                "أي صفحات يمكنها استخدامها",
+                "Path=/ يعني جميع صفحات الموقع"
+              ]
+            },
+            {
+              "en": ["Domain", "Which website owns it", "Domain=example.com"],
+              "ar": ["النطاق", "أي موقع يملكها", "Domain=example.com"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "topic-4-security-rules",
+      "title": {
+        "en": "4. Keeping Cookies Safe: The Three Rules",
+        "ar": "4. حماية الـ Cookies: القواعد الثلاث"
+      },
+      "elements": [
+        {
+          "id": 1,
+          "type": "title",
+          "value": {
+            "en": "Why Cookie Safety Matters",
+            "ar": "لماذا تهم سلامة الـ Cookie"
+          }
+        },
+        {
+          "id": 2,
+          "type": "text",
+          "value": {
+            "en": "A cookie is like a key to your online house. If someone steals it, they can enter your house even without your password. This is why websites use special safety rules to protect cookies.",
+            "ar": "الـ Cookie تشبه المفتاح لبيتك على الإنترنت. إذا سرقها شخص ما، يمكنه دخول بيتك حتى بدون كلمة مرورك. لهذا السبب تستخدم المواقع قواعد أمان خاصة لحماية الكوكيز."
+          }
+        },
+        {
+          "id": 3,
+          "type": "subtitle",
+          "value": {
+            "en": "Rule #1: The Secure Flag",
+            "ar": "القاعدة #1: Secure Flag"
+          }
+        },
+        {
+          "id": 4,
+          "type": "text",
+          "value": {
+            "en": "The Secure flag means: 'Only send this cookie over a locked connection (HTTPS).'\n\nThink of it like this: At the airport, you would never give your passport to someone through an open window. You only give it through a secure, locked desk. Secure flag does the same for cookies.",
+            "ar": "Secure Flag يعني: 'أرسل هذه الـ Cookie فقط عبر اتصال مقفل (HTTPS).'\n\nفكر في الأمر هكذا: في المطار، لن تعطي جوازك لشخص ما من خلال نافذة مفتوحة. تعطيه فقط من خلال مكتب آمن ومقفل. يفعل Secure Flag نفس الشيء للكوكيز."
+          }
+        },
+        {
+          "id": 5,
+          "type": "subtitle",
+          "value": {
+            "en": "Rule #2: The HttpOnly Flag",
+            "ar": "القاعدة #2: HttpOnly Flag"
+          }
+        },
+        {
+          "id": 6,
+          "type": "text",
+          "value": {
+            "en": "The HttpOnly flag means: 'This cookie is secret. JavaScript code cannot read it.'\n\nWhy is this important? Sometimes bad people write code that steals cookies. If HttpOnly is set, their code cannot see the cookie. It is like putting your ID card in a locked box that only the bank can open, not the public.",
+            "ar": "HttpOnly Flag يعني: 'هذه الـ Cookie سرية. كود JavaScript لا يمكنه قراءتها.'\n\nلماذا هذا مهم؟ أحيانًا يكتب أشخاص سيئون كودًا يسرق الكوكيز. إذا تم تعيين HttpOnly، لا يمكن لكودهم أن يرى الكوكي. إنها مثل وضع بطاقة هويتك في صندوق مقفل يمكن فقط للبنك فتحه، وليس الجمهور."
+          }
+        },
+        {
+          "id": 7,
+          "type": "subtitle",
+          "value": {
+            "en": "Rule #3: The SameSite Flag",
+            "ar": "القاعدة #3: SameSite Flag"
+          }
+        },
+        {
+          "id": 8,
+          "type": "text",
+          "value": {
+            "en": "The SameSite flag means: 'Only send this cookie when it is used from the same website.'\n\nHere is an example of why it matters: You are at your bank website. Then you visit a bad website. That bad website tries to trick your browser into sending money from your bank. SameSite stops this because it says 'no, send the bank cookie only to the bank, not to other websites.'",
+            "ar": "SameSite Flag يعني: 'أرسل هذه الـ Cookie فقط عندما تُستخدم من نفس الموقع.'\n\nإليك مثال على أهميتها: أنت على موقع البنك الخاص بك. ثم تزور موقع سيء. هذا الموقع السيء يحاول خداع متصفحك لإرسال أموال من بنكك. يوقف SameSite هذا لأنه يقول 'لا، أرسل كوكي البنك فقط إلى البنك، وليس إلى مواقع أخرى.'"
+          }
+        },
+        {
+          "id": 9,
+          "type": "note",
+          "noteType": "info",
+          "value": {
+            "en": "Safe Cookie Checklist: A good cookie should have: (1) Secure flag (2) HttpOnly flag (3) SameSite flag. If any of these are missing, it is a security risk.",
+            "ar": "قائمة تحقق الـ Cookie الآمنة: يجب أن تحتوي الـ Cookie الجيدة على: (1) علم Secure (2) علم HttpOnly (3) علم SameSite. إذا كان أي من هذه مفقودًا، فهو خطر أمني."
+          },
+          "link": "",
+          "isLab": false
+        }
+      ]
+    },
+    {
+      "id": "topic-5-cookie-attacks",
+      "title": {
+        "en": "5. Dangers: How Hackers Steal Cookies",
+        "ar": "5. الأخطار: كيف يسرق الهاكرز الـ Cookies"
+      },
+      "elements": [
+        {
+          "id": 1,
+          "type": "title",
+          "value": {
+            "en": "What Can Go Wrong?",
+            "ar": "ما الذي يمكن أن يحدث خطأ؟"
+          }
+        },
+        {
+          "id": 2,
+          "type": "text",
+          "value": {
+            "en": "A cookie is a secret token that proves 'I am this person.' If a hacker steals your cookie, they can pretend to be you. They do not need your password. This is why security is important.",
+            "ar": "الـ Cookie هي رمز سري يثبت 'أنا هذا الشخص.' إذا سرق هاكر كوكيك، يمكنه التظاهر بأنه أنت. هو لا يحتاج إلى كلمة مرورك. لهذا السبب تهم الأمان."
+          }
+        },
+        {
+          "id": 3,
+          "type": "subtitle",
+          "value": {
+            "en": "Attack #1: Public WiFi Theft",
+            "ar": "الهجوم #1: السرقة عبر WiFi العامة"
+          }
+        },
+        {
+          "id": 4,
+          "type": "text",
+          "value": {
+            "en": "Scenario: You are at a café using public WiFi. You log into your email without HTTPS protection. A hacker is also on the same WiFi. They use a special tool to 'listen' to the network and see your cookie pass by. They copy your cookie.\n\nResult: The hacker logs in as you. They read your emails, change your password, steal your money.\n\nDefense: Websites must use the 'Secure' flag. This encrypts the cookie so hackers cannot see it.",
+            "ar": "السيناريو: أنت في مقهى تستخدم WiFi عامة. تسجل دخولك إلى بريدك الإلكتروني بدون حماية HTTPS. هاكر موجود أيضًا على نفس شبكة WiFi. يستخدم أداة خاصة 'للاستماع' إلى الشبكة ورؤية كوكيك تمر. يسخ كوكيك.\n\nالنتيجة: يسجل الهاكر الدخول كأنك. يقرأ رسائلك، يغير كلمة مرورك، يسرق أموالك.\n\nالدفاع: يجب على المواقع استخدام علم 'Secure'. هذا يشفر الكوكي حتى لا يراها الهاكرز."
+          }
+        },
+        {
+          "id": 5,
+          "type": "subtitle",
+          "value": {
+            "en": "Attack #2: JavaScript Theft (XSS)",
+            "ar": "الهجوم #2: السرقة عبر JavaScript (XSS)"
+          }
+        },
+        {
+          "id": 6,
+          "type": "text",
+          "value": {
+            "en": "Scenario: A website has a comment section. It does not check if comments are safe. A hacker posts code that steals cookies. When you read the hacker's comment, the bad code runs in your browser. It sends your cookies to the hacker.\n\nDefense: Websites must set the 'HttpOnly' flag. This makes the cookie invisible to JavaScript, so the bad code cannot steal it.",
+            "ar": "السيناريو: موقع فيه قسم تعليقات. لا يفحص ما إذا كانت التعليقات آمنة. يضع هاكر كودًا يسرق الكوكيز. عندما تقرأ تعليق الهاكر، يعمل الكود السيء في متصفحك. يرسل كوكيك للهاكر.\n\nالدفاع: يجب على المواقع تعيين علم 'HttpOnly'. هذا يجعل الكوكي غير مرئية لـ JavaScript، لذا لا يمكن للكود السيء سرقتها."
+          }
+        },
+        {
+          "id": 7,
+          "type": "subtitle",
+          "value": {
+            "en": "Attack #3: Tricking Your Browser",
+            "ar": "الهجوم #3: خداع متصفحك"
+          }
+        },
+        {
+          "id": 8,
+          "type": "text",
+          "value": {
+            "en": "Scenario: You are logged into your bank. You visit a bad website. That website has hidden code that says 'Send all the money in the bank account to me.' Your browser sends this request WITH your bank cookie (automatically). The bank thinks it is you, so it does the transfer.\n\nDefense: Websites use the 'SameSite' flag. This tells the browser 'Do not send my cookies when used from other websites.'",
+            "ar": "السيناريو: أنت مسجل دخول بنكك. تزور موقع سيء. هذا الموقع يحتوي على كود مخفي يقول 'أرسل كل الأموال في حساب البنك إلي.' يرسل متصفحك هذا الطلب مع كوكي البنك الخاص بك (تلقائيًا). يعتقد البنك أنه أنت، لذا يقوم بالتحويل.\n\nالدفاع: تستخدم المواقع علم 'SameSite'. هذا يخبر المتصفح 'لا ترسل الكوكيز الخاصة بي عند استخدامها من مواقع أخرى.'"
+          }
+        },
+        {
+          "id": 9,
+          "type": "note",
+          "noteType": "warning",
+          "value": {
+            "en": "Important: These attacks are real. They happen every day. This is why learning about cookie security is important for your safety online.",
+            "ar": "مهم: هذه الهجمات حقيقية. تحدث يوميًا. لهذا السبب من المهم تعلم أمان الـ Cookies لسلامتك على الإنترنت."
+          },
+          "link": "",
+          "isLab": false
+        }
+      ]
+    },
+    {
+      "id": "topic-6-cookie-types",
+      "title": {
+        "en": "6. Different Types of Cookies",
+        "ar": "6. أنواع مختلفة من الـ Cookies"
+      },
+      "elements": [
+        {
+          "id": 1,
+          "type": "title",
+          "value": {
+            "en": "Not All Cookies Are the Same",
+            "ar": "ليست كل الـ Cookies متساوية"
+          }
+        },
+        {
+          "id": 2,
+          "type": "text",
+          "value": {
+            "en": "Cookies vary by how long they live and who creates them. Understanding the difference helps you understand security better.",
+            "ar": "تختلف الـ Cookies حسب مدة بقائها ومن ينشئها. فهم الفرق يساعدك على فهم الأمان بشكل أفضل."
+          }
+        },
+        {
+          "id": 3,
+          "type": "subtitle",
+          "value": {
+            "en": "Type 1: Session Cookies",
+            "ar": "النوع 1: كوكيز الجلسة"
+          }
+        },
+        {
+          "id": 4,
+          "type": "text",
+          "value": {
+            "en": "A session cookie lives only while you are on the website. When you close your browser, it disappears. Session cookies are used for banking and secure logins because they are safer.",
+            "ar": "كوكي الجلسة تعيش فقط بينما أنت على الموقع. عند إغلاق متصفحك، تختفي. تُستخدم كوكيز الجلسة للبنوك وتسجيلات الدخول الآمنة لأنها أكثر أمانًا."
+          }
+        },
+        {
+          "id": 5,
+          "type": "subtitle",
+          "value": {
+            "en": "Type 2: Persistent Cookies",
+            "ar": "النوع 2: كوكيز دائمة"
+          }
+        },
+        {
+          "id": 6,
+          "type": "text",
+          "value": {
+            "en": "A persistent cookie has an expiration date. It stays on your computer even after you close the browser. It is used for 'Remember Me' features and storing your preferences (like your language choice).",
+            "ar": "الـ Cookie الدائمة لها تاريخ انتهاء صلاحية. تبقى على حاسوبك حتى بعد إغلاق المتصفح. تُستخدم لميزات 'تذكرني' وتخزين تفضيلاتك (مثل اختيار اللغة)."
+          }
+        },
+        {
+          "id": 7,
+          "type": "subtitle",
+          "value": {
+            "en": "Type 3: Third-Party Cookies",
+            "ar": "النوع 3: كوكيز الطرف الثالث"
+          }
+        },
+        {
+          "id": 8,
+          "type": "text",
+          "value": {
+            "en": "A third-party cookie is created by a website other than the one you are visiting. For example, ad networks create cookies while you visit news sites. They use these cookies to track where you go on the internet. This raises privacy concerns.",
+            "ar": "كوكي الطرف الثالث تُنشأ بواسطة موقع غير الموقع الذي تزوره. على سبيل المثال، شبكات الإعلانات تنشئ كوكيز بينما تزور مواقع الأخبار. يستخدمون هذه الكوكيز لتتبع أين تذهب على الإنترنت. هذا يثير مخاوف الخصوصية."
+          }
+        },
+        {
+          "id": 9,
+          "type": "table",
+          "title": {
+            "en": "Comparison: Cookie Types",
+            "ar": "مقارنة: أنواع الـ Cookies"
+          },
+          "headers": {
+            "en": ["Type", "Lives How Long?", "Used For", "Privacy Risk"],
+            "ar": ["النوع", "تعيش كم من الوقت؟", "تُستخدم لـ", "خطر الخصوصية"]
+          },
+          "rows": [
+            {
+              "en": [
+                "Session",
+                "Until you close browser",
+                "Secure login (banks)",
+                "Low"
+              ],
+              "ar": [
+                "الجلسة",
+                "حتى تغلق المتصفح",
+                "تسجيل الدخول الآمن (البنوك)",
+                "منخفض"
+              ]
+            },
+            {
+              "en": [
+                "Persistent",
+                "Until expiration date",
+                "Remember Me, preferences",
+                "Medium"
+              ],
+              "ar": [
+                "دائمة",
+                "حتى تاريخ انتهاء الصلاحية",
+                "تذكرني، التفضيلات",
+                "متوسط"
+              ]
+            },
+            {
+              "en": [
+                "Third-Party",
+                "Can be very long",
+                "Tracking and ads",
+                "High"
+              ],
+              "ar": [
+                "الطرف الثالث",
+                "يمكن أن تكون طويلة جدًا",
+                "التتبع والإعلانات",
+                "عالي"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "topic-7-best-practices",
+      "title": {
+        "en": "7. How to Stay Safe: Best Practices",
+        "ar": "7. كيف تبقى آمنًا: أفضل الممارسات"
+      },
+      "elements": [
+        {
+          "id": 1,
+          "type": "title",
+          "value": {
+            "en": "What You Should Do",
+            "ar": "ما الذي يجب أن تفعله"
+          }
+        },
+        {
+          "id": 2,
+          "type": "list",
+          "title": {
+            "en": "Simple Rules to Protect Yourself",
+            "ar": "قواعد بسيطة لحماية نفسك"
+          },
+          "items": {
+            "en": [
+              "Rule 1 - Use HTTPS: Only log into websites that start with 'https://' not 'http://'. The 's' means secure.",
+              "Rule 2 - Avoid Public WiFi: Never use public WiFi for banking or email. Use your phone's mobile data instead.",
+              "Rule 3 - Clear Cookies Regularly: Press F12 in your browser. Go to Application → Cookies → Delete all. Do this every week.",
+              "Rule 4 - Use Strong Passwords: Even if a hacker steals your cookie, they cannot reset your password if it is very strong.",
+              "Rule 5 - Do Not Click Suspicious Links: A link from a bad website could steal your cookies. Be careful."
+            ],
+            "ar": [
+              "القاعدة 1 - استخدم HTTPS: سجل دخولك فقط إلى مواقع تبدأ بـ 'https://' وليس 'http://'. يعني 's' الأمان.",
+              "القاعدة 2 - تجنب شبكات WiFi العامة: لا تستخدم أبدًا WiFi عامة للبنوك أو البريد الإلكتروني. استخدم بيانات الهاتف الجوال بدلاً من ذلك.",
+              "القاعدة 3 - امسح الكوكيز بشكل منتظم: اضغط F12 في متصفحك. انتقل إلى Application → Cookies → احذف الكل. افعل هذا كل أسبوع.",
+              "القاعدة 4 - استخدم كلمات مرور قوية: حتى لو سرق هاكر كوكيك، لا يمكنه إعادة تعيين كلمة مرورك إذا كانت قوية جدًا.",
+              "القاعدة 5 - لا تنقر على روابط مريبة: الرابط من موقع سيء يمكن أن يسرق كوكيك. كن حذراً."
+            ]
+          }
+        },
+        {
+          "id": 3,
+          "type": "subtitle",
+          "value": {
+            "en": "What Websites Should Do",
+            "ar": "ما الذي يجب على المواقع أن تفعله"
+          }
+        },
+        {
+          "id": 4,
+          "type": "list",
+          "title": {
+            "en": "For Web Developers",
+            "ar": "لمطورري الويب"
+          },
+          "items": {
+            "en": [
+              "Use All Three Safety Flags: Always set Secure + HttpOnly + SameSite flags on session cookies.",
+              "Never Store Secrets: Do not put passwords or credit card numbers in cookies. Only put a session ID.",
+              "Use HTTPS Everywhere: Your website must use HTTPS, not HTTP.",
+              "Expire Cookies Quickly: Session should end after 15-30 minutes of no activity.",
+              "Regenerate After Login: When a user logs in, create a NEW cookie. Never reuse the old one."
+            ],
+            "ar": [
+              "استخدم الأعلام الثلاثة للأمان: قم دائمًا بتعيين أعلام Secure + HttpOnly + SameSite على كوكيز الجلسة.",
+              "لا تخزن الأسرار: لا تضع كلمات المرور أو أرقام بطاقات الائتمان في الكوكيز. ضع فقط معرف الجلسة.",
+              "استخدم HTTPS في كل مكان: يجب أن يستخدم موقعك HTTPS وليس HTTP.",
+              "انتهاء صلاحية الكوكيز بسرعة: يجب أن تنتهي الجلسة بعد 15-30 دقيقة من عدم النشاط.",
+              "أعد توليد بعد تسجيل الدخول: عندما يسجل المستخدم دخوله، أنشئ كوكي جديد. لا تعيد استخدام الكوكي القديمة."
+            ]
+          }
+        },
+        {
+          "id": 5,
+          "type": "note",
+          "noteType": "info",
+          "value": {
+            "en": "Remember: Cookies are not bad. They make the web work better. But they must be protected properly. Think of them like keys to your house—useful, but you must keep them safe.",
+            "ar": "تذكر: الـ Cookies ليست سيئة. تجعل الويب يعمل بشكل أفضل. لكن يجب حمايتها بشكل صحيح. فكر فيها مثل مفاتيح بيتك—مفيدة، لكن يجب أن تحافظ عليها آمنة."
+          },
+          "link": "",
+          "isLab": false
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "createdAt": "2025-12-30T23:58:36.630Z",
+    "totalTopics": 7,
+    "totalElements": 52
+  }
+}

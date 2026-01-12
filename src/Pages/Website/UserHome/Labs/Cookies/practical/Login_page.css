@@ -1,0 +1,122 @@
+.login-page {
+  font-family: 'poppins', 'sans-serif';
+  overflow-y: hidden;
+  height: 100vh;
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
+}
+
+
+
+.container-login {
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+/* Extra small */
+@media (min-width: 0px) {
+  .container-login {
+    max-width: 100%;
+  }
+}
+
+
+/* small */
+@media (min-width: 576px) {
+  .container-login {
+    max-width: 540px;
+  }
+}
+
+
+/*  Medium */
+@media (min-width: 768px) {
+  .container-login {
+    max-width: 750px;
+  }
+}
+
+/* Large */
+@media (min-width: 992px) {
+  .container-login {
+    max-width: 970px;
+  }
+}
+
+/* X-Large */
+@media (min-width: 1200px) {
+  .container-login {
+    max-width: 1170px;
+  }
+}
+
+/* End Global Var */
+.cookies__login-form {
+  padding: 50px;
+  border-radius: 5px;
+  min-width: 400px;
+  background-color: var(--secondary-bg);
+  border: 3px solid var(--faq-body-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.cookies__login-form form{
+  width: 100%;
+}
+
+.cookies__login-form h1 {
+  margin-bottom: 20px;
+}
+
+.cookies__login-form .cookies__login__form-group label {
+  font-size: 1.2rem;
+  color: var(--primary-text);
+}
+
+.cookies__login-form .cookies__login__form-group input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 10px;
+  color: var(--primary-text);
+  background-color: var(--faq-header-hover);
+}
+
+.cookies__login-form .cookies__login__form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+}
+
+.cookies__login-form button.btn-login {
+  width: 60%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  color: whitesmoke;
+  /* background: linear-gradient(0deg, var(--neon-red), var(--burnt-orange)); */
+  background-color: var(--main-color);
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+
+.cookies__login-form button:hover {
+  opacity: .85;
+}
+
+form .error {
+  margin-left: auto;
+  margin-right: auto;
+}

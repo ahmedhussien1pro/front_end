@@ -1,0 +1,127 @@
+/* Container and Layout */
+.rc-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--primary-bg);
+  padding: 20px;
+}
+
+.rc-content {
+  background-color: var(--glass-effect);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Title */
+.rc-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--main-color);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Alert Message */
+.rc-alert {
+  background-color: #ffebee;
+  color: #c62828;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+.rc-alert-success {
+  background-color: #f4ffeb;
+  color: green;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Form Group */
+.rc-form-group {
+  margin-bottom: 20px;
+}
+
+.rc-form-group label {
+  display: block;
+  font-size: 14px;
+  color: var(--primary-text);
+  margin-bottom: 8px;
+}
+
+.rc-form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+.rc-form-group input:focus {
+  border-color: var(--main-color);
+  outline: none;
+}
+
+/* Buttons */
+.rc-btn-primary {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--main-color2);
+  color: var(--primary-text);
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.rc-btn-primary:hover {
+  background-color: var(--main-color3);
+}
+
+.rc-btn-secondary {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #6c757d;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.rc-btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .rc-content {
+    padding: 20px;
+  }
+
+  .rc-title {
+    font-size: 20px;
+  }
+
+  .rc-btn-primary,
+  .rc-btn-secondary {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,105 @@
+/* Overall landing section styling */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+.landing-section {
+  position: relative;
+  overflow: hidden;
+  min-height: 70vh;
+  color: var(--primary-text);
+  /* background-color: var(--secondary-bg, #0a0a0a); */
+  font-family: 'Open Sans', sans-serif;
+}
+
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.landing-text__header {
+  font-size: 2.25rem;
+  text-transform: capitalize;
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+  font-family: "Dancing Script", serif;
+  font-weight: 500;
+}
+
+.landing-text__header::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  background: currentColor;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+.landing-text__headline {
+  font-size: 2rem;
+  line-height: 1.4;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(to right, var(--main-color), #00c4ff);
+  text-transform: capitalize;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.landing-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.btn-custom {
+  background: var(--main-color);
+  color: var(--whiteColor);
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1000;
+}
+
+.btn-custom:hover {
+  background: var(--hover-highlight-color);
+  color: var(--whiteColor);
+}
+
+.landing-image__banner {
+  width: 80%;
+  max-width: 400px;
+  animation: bounce 3s infinite;
+}
+
+@keyframes bounce {
+
+  0%,
+  20%,
+  60%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-10px);
+  }
+
+  80% {
+    transform: translateY(-5px);
+  }
+}
+
+@media (max-width: 575px) {
+  .landing-image__banner {
+    display: none;
+  }
+}

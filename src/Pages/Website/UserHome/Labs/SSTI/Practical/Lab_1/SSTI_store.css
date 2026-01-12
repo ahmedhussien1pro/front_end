@@ -1,0 +1,155 @@
+.ssti_body {
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
+  width: 100%;
+  height: 100%;
+}
+
+.container-ssti3 {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 0px) {
+  .container-ssti3 {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 576px) {
+  .container-ssti3 {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container-ssti3 {
+    max-width: 750px;
+  }
+}
+
+@media (min-width: 991px) {
+  .container-ssti3 {
+    max-width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-ssti3 {
+    max-width: 1170px;
+  }
+}
+
+@media (max-width: 992px) {
+  .course-store .row-practice {
+    grid-template-columns: 0.5fr 0.5fr;
+  }
+}
+
+.course-store-ssti {
+  padding: 100px 0;
+}
+
+.course-store-ssti .row-practice {
+  display: grid;
+  grid-template-columns: repeat(3, 0.3fr);
+  grid-template-rows: auto auto;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  gap: 20px;
+}
+
+.course-store-ssti .card-store {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(200, 200, 200, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.course-store-ssti .card-store .functions {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  gap: 15px;
+  padding: 0 5px;
+  box-shadow: 0 0 5px rgba(2000, 2000, 2000, 0.1);
+  transition: 0.75s;
+  color: white;
+  background-color: var(--main-color);
+}
+
+.course-store-ssti .card-store:hover .functions {
+  left: 0;
+}
+
+.course-store-ssti .card-store .functions i {
+  cursor: pointer;
+}
+
+.course-store-ssti .card-store img {
+  width: 50%;
+  border-radius: 10px;
+}
+
+.course-store-ssti .card-store .card-text-store {
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.course-store-ssti .card-store .card-text-store button {
+  background-color: var(--main-color);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+
+.course-store-ssti .card-store .card-text-store h4 {
+  margin-bottom: 0;
+}
+
+.course-store-ssti .card-store .card-text-store p.price {
+  font-size: 16px;
+  font-weight: lighter;
+  margin: 0 0 0 15px;
+  background-color: var(--main-color);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 25px;
+  position: relative;
+  max-height: fit-content;
+}
+
+.course-store-ssti .card-store .card-text-store p.price::after {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.15);
+  z-index: 1;
+  transition: var(--main-transition);
+}
+
+.course-store-ssti .card-store p.price:hover::after {
+  top: 0;
+}

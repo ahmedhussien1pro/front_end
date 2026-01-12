@@ -1,0 +1,243 @@
+/* Start Landing */
+.landing {
+  height: auto;
+  background: linear-gradient(
+    105deg,
+    var(--main-color) 0%,
+    var(--main-color) 60%,
+    rgb(28, 37, 56) 60%
+  );
+}
+
+@media (max-width: 991px) {
+  .landing {
+    background: var(--main-color);
+  }
+}
+
+.landing .container {
+  padding: 24px 12px;
+}
+
+.landing .course-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: var(--primary-text);
+}
+
+.landing .course-info .course-text {
+  max-width: 60%;
+}
+
+@media (max-width: 991px) {
+  .landing .course-info .course-text {
+    max-width: 100%;
+  }
+}
+
+.landing .course-info .course-text h1 {
+  font-size: 40px;
+}
+
+.landing .course-info .course-text p {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+.landing .course-info .course-text p.brief {
+  background-color: var(--secondary-bg);
+  padding: 10px;
+  width: max-content;
+  font-size: 12px;
+  border-radius: 8px;
+}
+
+.landing .course-info .course-text p.brief i {
+  margin-right: 10px;
+}
+
+.landing .course-info .course-icon {
+  display: flex;
+  flex-basis: 30%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media (max-width: 991px) {
+  .landing .course-info .course-icon {
+    display: none;
+  }
+}
+
+.landing .course-info .course-icon .content {
+  transform: rotateZ(45deg);
+  width: 230px;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing .course-info .course-icon i {
+  border-radius: 50%;
+  padding: 17px;
+  font-size: 45px;
+}
+
+.landing .course-info .course-icon p {
+  padding: 20px;
+  font-size: 24px;
+  font-weight: lighter;
+  margin: 25px 0;
+}
+
+.landing .course-info .course-icon i.fa-book-open.lab,
+.landing .course-info .course-icon i.fa-bullseye.lab {
+  background-color: var(--main-color);
+}
+
+/* End Landing */
+
+/* Start Course  */
+.course {
+  padding: 70px 0;
+  background-color: var(--primary-bg);
+}
+
+.course .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.course .container > h2 {
+  border: 2px solid var(--main-color);
+  width: max-content;
+  align-self: center;
+  padding: 20px 10px;
+}
+@media screen and (max-width: 991px) {
+  .course .row,
+  .course .row > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+}
+.course .section-p {
+  color: var(--white-alpha-20);
+  font-weight: lighter;
+  margin-top: 15px;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* End Course  */
+
+/* Enhanced Labs Section By Ahmed Sherif */
+.width-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.labs-section-text {
+  text-align: center;
+  padding: 50px 30px;
+  background: linear-gradient(135deg, var(--primary-bg), var(--secondary-bg));
+  border-radius: 20px;
+  box-shadow: 0 15px 40px var(--shadow-color);
+  max-width: 800px;
+  position: relative;
+  margin-bottom: 1.5rem;
+  backdrop-filter: blur(15px);
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+  transition: transform 0.5s ease-out, box-shadow 0.5s ease-out;
+  animation: pulse-glow 3s infinite alternate ease-in-out;
+}
+.labs-section-text h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  background: linear-gradient(45deg, var(--main-color), var(--main-color2));
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: text-glow 1.8s infinite alternate ease-in-out;
+}
+.labs-section-text .section-p {
+  font-size: 1.6rem;
+  font-weight: 300;
+  opacity: 0.9;
+  color: var(--primary-text);
+  animation: fade-in 1.2s ease-in-out;
+}
+/* .labs-section-text:hover {
+  transform: scale(1.05);
+  box-shadow: 0 25px 60px var(--shadow-color);
+  background: linear-gradient(
+    135deg,
+    var(--primary-bg-light),
+    var(--secondary-bg-light)
+  );
+  border-color: var(--highlight-color);
+} */
+
+/* Neon Background Glow */
+.labs-section-text .glow-bg {
+  content: "";
+  position: absolute;
+  inset: -5px;
+  border-radius: 22px;
+  background: linear-gradient(45deg, var(--main-color4), var(--main-color2));
+  filter: blur(12px);
+  opacity: 0.5;
+  z-index: -1;
+  animation: border-glow 3s infinite alternate ease-in-out;
+}
+
+@keyframes border-glow {
+  0% {
+    opacity: 0.3;
+    filter: blur(5px);
+  }
+  100% {
+    opacity: 0.7;
+    filter: blur(15px);
+  }
+}
+
+@keyframes pulse-glow {
+  0% {
+    box-shadow: 0 10px 30px var(--shadow-color);
+  }
+  100% {
+    box-shadow: 0 20px 50px var(--highlight-color);
+  }
+}
+
+@keyframes text-glow {
+  0% {
+    text-shadow: 0 0 10px var(--main-color);
+  }
+  100% {
+    text-shadow: 0 0 20px var(--main-color2), 0 0 40px var(--main-color4);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

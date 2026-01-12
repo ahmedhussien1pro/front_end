@@ -1,0 +1,100 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What piece of code can we insert at the start of a line to comment out our code?",
+      "correctAnswer": "#",
+      "hint": "This symbol is commonly used in Python and Bash to comment out lines."
+    },
+    {
+      "id": 2,
+      "question": "What will the following script output to the screen, echo “BishBashBosh”",
+      "correctAnswer": "BishBashBosh",
+      "hint": "The `echo` command prints text to the terminal exactly as provided."
+    },
+    {
+      "id": 3,
+      "question": "What would this code return?",
+      "correctAnswer": "#",
+      "hint": "This symbol is used to write comments in shell scripts.",
+      "element": "<p>name=<code>\"Jammy\"</code>, age=<code>21</code></p><p>echo \"<code>$name</code> is<code> $age</code> years old\"</p><p>city= <code>\"Paris\"</code>, country= <code>\"France\"</code></p>"
+    },
+    {
+      "id": 4,
+      "question": "How would you print out the city to the screen?",
+      "correctAnswer": "echo $city",
+      "hint": "Use the `echo` command followed by the variable name.",
+      "element": "<p>name=<code>\"Jammy\"</code>, age=<code>21</code></p><p>echo \"<code>$name</code> is<code> $age</code> years old\"</p><p>city= <code>\"Paris\"</code>, country= <code>\"France\"</code></p>"
+    },
+    {
+      "id": 5,
+      "question": "How would you print out the country to the screen?",
+      "correctAnswer": "echo $country",
+      "hint": "Variables in shell scripts are referenced using a `$` symbol.",
+      "element": "<p>name=<code>\"Jammy\"</code>, age=<code>21</code></p><p>echo \"<code>$name</code> is<code> $age</code> years old\"</p><p>city= <code>\"Paris\"</code>, country= <code>\"France\"</code></p>"
+    },
+    {
+      "id": 6,
+      "question": "How can we get the number of arguments supplied to a script?",
+      "correctAnswer": "$#",
+      "hint": "Use a special shell variable that counts arguments."
+    },
+    {
+      "id": 7,
+      "question": "How can we get the filename of our current script (aka our first argument)?",
+      "correctAnswer": "$0",
+      "hint": "This special variable stores the script’s filename."
+    },
+    {
+      "id": 8,
+      "question": "How can we get the 4th argument supplied to the script?",
+      "correctAnswer": "$4",
+      "hint": "Use `$` followed by the argument number."
+    },
+    {
+      "id": 9,
+      "question": "If a script asks us for input, how can we direct our input into a variable called ‘test’ using 'read'?",
+      "correctAnswer": "read test",
+      "hint": "The `read` command is used to accept user input."
+    },
+    {
+      "id": 10,
+      "question": "What will the output of 'echo $1 $3' be if the script was run with './script.sh hello hola aloha'?",
+      "correctAnswer": "hello aloha",
+      "hint": "Arguments are referenced using `$1`, `$2`, etc."
+    },
+    {
+      "id": 11,
+      "question": "What would be the command to print audi to the screen using indexing?",
+      "element": "<p>Array: <code>cars=('honda' 'audi' 'bmw' 'tesla')</code></p>",
+      "correctAnswer": "echo ${cars[1]}",
+      "hint": "Arrays in Bash use zero-based indexing."
+    },
+    {
+      "id": 12,
+      "question": "If we wanted to remove tesla from the array how would we do so?",
+      "element": "<p>Array: <code>cars=('honda' 'audi' 'bmw' 'tesla')</code></p>",
+      "correctAnswer": "unset cars[3]",
+      "hint": "Use the `unset` command followed by the index."
+    },
+    {
+      "id": 13,
+      "question": "How could we insert a new value called toyota to replace tesla?",
+      "element": "<p>Array: <code>cars=('honda' 'audi' 'bmw' 'tesla')</code></p>",
+      "correctAnswer": "cars[3]='toyota'",
+      "hint": "Assign the new value to the specific index."
+    },
+    {
+      "id": 14,
+      "question": "What is the flag to check if we have read access to a file?",
+      "correctAnswer": "-r",
+      "hint": "This flag checks if a file is readable."
+    },
+    {
+      "id": 15,
+      "question": "What is the flag to check to see if it's a directory?",
+      "correctAnswer": "-d",
+      "hint": "This flag checks if a file is a directory."
+    }
+  ]
+}

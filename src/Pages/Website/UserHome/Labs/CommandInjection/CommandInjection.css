@@ -1,0 +1,97 @@
+.Command-Injection-paragraph {
+  font-size: 1.1rem;
+  color: var(--primary-text);
+  margin-bottom: 20px;
+  line-height: 1.8;
+  transition: color 0.3s ease;
+}
+
+.Command-Injection-image {
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 15px auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+.Command-Injection-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 768px) {
+  .Command-Injection-paragraph {
+    font-size: 1rem;
+  }
+
+  .Command-Injection-image {
+    border-radius: 5px;
+  }
+}
+
+.code-command-injection {
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
+  padding: 15px;
+  border-radius: 8px;
+  width: 1000px;
+  height: 65px;
+  overflow-x: auto;
+  white-space: nowrap;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 20px 0;
+  display: inline-block;
+  font-size: 1rem;
+}
+
+.code-command-injection:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 768px) {
+  .code-command-injection {
+    font-size: 0.8rem;
+    padding: 10px;
+    width: 500px;
+  }
+}
+.Command-modern-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--primary-bg);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.Command-modern-table th,
+.Command-modern-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+  color: var(--primary-text);
+}
+
+.Command-modern-table th {
+  background-color: var(--main-color);
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.Command-modern-table code {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.9rem;
+  color: var(--main-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .Command-modern-table th,
+  .Command-modern-table td {
+    padding: 10px;
+  }
+}

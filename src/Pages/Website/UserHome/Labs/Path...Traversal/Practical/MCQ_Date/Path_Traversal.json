@@ -1,0 +1,209 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is a Path Traversal attack?",
+      "options": [
+        "An attack that manipulates database queries",
+        "An attack that allows accessing directories and files outside the intended directory",
+        "An attack that injects malicious scripts into web applications",
+        "An attack that exploits buffer overflow vulnerabilities"
+      ],
+      "answer": "An attack that allows accessing directories and files outside the intended directory"
+    },
+    {
+      "id": 2,
+      "question": "Which special characters are commonly used in a Path Traversal attack?",
+      "options": [
+        "../ and ..\\",
+        "<script> and alert()",
+        "SELECT * FROM",
+        "chmod +x"
+      ],
+      "answer": "../ and ..\\"
+    },
+    {
+      "id": 3,
+      "question": "What is the main goal of a Path Traversal attack?",
+      "options": [
+        "To inject SQL queries",
+        "To bypass authentication",
+        "To access restricted files on the server",
+        "To perform a phishing attack"
+      ],
+      "answer": "To access restricted files on the server"
+    },
+    {
+      "id": 4,
+      "question": "How can Path Traversal attacks be prevented?",
+      "options": [
+        "Using input validation and sanitization",
+        "Disabling user authentication",
+        "Allowing direct file path inputs from users",
+        "Using only GET requests"
+      ],
+      "answer": "Using input validation and sanitization"
+    },
+    {
+      "id": 5,
+      "question": "What is a null byte injection in Path Traversal attacks?",
+      "options": [
+        "An attack that exploits a null character (%00) to bypass filters",
+        "A method to inject SQL commands",
+        "A way to perform brute force attacks",
+        "A technique to modify JavaScript code"
+      ],
+      "answer": "An attack that exploits a null character (%00) to bypass filters"
+    },
+    {
+      "id": 6,
+      "question": "Which programming language is more vulnerable to Path Traversal if input validation is not implemented?",
+      "options": ["Python", "Java", "PHP", "All of the above"],
+      "answer": "All of the above"
+    },
+    {
+      "id": 7,
+      "question": "Which PHP function should be avoided to prevent Path Traversal vulnerabilities?",
+      "options": [
+        "include()",
+        "file_get_contents()",
+        "fopen()",
+        "All of the above"
+      ],
+      "answer": "All of the above"
+    },
+    {
+      "id": 8,
+      "question": "A web application allows users to fetch images via a URL parameter. Which input could indicate a Path Traversal attack?",
+      "options": [
+        "image=profile.jpg",
+        "image=../etc/passwd",
+        "image=user123.png",
+        "image=logo.png"
+      ],
+      "answer": "image=../etc/passwd"
+    },
+    {
+      "id": 9,
+      "question": "What is the purpose of directory traversal encoding like %2E%2E%2F?",
+      "options": [
+        "To encode database queries",
+        "To bypass input validation and firewalls",
+        "To execute JavaScript code",
+        "To encrypt file names"
+      ],
+      "answer": "To bypass input validation and firewalls"
+    },
+    {
+      "id": 10,
+      "question": "What is an example of a Windows-based Path Traversal attack?",
+      "options": [
+        "../../etc/passwd",
+        "..\\..\\Windows\\System32\\config\\SAM",
+        "<script>alert('XSS')</script>",
+        "SELECT * FROM users"
+      ],
+      "answer": "..\\..\\Windows\\System32\\config\\SAM"
+    },
+    {
+      "id": 11,
+      "question": "Which OWASP category includes Path Traversal vulnerabilities?",
+      "options": [
+        "A1: Injection",
+        "A5: Security Misconfiguration",
+        "A6: Sensitive Data Exposure",
+        "A10: Insufficient Logging & Monitoring"
+      ],
+      "answer": "A1: Injection"
+    },
+    {
+      "id": 12,
+      "question": "Which of the following is a real-world example of a Path Traversal attack?",
+      "options": [
+        "Shellshock",
+        "Heartbleed",
+        "The Apache Struts vulnerability allowing file access",
+        "Spectre"
+      ],
+      "answer": "The Apache Struts vulnerability allowing file access"
+    },
+    {
+      "id": 13,
+      "question": "What role does chroot jail play in preventing Path Traversal?",
+      "options": [
+        "It limits access to a restricted part of the file system",
+        "It encrypts all file paths",
+        "It scans user inputs for malicious patterns",
+        "It allows unrestricted access to the root directory"
+      ],
+      "answer": "It limits access to a restricted part of the file system"
+    },
+    {
+      "id": 14,
+      "question": "How does web application firewalls (WAFs) help prevent Path Traversal attacks?",
+      "options": [
+        "By blocking known malicious patterns",
+        "By modifying system file permissions",
+        "By preventing JavaScript execution",
+        "By disabling file uploads"
+      ],
+      "answer": "By blocking known malicious patterns"
+    },
+    {
+      "id": 15,
+      "question": "What happens if a Path Traversal attack is successful?",
+      "options": [
+        "An attacker can execute arbitrary SQL queries",
+        "An attacker can access sensitive system files",
+        "An attacker can send phishing emails",
+        "An attacker can control the victim's browser"
+      ],
+      "answer": "An attacker can access sensitive system files"
+    },
+    {
+      "id": 16,
+      "question": "Which Linux command can check file permissions to reduce the risk of Path Traversal?",
+      "options": ["ls -l", "chmod", "stat", "All of the above"],
+      "answer": "All of the above"
+    },
+    {
+      "id": 17,
+      "question": "What is absolute path traversal?",
+      "options": [
+        "Using relative paths to navigate directories",
+        "Using a full file path to access restricted files",
+        "Encrypting file paths before access",
+        "Using brute force techniques"
+      ],
+      "answer": "Using a full file path to access restricted files"
+    },
+    {
+      "id": 18,
+      "question": "A developer is implementing file access based on user input. Which approach is the best practice?",
+      "options": [
+        "Allow users to specify any file path",
+        "Use a whitelist of allowed filenames",
+        "Store user input directly in a database without validation",
+        "Allow only administrator accounts to access files"
+      ],
+      "answer": "Use a whitelist of allowed filenames"
+    },
+    {
+      "id": 19,
+      "question": "Which HTTP method is most commonly exploited in Path Traversal attacks?",
+      "options": ["GET", "POST", "PUT", "DELETE"],
+      "answer": "GET"
+    },
+    {
+      "id": 20,
+      "question": "What is the best way to log and detect Path Traversal attempts?",
+      "options": [
+        "Monitor access logs for unusual file access patterns",
+        "Block all user input",
+        "Allow unrestricted access but notify the admin",
+        "Use only server-side encryption"
+      ],
+      "answer": "Monitor access logs for unusual file access patterns"
+    }
+  ]
+}

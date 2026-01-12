@@ -1,0 +1,219 @@
+/* Main container */
+.ping-container {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  height: 100vh !important;
+  background-color: var(--primary-bg);
+}
+
+/* Main wrapper for content */
+.ping-main-wrapper {
+  width: 100% !important;
+  max-width: 600px !important;
+  padding: 30px !important;
+  background-color: var(--glass-effect) !important;
+  border-radius: 10px !important;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+  text-align: center !important;
+}
+
+/* Header text style */
+.ping-header-wrapper .ping-title {
+  font-size: 2.5rem !important;
+  color: var(--main-color) !important;
+  font-family: "Arial", sans-serif !important;
+  margin-bottom: 20px !important;
+  font-weight: 700 !important;
+}
+
+/* Form styling */
+.ping-form-wrapper {
+  display: flex !important;
+  justify-content: center !important;
+  width: 100% !important;
+}
+
+.ping-form {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 20px !important;
+  width: 100% !important;
+}
+
+.ping-input {
+  background-color: var(--glass-effect) !important;
+  padding: 15px !important;
+  font-size: 1rem !important;
+  border-radius: 8px !important;
+  border: 1px solid var(--main-color2) !important;
+  box-sizing: border-box !important;
+  transition: all 0.3s ease !important;
+  outline: none !important;
+  color: var(--primary-text);
+}
+
+.ping-input:focus {
+  border-color: var(--main-color3) !important;
+  box-shadow: 0 0 5px var(--main-color) !important;
+  color: var(--primary-text);
+}
+
+/* Button styling */
+.ping-button {
+  padding: 15px !important;
+  font-size: 1.1rem !important;
+  background-color: var(--main-color) !important;
+  color: var(--primary-text) !important;
+  border: none !important;
+  border-radius: 8px !important;
+  cursor: pointer !important;
+  transition: background-color 0.3s ease, transform 0.2s ease !important;
+}
+
+.ping-button:hover {
+  background-color: var(--main-color3) !important;
+  transform: translateY(-3px) !important;
+}
+
+.ping-button:active {
+  background-color: var(--main-color2) !important;
+  transform: translateY(0) !important;
+}
+
+/* Result container */
+.ping-result {
+  margin-top: 30px !important;
+  padding: 20px !important;
+  background-color: #f7f7f7 !important;
+  border-radius: 8px !important;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1) !important;
+  text-align: center !important;
+  font-size: 1.1rem !important;
+  color: #333 !important;
+  line-height: 1.5 !important;
+}
+
+.ping-result-text {
+  margin: 0 !important;
+  font-weight: 500 !important;
+}
+
+/* Second lab style css */
+
+/* Page Container */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-color: var(--primary-bg);
+}
+
+/* Image Grid */
+.image-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Card Design */
+.image-card {
+  background-color: var(--glass-effect);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 320px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Product Image */
+.product-image {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #e0e0e0;
+  transition: opacity 0.3s ease;
+}
+
+.image-card:hover .product-image {
+  opacity: 0.9;
+}
+
+/* Check Button */
+.check-button {
+  background: var(--main-color);
+  color: var(--primary-text);
+  border: none;
+  padding: 12px 24px;
+  margin: 15px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.check-button:hover {
+  background: linear-gradient(135deg, var(--main-color2), var(--main-color3));
+  transform: scale(1.05);
+}
+
+/* Stock Info */
+.stock-info {
+  font-size: 18px;
+  color: #333;
+  font-weight: 500;
+  background: rgba(0, 123, 255, 0.1);
+  padding: 8px 15px;
+  border-radius: 6px;
+  display: inline-block;
+  margin-top: 10px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Style for the stock info container */
+.stock-info-container {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid var(--main-color2);
+  border-radius: 5px;
+  background-color: var(--glass-effect);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style for the stock message text */
+.stock-info {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--primary-text);
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+}
+
+/* Optional: Style for the date part if you want to make it stand out */
+.stock-info .date {
+  font-style: italic;
+  color: #007bff; /* Blue color for date */
+}
+.page-container h1 {
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,96 @@
+.test-page-container {
+  font-family: "Montserrat", sans-serif;
+  background: var(--primary-bg);
+  color: var(--primary-text);
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.test-page-container::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: var(--secondary-bg);
+  animation: rotate 20s linear infinite;
+  opacity: 0.1;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.test-page-content {
+  position: relative;
+  text-align: center;
+  padding: clamp(2rem, 5vw, 4rem);
+  background: var(--glass-bg);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transform: translateY(0);
+  transition: all 0.3s ease-in-out;
+  max-width: 800px;
+  width: 90%;
+}
+
+.test-page-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+.test-page-title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  color: var(--main-color);
+  text-shadow: var(--text-shadow);
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.test-page-text {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  opacity: 0.9;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  text-shadow: var(--text-shadow);
+  animation: fadeIn 1s ease-out 0.3s backwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.9;
+  }
+}
+
+@media (max-width: 768px) {
+  .test-page-content {
+    padding: 1.5rem;
+    border-radius: 12px;
+  }
+}

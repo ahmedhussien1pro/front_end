@@ -1,0 +1,98 @@
+.course-ssti-lab2 a {
+  color: white;
+}
+
+.search-result {
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Start Course  */
+.course-ssti-lab2 {
+  padding: 70px 0;
+  background-color: var(--primary-bg);
+  color: white;
+}
+
+.course-ssti-lab2 .container-ssti-lab2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-ssti-lab2 {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-top: 50px;
+  width: 85%;
+}
+
+.login-ssti-lab2 a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background: var(--sec-main-color);
+  transition: var(--main-transition);
+}
+
+.login-ssti-lab2 a:hover {
+  background: var(--alt-color);
+}
+
+.course-ssti-lab2 .row-practice .html-output {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  margin-bottom: 0;
+}
+
+.course-ssti-lab2 .row-practice .html-output span {
+  font-weight: 300;
+}
+
+.course-ssti-lab2 .row-practice {
+  display: grid;
+  grid-template-columns: 0.7fr;
+  grid-template-rows: auto auto auto;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  gap: 20px;
+}
+
+.course-ssti-lab2 .row-practice .card-ssti-lab2 {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: var(--secondary-bg);
+  transition: var(--main-transition);
+}
+
+.course-ssti-lab2 .row-practice .card-ssti-lab2 img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.course-ssti-lab2 .row-practice .card-ssti-lab2:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transform: scale(1.02);
+}
+
+.course-ssti-lab2 .row-practice .card-ssti-lab2 .card-text-ssti-lab2 {
+  padding: 20px 10px;
+}
+
+.course-ssti-lab2 .row-practice .card-ssti-lab2 .card-text-ssti-lab2 p {
+  font-size: 16px;
+  font-weight: lighter;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/* End Course  */

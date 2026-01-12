@@ -1,0 +1,189 @@
+/* General Styles */
+.burp-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--primary-bg);
+  font-family: "Arial", sans-serif;
+}
+
+.burp-container {
+  background-color: var(--secondaey-bg);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px var(--faq-header);
+  padding: 2rem;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+.burp-title {
+  font-size: 2rem;
+  color: var(--primary-text);
+  margin-bottom: 1.5rem;
+}
+
+.burp-question {
+  font-size: 1.2rem;
+  color: var(--primary-text);
+  margin-bottom: 1.5rem;
+}
+
+.burp-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.burp-list-item {
+  background-color: var(--secondaey-bg);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: var(--primary-text);
+  overflow: hidden;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+.burp-input {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: var(--secondaey-bg);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary-text);
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.burp-input:focus {
+  border-color: var(--main-color);
+}
+
+.burp-button {
+  background-color: var(--main-color);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0.5rem;
+}
+
+.burp-button:hover {
+  background-color: var(--main-color3);
+}
+
+.burp-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.burp-nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.burp-correct {
+  color: #28a745;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+.burp-wrong {
+  color: #dc3545;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+.burp-completion {
+  font-size: 1.5rem;
+  color: #28a745;
+  margin-top: 1.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .burp-container {
+    padding: 1.5rem;
+  }
+
+  .burp-title {
+    font-size: 1.8rem;
+  }
+
+  .burp-question {
+    font-size: 1.1rem;
+  }
+
+  .burp-list-item {
+    font-size: 1rem;
+  }
+
+  .burp-button {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .burp-completion {
+    font-size: 1.3rem;
+  }
+}
+
+.burp-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.burp-option {
+  display: flex;
+  align-items: center;
+  background: var(--primary-bg);
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 2px solid var(--main-color);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  color: var(--primary-text);
+}
+
+.burp-option:hover {
+  border-color: var(--main-color3);
+  background: var(--secondaey-bg);
+}
+
+.burp-option input {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.burp-option input:checked + span {
+  font-weight: bold;
+  color: var(--main-color);
+}
+.bs-input-color {
+  color: var(--primary-text);
+}
+.burp-progress-container {
+  width: 100%;
+  height: 10px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.burp-progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #4caf50, #8bc34a);
+  transition: width 0.4s ease-in-out;
+}

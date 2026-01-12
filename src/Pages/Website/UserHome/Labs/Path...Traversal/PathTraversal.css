@@ -1,0 +1,121 @@
+.Path-Traversal-Text {
+  color: var(--secondary-text);
+  line-height: 1.6;
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+.Path-Traversal-List {
+  list-style-type: disc;
+  margin-left: 20px;
+  color: var(--secondary-text);
+}
+
+.Path-Traversal-ListItem {
+  margin-bottom: 8px;
+}
+
+.Path-Traversal-Label {
+  background-color: var(--main-color3);
+  color: var(--primary-text);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.Path-Traversal-Heading2 {
+  color: var(--main-color);
+  font-size: 1.5em;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+.Path-Traversal-Heading3 {
+  color: var(--main-color);
+  font-size: 1.3em;
+  margin-top: 20px;
+  margin-bottom: 12px;
+}
+
+.Path-Traversal-Link {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+.Path-Traversal-Link:hover {
+  text-decoration: underline;
+}
+
+.Path-Traversal-OrderedList {
+  list-style-type: decimal;
+  margin-left: 20px;
+  color: var(--secondary-text);
+}
+
+.Path-Traversal-OrderedListItem {
+  margin-bottom: 8px;
+}
+
+.Path-Traversal-Strong {
+  color: var(--main-color);
+}
+
+.Path-Traversal-Icon {
+  color: var(--main-color);
+}
+
+.Path-Traversal-Prevention-Heading {
+  color: var(--main-color);
+  font-size: 1.5em;
+  margin-bottom: 16px;
+  position: relative;
+  display: inline-block;
+}
+
+.Path-Traversal-Prevention-Heading::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background-color: var(--main-color);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.Path-Traversal-Prevention-Heading:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.Path-Traversal-Prevention-List {
+  list-style-type: disc;
+  margin-left: 20px;
+  font-size: 16px;
+  color: var(--primary-text);
+}
+
+.Path-Traversal-Prevention-ListItem {
+  margin-bottom: 12px;
+  line-height: 1.6;
+  padding: 8px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.Path-Traversal-Prevention-ListItem:hover {
+  background-color: var(--primary-bg);
+  transform: translateX(10px);
+}
+
+.Path-Traversal-Prevention-Highlight {
+  color: var(--main-color);
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.Path-Traversal-Prevention-Highlight:hover {
+  color: var(--main-color);
+}

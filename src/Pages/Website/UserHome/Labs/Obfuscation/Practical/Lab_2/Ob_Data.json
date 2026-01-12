@@ -1,0 +1,214 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is code obfuscation?",
+      "options": [
+        "A method to make code easier to read",
+        "A technique used to hide the meaning of code",
+        "A way to speed up code execution",
+        "A debugging tool"
+      ],
+      "answer": "A technique used to hide the meaning of code"
+    },
+    {
+      "id": 2,
+      "question": "Why do developers use code obfuscation?",
+      "options": [
+        "To make the code run faster",
+        "To prevent unauthorized access and reverse engineering",
+        "To improve debugging",
+        "To reduce file size"
+      ],
+      "answer": "To prevent unauthorized access and reverse engineering"
+    },
+    {
+      "id": 3,
+      "question": "Which of the following is a basic obfuscation technique?",
+      "options": [
+        "Using descriptive variable names",
+        "Removing whitespace and comments",
+        "Adding detailed documentation",
+        "Refactoring code for clarity"
+      ],
+      "answer": "Removing whitespace and comments"
+    },
+    {
+      "id": 4,
+      "question": "Which programming languages can have their code obfuscated?",
+      "options": [
+        "Only Python and JavaScript",
+        "Only compiled languages like C and Java",
+        "Only interpreted languages like Python",
+        "Any programming language"
+      ],
+      "answer": "Any programming language"
+    },
+    {
+      "id": 5,
+      "question": "How does variable renaming help in obfuscation?",
+      "options": [
+        "It makes variables easier to remember",
+        "It replaces meaningful variable names with random or misleading ones",
+        "It shortens code execution time",
+        "It improves debugging"
+      ],
+      "answer": "It replaces meaningful variable names with random or misleading ones"
+    },
+    {
+      "id": 6,
+      "question": "Which tool is commonly used for JavaScript obfuscation?",
+      "options": ["PyArmor", "UglifyJS", "Pylint", "Black"],
+      "answer": "UglifyJS"
+    },
+    {
+      "id": 7,
+      "question": "What is a downside of code obfuscation?",
+      "options": [
+        "It improves performance",
+        "It can make debugging difficult",
+        "It makes the code more readable",
+        "It automatically fixes syntax errors"
+      ],
+      "answer": "It can make debugging difficult"
+    },
+    {
+      "id": 8,
+      "question": "Which of the following is an example of control flow obfuscation?",
+      "options": [
+        "Removing unnecessary functions",
+        "Adding complex and unnecessary loops or conditions",
+        "Renaming files",
+        "Formatting code properly"
+      ],
+      "answer": "Adding complex and unnecessary loops or conditions"
+    },
+    {
+      "id": 9,
+      "question": "Which tool is commonly used for Python code obfuscation?",
+      "options": ["PyArmor", "Prettier", "Flake8", "AutoPep8"],
+      "answer": "PyArmor"
+    },
+    {
+      "id": 10,
+      "question": "What does string encryption do in obfuscation?",
+      "options": [
+        "Makes code run faster",
+        "Hides sensitive strings by encrypting them",
+        "Removes unnecessary functions",
+        "Simplifies the structure of the code"
+      ],
+      "answer": "Hides sensitive strings by encrypting them"
+    },
+    {
+      "id": 11,
+      "question": "What is a packer in the context of obfuscation?",
+      "options": [
+        "A tool that compresses and encrypts executables",
+        "A tool that removes whitespace",
+        "A debugger",
+        "A file management system"
+      ],
+      "answer": "A tool that compresses and encrypts executables"
+    },
+    {
+      "id": 12,
+      "question": "How does function splitting contribute to obfuscation?",
+      "options": [
+        "It merges multiple functions into one",
+        "It simplifies complex logic",
+        "It breaks a function into multiple smaller ones to make it harder to understand",
+        "It removes unused functions"
+      ],
+      "answer": "It breaks a function into multiple smaller ones to make it harder to understand"
+    },
+    {
+      "id": 13,
+      "question": "Which type of software commonly uses heavy obfuscation?",
+      "options": [
+        "Open-source projects",
+        "Educational tools",
+        "Commercial software with licensing protection",
+        "Simple scripts"
+      ],
+      "answer": "Commercial software with licensing protection"
+    },
+    {
+      "id": 14,
+      "question": "What is the purpose of dead code insertion in obfuscation?",
+      "options": [
+        "To add unnecessary code that does not affect execution",
+        "To remove unused functions",
+        "To optimize the code for performance",
+        "To make the code more readable"
+      ],
+      "answer": "To add unnecessary code that does not affect execution"
+    },
+    {
+      "id": 15,
+      "question": "How does junk code affect the readability of a program?",
+      "options": [
+        "It makes the program easier to debug",
+        "It adds extra, meaningless instructions to confuse attackers",
+        "It optimizes performance",
+        "It improves code structure"
+      ],
+      "answer": "It adds extra, meaningless instructions to confuse attackers"
+    },
+    {
+      "id": 16,
+      "question": "Which type of obfuscation involves changing the way data is stored and manipulated?",
+      "options": [
+        "Data obfuscation",
+        "Variable renaming",
+        "Whitespace removal",
+        "Function merging"
+      ],
+      "answer": "Data obfuscation"
+    },
+    {
+      "id": 17,
+      "question": "How does anti-debugging help with obfuscation?",
+      "options": [
+        "It prevents debugging tools from analyzing the program",
+        "It makes debugging easier for developers",
+        "It removes all error messages",
+        "It improves application speed"
+      ],
+      "answer": "It prevents debugging tools from analyzing the program"
+    },
+    {
+      "id": 18,
+      "question": "What is polymorphic obfuscation?",
+      "options": [
+        "Obfuscation that changes every time the code is run",
+        "A method to remove all functions",
+        "A way to format the code properly",
+        "A technique for adding comments"
+      ],
+      "answer": "Obfuscation that changes every time the code is run"
+    },
+    {
+      "id": 19,
+      "question": "Which obfuscation technique involves rearranging code execution order?",
+      "options": [
+        "Whitespace removal",
+        "Control flow obfuscation",
+        "String encryption",
+        "File compression"
+      ],
+      "answer": "Control flow obfuscation"
+    },
+    {
+      "id": 20,
+      "question": "What is the main goal of virtualization-based obfuscation?",
+      "options": [
+        "To run the code in a virtual machine to obscure its execution",
+        "To delete unnecessary code",
+        "To improve software performance",
+        "To optimize memory usage"
+      ],
+      "answer": "To run the code in a virtual machine to obscure its execution"
+    }
+  ]
+}

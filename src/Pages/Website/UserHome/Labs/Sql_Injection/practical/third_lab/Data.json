@@ -1,0 +1,24 @@
+{
+  "products": [
+    {
+      "name": "Robot Home Security Buddy",
+      "actual_price": "$92.70",
+      "hidden_price": "$85.00"
+    },
+    {
+      "name": "All-in-one Typewriter",
+      "actual_price": "$33.61",
+      "hidden_price": "$30.00"
+    },
+    {
+      "name": "Photobomb Backdrops",
+      "actual_price": "$46.21",
+      "hidden_price": "$40.00"
+    },
+    {
+      "name": "Grow Your Own Spy Kit",
+      "actual_price": "$19.26",
+      "hidden_price": "$15.00"
+    }
+  ]
+}
