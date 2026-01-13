@@ -2,7 +2,9 @@ import axios from 'axios';
 
 // Create axios instance with default config
 const api = axios.create({
-  baseURL: process.env.REACT_APP_API_URL || 'https://cyber-labs-backend.vercel.app/api/v1',
+  baseURL:
+    process.env.REACT_APP_API_URL ||
+    'test-backend-production-82fc.up.railway.app/api/v1',
   timeout: parseInt(process.env.REACT_APP_API_TIMEOUT) || 30000,
   headers: {
     'Content-Type': 'application/json',
