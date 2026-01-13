@@ -1,12 +1,10 @@
 import React from 'react';
-import Header from '../../Header/Header';
-import background from '../../assets/img/Path__Traversal/what-is-path-traversal-attack.png';
+import Header from '../../../components/Header/Header';
+import Footer from '../../../components/Footer/Footer';
 import courseImage from '../../assets/img/Path__Traversal/Directory_Traversal.png';
-import Footer from '../../Footer/Footer';
-import '../../Components/Topics CSS/topics.css';
-import UseFaqSection from '../../Components/UseFaqSection/UseFaqSection.jsx';
-import CourseLanding from '../../Components/Landing/CourseLanding.jsx';
-import GoTop from '../../Components/Go2Top_Btn/Go2Top_Btn';
+import UseFaqSection from '../../../components/UseFaqSection/UseFaqSection.jsx';
+import CourseLanding from '../../../components/Landing/CourseLanding.jsx';
+import GoTop from '../../../components/Go2Top_Btn/Go2Top_Btn';
 import './PathTraversal.css';
 export default function PathTraversal() {
   const { faqSectionRef, handleGoToLab } = UseFaqSection();

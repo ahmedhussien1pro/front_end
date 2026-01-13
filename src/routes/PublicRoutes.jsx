@@ -6,10 +6,10 @@ import PrivacyPolicy from '../Pages/Auth/PrivacyPolicy.jsx';
 import DataDeletion from '../Pages/Auth/DataDeletion.jsx';
 import Error404 from '../Pages/Auth/Page-404/404.jsx';
 import Contact from '../Pages/Website/Contact/Contact.jsx';
-import AboutUs from '../Pages/Website/AboutUs/AboutUs.jsx';
+import AboutUs from '../Pages//Website/AboutUs/AboutUs.jsx';
 import ComingSoon from '../Pages/Website/ComingSoon/ComingSoon.jsx';
 import SubscriptionPlans from '../Pages/Website/SubscriptionPlans/SubscriptionPlans.jsx';
-import AdminDashboard from '../Components/Dashboards/Admin/AdminDashboard.jsx';
+import AdminDashboard from '../Pages/Dashboards/Admin/AdminDashboard';
 const PublicRoutes = (
   <>
     <Route path='/' element={<HomePage />} />

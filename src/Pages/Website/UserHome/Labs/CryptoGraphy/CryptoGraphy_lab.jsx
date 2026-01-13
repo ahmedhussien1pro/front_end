@@ -1,11 +1,10 @@
 import React from 'react';
-import '../Page_Styles/Lab.css';
-import Header from '../../Header/Header';
+import Header from '../../../components/Header/Header';
+import Footer from '../../../components/Footer/Footer';
+import { Card } from '../../../components/Card/Card';
+import LandingPractice from '../../../components/Landing/PracticeLanding';
+import PracticeTitle from '../../../components/PracticeTitle/PracticeTitle';
 import image from '../../assets/img/Cryptography/card_image.png';
-import Footer from '../../Footer/Footer';
-import { Card } from '../../Components/Card/Card';
-import LandingPractice from '../../Components/Landing/PracticeLanding';
-import PracticeTitle from '../../Components/PracticeTitle/PracticeTitle';
 
 export default function CryptoGraphy_lab() {
   const Labs = [

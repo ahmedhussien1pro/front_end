@@ -1,53 +1,53 @@
-import React, { useEffect, useState } from "react";
-import "./Tours.css";
-import Header from "../../../Header/Header";
-import pyramidsImage from "../../../assets/img/seven_lab/Picture2.png";
-import Alert from "./Alert";
+import React, { useEffect, useState } from 'react';
+import './Tours.css';
+import Header from '../../../../components/Header/Header';
+import pyramidsImage from '../../../assets/img/seven_lab/Picture2.png';
+import Alert from './Alert';
 
 export default function PyramidsOfGiza() {
-  const [selectedStore, setSelectedStore] = useState("");
-  const [countries] = useState(["Egypt", "France", "USA"]);
+  const [selectedStore, setSelectedStore] = useState('');
+  const [countries] = useState(['Egypt', 'France', 'USA']);
   const [showCountries, setShowCountries] = useState(false);
-  const [alertMessage, setAlertMessage] = useState("");
+  const [alertMessage, setAlertMessage] = useState('');
   const [showAlert, setShowAlert] = useState(false);
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
-    const storeId = params.get("storeId");
+    const storeId = params.get('storeId');
 
     if (storeId) {
       // Extract the alert message dynamically
       const alertMessageMatch = storeId.match(/alert\("([^"]+)"\)/);
       const customAlertMessage = alertMessageMatch
         ? alertMessageMatch[1]
-        : "No alert message found";
+        : 'No alert message found';
 
       // Set the alert message to the extracted value
       setAlertMessage(customAlertMessage);
       setShowAlert(true);
-      setSelectedStore(storeId.split("</select>")[0].trim());
+      setSelectedStore(storeId.split('</select>')[0].trim());
       setShowCountries(true);
     }
   }, []);
 
   const handleCloseAlert = () => {
     setShowAlert(false);
-    setAlertMessage("");
+    setAlertMessage('');
   };
 
   return (
     <>
       <Header />
-      <div className="tour-container">
+      <div className='tour-container'>
         <h1>The Pyramids of Giza</h1>
 
         <img
           src={pyramidsImage}
-          alt="Pyramids of Giza"
-          className="tour-image"
+          alt='Pyramids of Giza'
+          className='tour-image'
         />
 
-        <p className="tour-description">
+        <p className='tour-description'>
           Embark on an unforgettable journey to Egypt, a land where ancient
           history and modern beauty merge. At the heart of this timeless
           destination lies one of the most extraordinary wonders of the
@@ -84,18 +84,17 @@ export default function PyramidsOfGiza() {
           lifetime.
         </p>
 
-        <div className="reservation-section">
+        <div className='reservation-section'>
           <h2>Reserve Your Journey</h2>
-          <label htmlFor="country-select">
+          <label htmlFor='country-select'>
             Select your country of departure:
           </label>
           <select
-            id="country-select"
-            className="country-select"
+            id='country-select'
+            className='country-select'
             value={selectedStore}
-            onChange={(e) => setSelectedStore(e.target.value)}
-          >
-            <option value="" disabled>
+            onChange={(e) => setSelectedStore(e.target.value)}>
+            <option value='' disabled>
               -- Select a Country --
             </option>
             {showCountries ? (
@@ -109,11 +108,11 @@ export default function PyramidsOfGiza() {
             )}
           </select>
 
-          <button className="reservation-button">Reserve Now</button>
+          <button className='reservation-button'>Reserve Now</button>
         </div>
 
         {showCountries && (
-          <div className="available-countries">
+          <div className='available-countries'>
             {countries.map((country) => (
               <option key={country} value={country}>
                 {country}

@@ -1,4 +1,4 @@
-import { FileDownloader } from '../../../../Components/FileDwnLodrLab/FileDownloader';
+import { FileDownloader } from '../../../../../components/FileDwnLodrLab/FileDownloader';
 export default function Corrupted() {
   return (
     <FileDownloader

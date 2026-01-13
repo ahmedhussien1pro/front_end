@@ -1,47 +1,47 @@
-import React, { useEffect, useState } from "react";
-import "./Tours.css";
-import Header from "../../../Header/Header";
-import eiffelTowerImage from "../../../assets/img/seven_lab/Picture3.jpg";
-import Alert from "./Alert";
+import React, { useEffect, useState } from 'react';
+import './Tours.css';
+import Header from '../../../../components/Header/Header';
+import eiffelTowerImage from '../../../assets/img/seven_lab/Picture3.jpg';
+import Alert from './Alert';
 
 export default function EiffelTower() {
-  const [selectedStore, setSelectedStore] = useState("");
-  const [countries] = useState(["France", "Egypt", "USA"]);
+  const [selectedStore, setSelectedStore] = useState('');
+  const [countries] = useState(['France', 'Egypt', 'USA']);
   const [showCountries, setShowCountries] = useState(false);
-  const [alertMessage, setAlertMessage] = useState("");
+  const [alertMessage, setAlertMessage] = useState('');
   const [showAlert, setShowAlert] = useState(false);
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
-    const storeId = params.get("storeId");
+    const storeId = params.get('storeId');
 
     if (storeId) {
       const alertMessageMatch = storeId.match(/alert\("([^"]+)"\)/);
       const customAlertMessage = alertMessageMatch
         ? alertMessageMatch[1]
-        : "No alert message found";
+        : 'No alert message found';
 
       setAlertMessage(customAlertMessage);
       setShowAlert(true);
-      setSelectedStore(storeId.split("</select>")[0].trim());
+      setSelectedStore(storeId.split('</select>')[0].trim());
       setShowCountries(true);
     }
   }, []);
 
   const handleCloseAlert = () => {
     setShowAlert(false);
-    setAlertMessage("");
+    setAlertMessage('');
   };
 
   return (
     <>
       <Header />
-      <div className="tour-container">
+      <div className='tour-container'>
         <h1>The Eiffel Tower</h1>
 
-        <img src={eiffelTowerImage} alt="Eiffel Tower" className="tour-image" />
+        <img src={eiffelTowerImage} alt='Eiffel Tower' className='tour-image' />
 
-        <p className="tour-description">
+        <p className='tour-description'>
           Discover the magic of Paris, the City of Light, and its most iconic
           symbol, the Eiffel Tower. Standing proudly at 330 meters (1,083 feet),
           this architectural masterpiece has drawn millions of visitors since
@@ -79,18 +79,17 @@ export default function EiffelTower() {
           Paris.
         </p>
 
-        <div className="reservation-section">
+        <div className='reservation-section'>
           <h2>Reserve Your Journey</h2>
-          <label htmlFor="country-select">
+          <label htmlFor='country-select'>
             Select your country of departure:
           </label>
           <select
-            id="country-select"
-            className="country-select"
+            id='country-select'
+            className='country-select'
             value={selectedStore}
-            onChange={(e) => setSelectedStore(e.target.value)}
-          >
-            <option value="" disabled>
+            onChange={(e) => setSelectedStore(e.target.value)}>
+            <option value='' disabled>
               -- Select a Country --
             </option>
             {showCountries ? (
@@ -104,11 +103,11 @@ export default function EiffelTower() {
             )}
           </select>
 
-          <button className="reservation-button">Reserve Now</button>
+          <button className='reservation-button'>Reserve Now</button>
         </div>
 
         {showCountries && (
-          <div className="available-countries">
+          <div className='available-countries'>
             {countries.map((country) => (
               <option key={country} value={country}>
                 {country}

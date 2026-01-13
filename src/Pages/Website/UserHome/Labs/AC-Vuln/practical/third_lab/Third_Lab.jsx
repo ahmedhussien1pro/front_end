@@ -1,26 +1,26 @@
-import React, { useEffect, useState } from "react";
-import "../Lab_Style.css";
-import { Link } from "react-router-dom";
-import ProductList from "../../../../Components/ProductList/ProductList";
-import GoBackBtn from "../../../../Components/GoBack_Btn/GoBack_Btn";
-import products from "../data.json";
-import ShowHintBtn from "../../../../Components/ShowHint_Btn/ShowHint_Btn";
-import Go2TopBtn from "../../../../Components/Go2Top_Btn/Go2Top_Btn";
+import React, { useEffect, useState } from 'react';
+import '../Lab_Style.css';
+import { Link } from 'react-router-dom';
+import ProductList from '../../../../../components/ProductList/ProductList';
+import GoBackBtn from '../../../../../components/GoBack_Btn/GoBack_Btn';
+import products from '../data.json';
+import ShowHintBtn from '../../../../../components/ShowHint_Btn/ShowHint_Btn';
+import Go2TopBtn from '../../../../../components/Go2Top_Btn/Go2Top_Btn';
 
 export default function Third_Lab() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const getCookie = (name) => {
     const value = `; ${document.cookie}`;
     const parts = value.split(`; ${name}=`);
-    if (parts.length === 2) return parts.pop().split(";").shift();
+    if (parts.length === 2) return parts.pop().split(';').shift();
     return null;
   };
 
   useEffect(() => {
-    const loggedInStatus = getCookie("isLoggedIn");
-    const adminStatus = getCookie("Admin");
+    const loggedInStatus = getCookie('isLoggedIn');
+    const adminStatus = getCookie('Admin');
 
-    if (loggedInStatus === "true" && adminStatus === "true") {
+    if (loggedInStatus === 'true' && adminStatus === 'true') {
       setIsLoggedIn(true);
     } else {
       setIsLoggedIn(false);
@@ -39,12 +39,16 @@ export default function Third_Lab() {
 `;
 
   return (
-    <div className="Custom__body--bg">
+    <div className='Custom__body--bg'>
       <GoBackBtn />
       <ShowHintBtn hintText={hintMessage} />
-      <div className="container">
-        <h1 style={{ textAlign: "center", marginBlock: "50px" }}>Products </h1>
-        <Link to={`/AC-Vuln/AC_Vuln_labs/third_lab/login`} className="btn-main-color">Login</Link>
+      <div className='container'>
+        <h1 style={{ textAlign: 'center', marginBlock: '50px' }}>Products </h1>
+        <Link
+          to={`/AC-Vuln/AC_Vuln_labs/third_lab/login`}
+          className='btn-main-color'>
+          Login
+        </Link>
         {isLoggedIn && (
           <Link to={`/AC-Vuln/AC_Vuln_labs/third_lab/admin`}>Go to Admin</Link>
         )}

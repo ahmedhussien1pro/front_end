@@ -1,16 +1,16 @@
-import { FileDownloader } from "../../../../Components/FileDwnLodrLab/FileDownloader";
+import { FileDownloader } from '../../../../../components/FileDwnLodrLab/FileDownloader';
 export default function Test() {
   const hint =
-    "Looking for hidden files in Linux? 🕵️ Use ls -a to show all files, including hidden ones (they start with .)";
+    'Looking for hidden files in Linux? 🕵️ Use ls -a to show all files, including hidden ones (they start with .)';
 
   return (
     <>
       <FileDownloader
-        answerText={"flag{y0u_h4v3_d0n3_1t}"}
+        answerText={'flag{y0u_h4v3_d0n3_1t}'}
         hint={hint}
-        fileName={"test_your_self.rar"}
-        subject={"linux"}
-        title={"Test Yourself"}
+        fileName={'test_your_self.rar'}
+        subject={'linux'}
+        title={'Test Yourself'}
       />
     </>
   );

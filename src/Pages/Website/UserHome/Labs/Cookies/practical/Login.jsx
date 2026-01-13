@@ -4,9 +4,9 @@ import axios from 'axios';
 import React, { useState } from 'react';
 import Cookie from 'cookie-universal';
 import { useNavigate } from 'react-router-dom';
-import GoBackBtn from '../../../Components/GoBack_Btn/GoBack_Btn';
-import ShowHintBtn from '../../../Components/ShowHint_Btn/ShowHint_Btn';
-import Preloader from '../../../../Preloader/Preloader';
+import GoBackBtn from '../../../../components/GoBack_Btn/GoBack_Btn';
+import ShowHintBtn from '../../../../components/ShowHint_Btn/ShowHint_Btn';
+import Preloader from '../../../../components/Preloader/Preloader';
 
 export default function CookiesLogin({ CookieName, ApiEnd, labName, values }) {
   const [form, setForm] = useState({

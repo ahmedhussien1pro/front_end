@@ -1,6 +1,6 @@
 // src/context/GlobalSearchContext.js
 import React, { createContext, useState, useEffect } from "react";
-import demoData from "../Pages/Website/UserHome/Components/Courses/courseData";
+import demoData from "../Pages/Website/components/Courses/courseData";
 
 export const GlobalSearchContext = createContext();
 

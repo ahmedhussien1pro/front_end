@@ -1,14 +1,12 @@
 import React from 'react';
 import './InsecureDirectObjectReference.css';
-import Header from '../../Header/Header';
-import Footer from '../../Footer/Footer';
-import './InsecureDirectObjectReference.css';
-import '../../Components/Topics CSS/topics.css';
+import Header from '../../../components/Header/Header';
+import Footer from '../../../components/Footer/Footer';
 import courseImage from '../../assets/img/IDOR/idorIcon.jpg';
 import IDOR_Vulerability from '../../assets/img/IDOR/InsecureDirectObjectReference(IDOR)Vulnerability.png';
-import UseFaqSection from '../../Components/UseFaqSection/UseFaqSection.jsx';
-import CourseLanding from '../../Components/Landing/CourseLanding.jsx';
-import GoTop from '../../Components/Go2Top_Btn/Go2Top_Btn';
+import UseFaqSection from '../../../components/UseFaqSection/UseFaqSection.jsx';
+import CourseLanding from '../../../components/Landing/CourseLanding.jsx';
+import GoTop from '../../../components/Go2Top_Btn/Go2Top_Btn';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 

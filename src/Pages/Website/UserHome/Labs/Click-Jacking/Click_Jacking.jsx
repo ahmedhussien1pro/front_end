@@ -1,13 +1,13 @@
 import React from 'react';
-import Header from '../../Header/Header';
-import Footer from '../../Footer/Footer';
-import '../../Components/Topics CSS/topics.css';
+import Header from '../../../components/Header/Header';
+import Footer from '../../../components/Footer/Footer';
+import '../../../components/Topics CSS/topics.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import courseImage from '../../assets/img/Click_Jacking/courseImage.png';
-import UseFaqSection from '../../Components/UseFaqSection/UseFaqSection.jsx';
-import CourseLanding from '../../Components/Landing/CourseLanding.jsx';
-import Go2TopBtn from '../../Components/Go2Top_Btn/Go2Top_Btn.jsx';
+import UseFaqSection from '../../../components/UseFaqSection/UseFaqSection.jsx';
+import CourseLanding from '../../../components/Landing/CourseLanding.jsx';
+import Go2TopBtn from '../../../components/Go2Top_Btn/Go2Top_Btn.jsx';
 import click from '../../assets/img/Click_Jacking/clickjacking.svg';
 export default function Click_Jacking() {
   const { faqSectionRef, handleGoToLab } = UseFaqSection();

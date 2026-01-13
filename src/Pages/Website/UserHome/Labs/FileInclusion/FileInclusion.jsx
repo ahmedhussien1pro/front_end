@@ -1,8 +1,7 @@
 import React from 'react';
-import Header from '../../Header/Header';
+import Header from '../../../components/Header/Header';
+import Footer from '../../../components/Footer/Footer';
 import courseImage from '../../assets/img/File Inclusion/course_image.png';
-import Footer from '../../Footer/Footer';
-import '../../Components/Topics CSS/topics.css';
 import exampleImage1 from '../../assets/img/File Inclusion/image_1.webp';
 import exampleImage2 from '../../assets/img/File Inclusion/image_2.webp';
 import exampleImage3 from '../../assets/img/File Inclusion/image_3.webp';
@@ -10,8 +9,8 @@ import exampleImage4 from '../../assets/img/File Inclusion/image_4.webp';
 import exampleImage5 from '../../assets/img/File Inclusion/image_5.webp';
 import exampleImage6 from '../../assets/img/File Inclusion/image_6.webp';
 import exampleImage7 from '../../assets/img/File Inclusion/image_7.webp';
-import UseFaqSection from '../../Components/UseFaqSection/UseFaqSection.jsx';
-import CourseLanding from '../../Components/Landing/CourseLanding.jsx';
+import UseFaqSection from '../../../components/UseFaqSection/UseFaqSection.jsx';
+import CourseLanding from '../../../components/Landing/CourseLanding.jsx';
 export default function FileInclusion() {
   const { faqSectionRef, handleGoToLab } = UseFaqSection();
   const data = {

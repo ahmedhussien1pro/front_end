@@ -1,17 +1,17 @@
-import React, { useState } from "react";
-import "./Fourth_lab.css";
-import image_1 from "../../../assets/img/practical_lab2/image_1.png";
-import icon from "../../../assets/img/practical_lab2/icon.png";
-import ThemeSwitcher from "../../../Components/ThemeSwitcher/ThemeSwitcher";
-import ShowHint_Btn from "../../../Components/ShowHint_Btn/ShowHint_Btn";
-import GoBackBtn from "../../../Components/GoBack_Btn/GoBack_Btn";
+import React, { useState } from 'react';
+import './Fourth_lab.css';
+import image_1 from '../../../assets/img/practical_lab2/image_1.png';
+import icon from '../../../assets/img/practical_lab2/icon.png';
+import ThemeSwitcher from '../../../../components/ThemeSwitcher/ThemeSwitcher';
+import ShowHint_Btn from '../../../../components/ShowHint_Btn/ShowHint_Btn';
+import GoBackBtn from '../../../../components/GoBack_Btn/GoBack_Btn';
 
 // Helper function to validate email
 const isValidEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
 export default function Robots() {
   const [comments, setComments] = useState([]);
-  const [err, setErr] = useState("");
+  const [err, setErr] = useState('');
   const [success, setSuccess] = useState(false);
 
   const handleSubmit = (e) => {
@@ -21,20 +21,20 @@ export default function Robots() {
     const website = e.target.website.value.trim();
 
     if (!content) {
-      setErr("Please enter a comment.");
+      setErr('Please enter a comment.');
       return;
     }
 
     if (!isValidEmail(email)) {
-      setErr("Please enter a valid email address.");
+      setErr('Please enter a valid email address.');
       return;
     }
 
-    const isJavaScriptLink = website.toLowerCase().startsWith("javascript:");
+    const isJavaScriptLink = website.toLowerCase().startsWith('javascript:');
 
     setComments([...comments, { email, content, website, isJavaScriptLink }]);
     e.target.reset();
-    setErr("");
+    setErr('');
     setSuccess(true);
 
     // Hide success message after 3 seconds
@@ -44,15 +44,15 @@ export default function Robots() {
   return (
     <>
       {/* Start Course Content */}
-      <div className="course-Fourth_lab">
+      <div className='course-Fourth_lab'>
         <GoBackBtn />
         <ShowHint_Btn />
         <ThemeSwitcher />
-        <div className="container-Fourth_lab">
-          <div className="row-practice p-4">
-            <div className="card-Fourth_lab">
-              <img className="robot-image" src={image_1} alt="Robotics" />
-              <div className="card-Fourth_lab">
+        <div className='container-Fourth_lab'>
+          <div className='row-practice p-4'>
+            <div className='card-Fourth_lab'>
+              <img className='robot-image' src={image_1} alt='Robotics' />
+              <div className='card-Fourth_lab'>
                 <h2>Robots in Our Lives</h2>
                 <p>
                   The development of robots has significantly transformed our
@@ -117,55 +117,53 @@ export default function Robots() {
               </div>
               <form onSubmit={handleSubmit}>
                 <textarea
-                  name="content"
-                  id="content"
-                  placeholder="Write Your Comment......"
-                  required
-                ></textarea>
+                  name='content'
+                  id='content'
+                  placeholder='Write Your Comment......'
+                  required></textarea>
                 <input
-                  type="email"
-                  name="email"
-                  placeholder="Write Your Email"
-                  className="form_input"
+                  type='email'
+                  name='email'
+                  placeholder='Write Your Email'
+                  className='form_input'
                   required
                 />
                 <input
-                  type="text"
-                  name="website"
-                  placeholder="Write Your Website"
-                  className="form_input"
+                  type='text'
+                  name='website'
+                  placeholder='Write Your Website'
+                  className='form_input'
                 />
-                <button type="submit" className="button-btn-primary">
+                <button type='submit' className='button-btn-primary'>
                   Submit
                 </button>
-                {err && <span className="error">{err}</span>}
+                {err && <span className='error'>{err}</span>}
                 {success && (
-                  <div className="success-message">
+                  <div className='success-message'>
                     Comment submitted successfully!
                   </div>
                 )}
               </form>
-              <div className="comment-section">
+              <div className='comment-section'>
                 {comments.map((comment, index) => (
-                  <div key={index} className="comment-card">
-                    <div className="comment-header">
-                      <img src={icon} className="icon-lab4" alt="User Icon" />
+                  <div key={index} className='comment-card'>
+                    <div className='comment-header'>
+                      <img src={icon} className='icon-lab4' alt='User Icon' />
                       <a
-                        href={comment.website || "#"}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="name"
+                        href={comment.website || '#'}
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        className='name'
                         onClick={(e) => {
                           if (comment.isJavaScriptLink) {
                             e.preventDefault(); // Prevent navigation
-                            alert("Alert triggered from JavaScript URL!"); // Custom alert
+                            alert('Alert triggered from JavaScript URL!'); // Custom alert
                           }
-                        }}
-                      >
-                        {comment.email || "Anonymous"}
+                        }}>
+                        {comment.email || 'Anonymous'}
                       </a>
                     </div>
-                    <p className="comment-text">{comment.content}</p>
+                    <p className='comment-text'>{comment.content}</p>
                   </div>
                 ))}
               </div>

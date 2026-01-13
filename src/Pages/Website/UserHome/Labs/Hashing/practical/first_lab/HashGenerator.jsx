@@ -9,11 +9,11 @@ import {
   faCopy,
   faCheck,
 } from '@fortawesome/free-solid-svg-icons';
-import ThemeSwitcher from '../../../../Components/ThemeSwitcher/ThemeSwitcher';
+import ThemeSwitcher from '../../../../../components/ThemeSwitcher/ThemeSwitcher';
 // import "./First_Lab.css";
-import GoBackBtn from '../../../../Components/GoBack_Btn/GoBack_Btn';
-import ShowHintBtn from '../../../../Components/ShowHint_Btn/ShowHint_Btn';
-import Go2TopBtn from '../../../../Components/Go2Top_Btn/Go2Top_Btn';
+import GoBackBtn from '../../../../../components/GoBack_Btn/GoBack_Btn';
+import ShowHintBtn from '../../../../../components/ShowHint_Btn/ShowHint_Btn';
+import Go2TopBtn from '../../../../../components/Go2Top_Btn/Go2Top_Btn';
 const HashGenerator = () => {
   const [input, setInput] = useState('');
   const [hashes, setHashes] = useState({

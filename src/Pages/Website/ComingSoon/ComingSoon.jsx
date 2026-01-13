@@ -11,7 +11,7 @@ import {
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import HERO_IMAGE from './In-progress.png';
-import ThemeSwitcher from '../UserHome/Components/ThemeSwitcher/ThemeSwitcher';
+import ThemeSwitcher from '../components/ThemeSwitcher/ThemeSwitcher';
 
 export default function ComingSoon() {
   const SHEET_URL =

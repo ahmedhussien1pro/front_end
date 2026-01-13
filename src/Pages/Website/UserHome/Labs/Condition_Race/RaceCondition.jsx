@@ -1,11 +1,10 @@
 import React from 'react';
-import Header from '../../Header/Header';
+import Header from '../../../components/Header/Header';
+import Footer from '../../../components/Footer/Footer';
 import courseImage from '../../assets/img/Condition_Race/race condition icon.jpg';
-import Footer from '../../Footer/Footer';
-import '../../Components/Topics CSS/topics.css';
-import UseFaqSection from '../../Components/UseFaqSection/UseFaqSection.jsx';
-import CourseLanding from '../../Components/Landing/CourseLanding.jsx';
-import GoTop from '../../Components/Go2Top_Btn/Go2Top_Btn';
+import UseFaqSection from '../../../components/UseFaqSection/UseFaqSection.jsx';
+import CourseLanding from '../../../components/Landing/CourseLanding.jsx';
+import GoTop from '../../../components/Go2Top_Btn/Go2Top_Btn';
 import exampleImage1 from '../../assets/img/Condition_Race/1.png';
 import exampleImage2 from '../../assets/img/Condition_Race/2.png';
 import exampleImage3 from '../../assets/img/Condition_Race/3.png';

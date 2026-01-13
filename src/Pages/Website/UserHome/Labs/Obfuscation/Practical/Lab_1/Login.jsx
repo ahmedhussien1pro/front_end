@@ -1,15 +1,15 @@
-import React, { useState } from "react";
-import "./Login.css";
-import ShowHintBtn from "../../../../Components/ShowHint_Btn/ShowHint_Btn";
-import GoBackBtn from "../../../../Components/GoBack_Btn/GoBack_Btn";
-import Swal from "sweetalert2";
+import React, { useState } from 'react';
+import './Login.css';
+import ShowHintBtn from '../../../../../components/ShowHint_Btn/ShowHint_Btn';
+import GoBackBtn from '../../../../../components/GoBack_Btn/GoBack_Btn';
+import Swal from 'sweetalert2';
 
 export default function Obfuscation_login() {
   const [form, setForm] = useState({
-    username: "",
-    password: "",
+    username: '',
+    password: '',
   });
-  const [err, setErr] = useState("");
+  const [err, setErr] = useState('');
   function handleChange(e) {
     e.preventDefault();
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -17,35 +17,35 @@ export default function Obfuscation_login() {
   async function submitLogin(e) {
     e.preventDefault();
     // setLoading(true);
-    setErr("");
+    setErr('');
     try {
-      if (form.username === "cyberlab" && form.password === "Obfuscation") {
+      if (form.username === 'cyberlab' && form.password === 'Obfuscation') {
         // setRight(`Congratz \n Flag: {0BFU5C4T10N_1S_4RT_4ND_PR0T3CT10N}`);
         Swal.fire({
-          title: "Congratulations!",
+          title: 'Congratulations!',
           text: `Congratz You Solved The Lab`,
-          icon: "success",
-          confirmButtonText: "OK",
+          icon: 'success',
+          confirmButtonText: 'OK',
         });
       } else {
         Swal.fire({
-          title: "Error!",
+          title: 'Error!',
           text: `Wrong Creditentials`,
-          icon: "error",
-          confirmButtonText: "OK",
+          icon: 'error',
+          confirmButtonText: 'OK',
         });
       }
     } catch (error) {
       // setLoading(false);
       if (error.response) {
         if (error.response.status === 401) {
-          setErr("Wrong Email or Password");
+          setErr('Wrong Email or Password');
         } else {
           setErr(error.response.data);
         }
         setErr(error.response.data.message);
       } else {
-        setErr("Network Error");
+        setErr('Network Error');
         console.error(error);
       }
     }
@@ -53,55 +53,55 @@ export default function Obfuscation_login() {
 
   return (
     <>
-      <div className="obu_body">
+      <div className='obu_body'>
         <GoBackBtn />
         <ShowHintBtn
           hintText={
             '<p>click inspect  and try to beautify and Deobfuscate  script use this : </p> <a href="https://filipemgs.github.io/poisonjs/">De-obfuscate</a> <a href="https://beautifier.io/">beautifier.io</a>'
           }
         />
-        <div className="obfuscation_lab_body">
-          <div className="container d-flex justify-content-center">
-            <div className="obu-card">
-              <div className="obu-card_content">
-                <div className="obu-card_title">Login</div>
-                <form className="obu-card_form" onSubmit={submitLogin}>
-                  <div className="obu-card_field">
-                    <label htmlFor="username">Username</label>
-                    <div className="input">
-                      <i className="fa-solid fa-user fa-2x"></i>
+        <div className='obfuscation_lab_body'>
+          <div className='container d-flex justify-content-center'>
+            <div className='obu-card'>
+              <div className='obu-card_content'>
+                <div className='obu-card_title'>Login</div>
+                <form className='obu-card_form' onSubmit={submitLogin}>
+                  <div className='obu-card_field'>
+                    <label htmlFor='username'>Username</label>
+                    <div className='input'>
+                      <i className='fa-solid fa-user fa-2x'></i>
                       <input
-                        type="text"
-                        id="username"
-                        name="username"
-                        placeholder="Username"
+                        type='text'
+                        id='username'
+                        name='username'
+                        placeholder='Username'
                         value={form.username}
                         required
-                        autoComplete="off"
+                        autoComplete='off'
                         onChange={handleChange}
                       />
                     </div>
                   </div>
-                  <div className="obu-card_field">
-                    <label htmlFor="password">Password</label>
-                    <div className="input">
-                      <i className="fa-solid fa-lock fa-2x"></i>
+                  <div className='obu-card_field'>
+                    <label htmlFor='password'>Password</label>
+                    <div className='input'>
+                      <i className='fa-solid fa-lock fa-2x'></i>
                       <input
-                        type="password"
-                        id="password"
-                        name="password"
-                        placeholder="Password"
+                        type='password'
+                        id='password'
+                        name='password'
+                        placeholder='Password'
                         value={form.password}
                         required
-                        autoComplete="off"
+                        autoComplete='off'
                         onChange={handleChange}
                       />
                     </div>
                   </div>
-                  <div className="obu-card_field">
-                    <button type="submit">Login</button>
+                  <div className='obu-card_field'>
+                    <button type='submit'>Login</button>
                   </div>
-                  {err !== "" && <span className="error">{err}</span>}
+                  {err !== '' && <span className='error'>{err}</span>}
                 </form>
               </div>
             </div>

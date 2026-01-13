@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react';
-import Preloader from './Preloader/Preloader';
-import Header from './Header/HeaderHome';
-import CountsSection from './CountsSection/CountsSection';
-import Services from './Services/Services';
-import Platform from './Platform/Platform';
-import PopularCoursesSection from './PopularCoursesSection/PopularCoursesSection';
-import Footer from './Footer/FooterHome';
-import HomeLanding from './HomeLanding/HomeLanding';
-import TestimonialsSection from './TestimonialsSection/TestimonialsSection';
-import Go2TopBtn from './UserHome/Components/Go2Top_Btn/Go2Top_Btn';
+import Preloader from './components/Preloader/Preloader';
+import Header from './components/Header/Header';
+import CountsSection from './components/CountsSection/CountsSection';
+import Services from './components/Services/Services';
+import Platform from './components/Platform/Platform';
+// import PopularCoursesSection from './PopularCoursesSection/PopularCoursesSection';
+import Footer from './components/Footer/Footer';
+import HomeLanding from './components/HomeLanding/HomeLanding';
+import TestimonialsSection from './components/TestimonialsSection/TestimonialsSection';
+import Go2TopBtn from './components/Go2Top_Btn/Go2Top_Btn';
 export default function HomePage() {
   const [loading, setLoading] = useState(true);
 

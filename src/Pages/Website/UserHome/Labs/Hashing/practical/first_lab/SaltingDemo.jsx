@@ -9,11 +9,11 @@ import {
   faCopy,
   faCheck,
 } from '@fortawesome/free-solid-svg-icons';
-import GoBackBtn from '../../../../Components/GoBack_Btn/GoBack_Btn';
-import ShowHintBtn from '../../../../Components/ShowHint_Btn/ShowHint_Btn';
-import Go2TopBtn from '../../../../Components/Go2Top_Btn/Go2Top_Btn';
+import GoBackBtn from '../../../../../components/GoBack_Btn/GoBack_Btn';
+import ShowHintBtn from '../../../../../components/ShowHint_Btn/ShowHint_Btn';
+import Go2TopBtn from '../../../../../components/Go2Top_Btn/Go2Top_Btn';
 // import "./First_Lab.css";
-import ThemeSwitcher from '../../../../Components/ThemeSwitcher/ThemeSwitcher';
+import ThemeSwitcher from '../../../../../components/ThemeSwitcher/ThemeSwitcher';
 const SaltingDemo = () => {
   const [input, setInput] = useState('');
   const [salt, setSalt] = useState('');
@@ -133,13 +133,13 @@ const SaltingDemo = () => {
                         <li className='list-group-item secondary-bg primary-text'>
                           <strong>Salted Hash:</strong>{' '}
                           <code>
-                            {SHA256('password123' + 'mysecret').toString()}
+                            {SHA256('password123', '+ ', 'mysecret').toString()}
                           </code>
                           <button
                             className='btn btn-sm btn-outline-secondary ms-4'
                             onClick={() =>
                               copyToClipboard(
-                                SHA256('password123' + 'mysecret').toString()
+                                `SHA256('password123' + 'mysecret').toString()`
                               )
                             }>
                             <FontAwesomeIcon

@@ -1,11 +1,10 @@
 import React from 'react';
-import Header from '../../Header/Header';
+import Header from '../../../components/Header/Header';
+import Footer from '../../../components/Footer/Footer';
+import UseFaqSection from '../../../components/UseFaqSection/UseFaqSection.jsx';
+import CourseLanding from '../../../components/Landing/CourseLanding.jsx';
+import GoTop from '../../../components/Go2Top_Btn/Go2Top_Btn';
 import courseImage from '../../assets/img/Insecure_Deserialization/Icon_Insecure.png';
-import Footer from '../../Footer/Footer';
-import '../../Components/Topics CSS/topics.css';
-import UseFaqSection from '../../Components/UseFaqSection/UseFaqSection.jsx';
-import CourseLanding from '../../Components/Landing/CourseLanding.jsx';
-import GoTop from '../../Components/Go2Top_Btn/Go2Top_Btn';
 import exampleImage1 from '../../assets/img/Insecure_Deserialization/1.jpg';
 import exampleImage2 from '../../assets/img/Insecure_Deserialization/2.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

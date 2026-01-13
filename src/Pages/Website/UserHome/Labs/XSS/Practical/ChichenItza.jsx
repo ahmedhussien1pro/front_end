@@ -1,47 +1,47 @@
-import React, { useEffect, useState } from "react";
-import "./Tours.css";
-import Header from "../../../Header/Header";
-import chichenItzaImage from "../../../assets/img/seven_lab/Picture4.jpg";
-import Alert from "./Alert";
+import React, { useEffect, useState } from 'react';
+import './Tours.css';
+import Header from '../../../../components/Header/Header';
+import chichenItzaImage from '../../../assets/img/seven_lab/Picture4.jpg';
+import Alert from './Alert';
 
 export default function ChichenItza() {
-  const [selectedStore, setSelectedStore] = useState("");
-  const [countries] = useState(["Mexico", "USA", "Canada"]);
+  const [selectedStore, setSelectedStore] = useState('');
+  const [countries] = useState(['Mexico', 'USA', 'Canada']);
   const [showCountries, setShowCountries] = useState(false);
-  const [alertMessage, setAlertMessage] = useState("");
+  const [alertMessage, setAlertMessage] = useState('');
   const [showAlert, setShowAlert] = useState(false);
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
-    const storeId = params.get("storeId");
+    const storeId = params.get('storeId');
 
     if (storeId) {
       const alertMessageMatch = storeId.match(/alert\("([^"]+)"\)/);
       const customAlertMessage = alertMessageMatch
         ? alertMessageMatch[1]
-        : "No alert message found";
+        : 'No alert message found';
 
       setAlertMessage(customAlertMessage);
       setShowAlert(true);
-      setSelectedStore(storeId.split("</select>")[0].trim());
+      setSelectedStore(storeId.split('</select>')[0].trim());
       setShowCountries(true);
     }
   }, []);
 
   const handleCloseAlert = () => {
     setShowAlert(false);
-    setAlertMessage("");
+    setAlertMessage('');
   };
 
   return (
     <>
       <Header />
-      <div className="tour-container">
+      <div className='tour-container'>
         <h1>The Pyramid of Chichén Itzá</h1>
 
-        <img src={chichenItzaImage} alt="Chichén Itzá" className="tour-image" />
+        <img src={chichenItzaImage} alt='Chichén Itzá' className='tour-image' />
 
-        <p className="tour-description">
+        <p className='tour-description'>
           Step back in time and explore the majestic Pyramid of Chichén Itzá,
           one of the New Seven Wonders of the World. Located in the Yucatán
           Peninsula, this ancient site was once a thriving city of the Maya
@@ -71,18 +71,17 @@ export default function ChichenItza() {
           most advanced civilizations of the ancient world.
         </p>
 
-        <div className="reservation-section">
+        <div className='reservation-section'>
           <h2>Reserve Your Journey</h2>
-          <label htmlFor="country-select">
+          <label htmlFor='country-select'>
             Select your country of departure:
           </label>
           <select
-            id="country-select"
-            className="country-select"
+            id='country-select'
+            className='country-select'
             value={selectedStore}
-            onChange={(e) => setSelectedStore(e.target.value)}
-          >
-            <option value="" disabled>
+            onChange={(e) => setSelectedStore(e.target.value)}>
+            <option value='' disabled>
               -- Select a Country --
             </option>
             {showCountries ? (
@@ -95,11 +94,11 @@ export default function ChichenItza() {
               ))
             )}
           </select>
-          <button className="reservation-button">Reserve Now</button>
+          <button className='reservation-button'>Reserve Now</button>
         </div>
 
         {showCountries && (
-          <div className="available-countries">
+          <div className='available-countries'>
             {countries.map((country) => (
               <option key={country} value={country}>
                 {country}

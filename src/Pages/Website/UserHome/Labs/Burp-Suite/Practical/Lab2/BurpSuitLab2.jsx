@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './BurpSuitLab2.css';
-import GoBack from '../../../../Components/GoBack_Btn/GoBack_Btn';
-import ShowHint from '../../../../Components/ShowHint_Btn/ShowHint_Btn';
-import ThemeSwitcher from '../../../../Components/ThemeSwitcher/ThemeSwitcher';
+import GoBack from '../../../../../components/GoBack_Btn/GoBack_Btn';
+import ShowHint from '../../../../../components/ShowHint_Btn/ShowHint_Btn';
+import ThemeSwitcher from '../../../../../components/ThemeSwitcher/ThemeSwitcher';
 
 export default function BurpSuitLab2() {
   const hintMessage = `<p>Use Burp Suite Intruder with username admin and the provided <mark>WordList </mark> to brute-force the password and identify the correct one.</p>`;

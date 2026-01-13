@@ -1,13 +1,13 @@
 import React from 'react';
-import Header from '../../Header/Header';
+import Header from '../../../components/Header/Header';
+import Footer from '../../../components/Footer/Footer';
 import mcqData from './MCQCards';
 import labImg from '../../assets/img/DigitalForensics/Email.jpg';
-import Footer from '../../Footer/Footer';
-import Banner from '../../Components/Banner/Banner';
-import { Card } from '../../Components/Card/Card';
-import Go2TopBtn from '../../Components/Go2Top_Btn/Go2Top_Btn';
-import LandingPractice from '../../Components/Landing/PracticeLanding';
-import PracticeTitle from '../../Components/PracticeTitle/PracticeTitle';
+import Banner from '../../../components/Banner/Banner';
+import { Card } from '../../../components/Card/Card';
+import Go2TopBtn from '../../../components/Go2Top_Btn/Go2Top_Btn';
+import LandingPractice from '../../../components/Landing/PracticeLanding';
+import PracticeTitle from '../../../components/PracticeTitle/PracticeTitle';
 export default function Digital_Forensics_labs() {
   const Labs = [
     {

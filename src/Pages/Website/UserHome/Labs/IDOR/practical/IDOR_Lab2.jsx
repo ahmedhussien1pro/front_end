@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
-import "./IDOR_Lab2.css";
-import GoBack from "../../../Components/GoBack_Btn/GoBack_Btn";
-import ShowHint from "../../../Components/ShowHint_Btn/ShowHint_Btn";
-import ThemeSwitcher from "../../../Components/ThemeSwitcher/ThemeSwitcher";
+import React, { useState, useEffect } from 'react';
+import './IDOR_Lab2.css';
+import GoBack from '../../../../components/GoBack_Btn/GoBack_Btn';
+import ShowHint from '../../../../components/ShowHint_Btn/ShowHint_Btn';
+import ThemeSwitcher from '../../../../components/ThemeSwitcher/ThemeSwitcher';
 
 const IDOR_Lab2 = () => {
   const hintMessage = `
@@ -35,25 +35,25 @@ const IDOR_Lab2 = () => {
           <p>The purchase price for 1 ticket is $10, but we can manipulate this price using <span class="highlight">Burpsuite</span>.</p>
       </div>
   `;
-  const [amount, setAmount] = useState("");
-  const [message, setMessage] = useState("");
+  const [amount, setAmount] = useState('');
+  const [message, setMessage] = useState('');
   const [accountBalance, setAccountBalance] = useState(0);
   const ticketPrice = 10;
   useEffect(() => {
     const fetchAccountBalance = async () => {
       try {
         const response = await fetch(
-          "https://digitopia-project-backend.vercel.app/api/IDORSlab2"
+          'https://digitopia-project-backend.vercel.app/api/IDORSlab2'
         );
         if (response.ok) {
           const data = await response.json();
           setAccountBalance(data.balance);
-          console.log("Fetched account balance:", data);
+          console.log('Fetched account balance:', data);
         } else {
-          setMessage("Failed to fetch account balance.");
+          setMessage('Failed to fetch account balance.');
         }
       } catch (error) {
-        setMessage("An error occurred while fetching the account balance.");
+        setMessage('An error occurred while fetching the account balance.');
       }
     };
 
@@ -66,17 +66,17 @@ const IDOR_Lab2 = () => {
     const numOfTickets = Number(amount);
 
     if (numOfTickets <= 0) {
-      setMessage("The number of tickets must be greater than 0.");
+      setMessage('The number of tickets must be greater than 0.');
       return;
     }
 
     try {
       const response = await fetch(
-        "https://digitopia-project-backend.vercel.app/api/IDORSlab2",
+        'https://digitopia-project-backend.vercel.app/api/IDORSlab2',
         {
-          method: "POST",
+          method: 'POST',
           headers: {
-            "Content-Type": "application/json",
+            'Content-Type': 'application/json',
           },
           body: JSON.stringify({ ticketPrice, numOfTickets }),
         }
@@ -86,23 +86,23 @@ const IDOR_Lab2 = () => {
         const result = await response.json();
         setAccountBalance(result.balance);
         setMessage(result.message);
-        console.log("API Response after purchase:", result);
+        console.log('API Response after purchase:', result);
       } else {
-        setMessage("Failed to process the purchase. Please try again.");
+        setMessage('Failed to process the purchase. Please try again.');
       }
     } catch (error) {
-      setMessage("An error occurred. Please try again.");
+      setMessage('An error occurred. Please try again.');
     }
   };
 
   return (
-    <div style={{ backgroundColor: "var(--primary-bg)", minHeight: "100vh" }}>
+    <div style={{ backgroundColor: 'var(--primary-bg)', minHeight: '100vh' }}>
       <GoBack />
       <ShowHint hintText={hintMessage} />
       <ThemeSwitcher />
-      <div className="idor-wrapper2">
-        <div className="unique-ticket-container">
-          <div className="unique-ticket-header">
+      <div className='idor-wrapper2'>
+        <div className='unique-ticket-container'>
+          <div className='unique-ticket-header'>
             <h1>Buy Tickets</h1>
             <p>Price per ticket: ${ticketPrice}</p>
             <p>Amount of money in your account: ${accountBalance}</p>
@@ -111,30 +111,29 @@ const IDOR_Lab2 = () => {
           {message && (
             <div
               className={`unique-ticket-alert ${
-                message.startsWith("Tickets booked successfully")
-                  ? "success"
-                  : "error"
-              }`}
-            >
+                message.startsWith('Tickets booked successfully')
+                  ? 'success'
+                  : 'error'
+              }`}>
               {message}
             </div>
           )}
 
-          <form onSubmit={handleSubmit} className="unique-ticket-form">
-            <label htmlFor="amount" className="unique-ticket-label">
+          <form onSubmit={handleSubmit} className='unique-ticket-form'>
+            <label htmlFor='amount' className='unique-ticket-label'>
               Number of Tickets
             </label>
             <input
-              type="number"
-              id="amount"
-              className="unique-ticket-input"
+              type='number'
+              id='amount'
+              className='unique-ticket-input'
               value={amount}
               onChange={(e) => setAmount(e.target.value)}
-              placeholder="Enter ticket amount"
-              min="0"
+              placeholder='Enter ticket amount'
+              min='0'
               required
             />
-            <button type="submit" className="unique-ticket-btn">
+            <button type='submit' className='unique-ticket-btn'>
               Buy
             </button>
           </form>

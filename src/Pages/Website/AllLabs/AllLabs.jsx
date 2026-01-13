@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import Header from '../Header/HeaderHome';
+import Header from '../components/Header/Header';
 import Labs from './Labs';
-import Footer from '../../Website/UserHome/Footer/Footer';
-import Go2TopBtn from '../UserHome/Components/Go2Top_Btn/Go2Top_Btn';
-import Preloader from '../Preloader/Preloader';
+import Footer from '../components/Footer/Footer';
+import Go2TopBtn from '../components/Go2Top_Btn/Go2Top_Btn';
+import Preloader from '../components/Preloader/Preloader';
 export default function HomePage() {
   const [loading, setLoading] = useState(true);
 

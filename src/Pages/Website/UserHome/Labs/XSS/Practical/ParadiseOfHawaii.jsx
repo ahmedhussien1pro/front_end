@@ -1,51 +1,51 @@
-import React, { useEffect, useState } from "react";
-import "./Tours.css";
-import hawaiiImage from "../../../assets/img/seven_lab/Picture6.jpg";
-import Header from "../../../Header/Header";
-import Alert from "./Alert";
+import React, { useEffect, useState } from 'react';
+import './Tours.css';
+import hawaiiImage from '../../../assets/img/seven_lab/Picture6.jpg';
+import Header from '../../../../components/Header/Header';
+import Alert from './Alert';
 
 export default function ParadiseOfHawaii() {
-  const [selectedCountry, setSelectedCountry] = useState("");
-  const [countries] = useState(["Mexico", "USA", "Canada"]);
+  const [selectedCountry, setSelectedCountry] = useState('');
+  const [countries] = useState(['Mexico', 'USA', 'Canada']);
   const [showCountries, setShowCountries] = useState(false);
   const [showAlert, setShowAlert] = useState(false);
-  const [alertMessage, setAlertMessage] = useState("");
+  const [alertMessage, setAlertMessage] = useState('');
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
-    const storeId = params.get("storeId");
+    const storeId = params.get('storeId');
 
     if (storeId) {
       const alertMessageMatch = storeId.match(/alert\("([^"]+)"\)/);
       const customAlertMessage = alertMessageMatch
         ? alertMessageMatch[1]
-        : "No alert message found";
+        : 'No alert message found';
 
       setAlertMessage(customAlertMessage);
       setShowAlert(true);
-      setSelectedCountry(storeId.split("</select>")[0].trim());
+      setSelectedCountry(storeId.split('</select>')[0].trim());
       setShowCountries(true);
     }
   }, []);
 
   const handleCloseAlert = () => {
     setShowAlert(false);
-    setAlertMessage("");
+    setAlertMessage('');
   };
 
   return (
     <>
       <Header />
-      <div className="tour-container">
+      <div className='tour-container'>
         <h1>Paradise of Hawaii: A Tropical Dream</h1>
 
         <img
           src={hawaiiImage}
-          alt="Paradise of Hawaii"
-          className="tour-image"
+          alt='Paradise of Hawaii'
+          className='tour-image'
         />
 
-        <p className="tour-description">
+        <p className='tour-description'>
           Hawaii, a tropical haven in the middle of the Pacific Ocean, offers
           some of the most breathtaking scenery in the world. With its rugged
           green mountains, stunning beaches, and vibrant ecosystems, Hawaii is
@@ -80,25 +80,24 @@ export default function ParadiseOfHawaii() {
           unforgettable experiences.
         </p>
 
-        <div className="reservation-section">
+        <div className='reservation-section'>
           <h2>Reserve Your Journey</h2>
-          <label htmlFor="country-select">
+          <label htmlFor='country-select'>
             Select your country of departure:
           </label>
           <select
-            id="country-select"
-            className="country-select"
+            id='country-select'
+            className='country-select'
             value={selectedCountry}
             onChange={(e) => {
               setSelectedCountry(e.target.value);
               if (!e.target.value) {
                 setShowCountries(true);
-                setAlertMessage("Please select a country before reserving.");
+                setAlertMessage('Please select a country before reserving.');
                 setShowAlert(true);
               }
-            }}
-          >
-            <option value="" disabled>
+            }}>
+            <option value='' disabled>
               -- Select a Country --
             </option>
             {showCountries ? (
@@ -111,11 +110,11 @@ export default function ParadiseOfHawaii() {
               ))
             )}
           </select>
-          <button className="reservation-button">Reserve Now</button>
+          <button className='reservation-button'>Reserve Now</button>
         </div>
 
         {showCountries && (
-          <div className="available-countries">
+          <div className='available-countries'>
             {countries.map((country) => (
               <option key={country} value={country}>
                 {country}

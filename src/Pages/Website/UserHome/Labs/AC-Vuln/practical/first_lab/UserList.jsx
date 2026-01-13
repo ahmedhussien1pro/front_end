@@ -1,14 +1,14 @@
-import React, { useState, useEffect } from "react";
-import Cookie from "cookie-universal";
-import "../Lab_Style.css";
-import ThemeSwitcher from "../../../../Components/ThemeSwitcher/ThemeSwitcher";
+import React, { useState, useEffect } from 'react';
+import Cookie from 'cookie-universal';
+import '../Lab_Style.css';
+import ThemeSwitcher from '../../../../../components/ThemeSwitcher/ThemeSwitcher';
 export default function UserList() {
   const [users, setUsers] = useState([]);
-  const [token, setToken] = useState("");
+  const [token, setToken] = useState('');
 
   useEffect(() => {
     const cookie = Cookie();
-    const retrievedToken = cookie.get("CuberWeb");
+    const retrievedToken = cookie.get('CuberWeb');
     setToken(retrievedToken);
   }, []);
 
@@ -16,9 +16,9 @@ export default function UserList() {
     const fetchUsers = async () => {
       try {
         const response = await fetch(
-          "https://digitopia-project-backend.vercel.app/api/vulnUsers",
+          'https://digitopia-project-backend.vercel.app/api/vulnUsers',
           {
-            method: "GET",
+            method: 'GET',
             headers: {
               Authorization: `Bearer ${token}`,
             },
@@ -28,10 +28,10 @@ export default function UserList() {
           const data = await response.json();
           setUsers(data);
         } else {
-          console.error("Failed to fetch users.");
+          console.error('Failed to fetch users.');
         }
       } catch (error) {
-        console.error("Error fetching users:", error);
+        console.error('Error fetching users:', error);
       }
     };
 
@@ -45,7 +45,7 @@ export default function UserList() {
       const response = await fetch(
         `https://digitopia-project-backend.vercel.app/api/vulnUsers/${id}`,
         {
-          method: "DELETE",
+          method: 'DELETE',
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -55,26 +55,25 @@ export default function UserList() {
       if (response.ok) {
         setUsers(users.filter((user) => user.id !== id));
       } else {
-        console.error("Failed to delete user.");
+        console.error('Failed to delete user.');
       }
     } catch (error) {
-      console.error("Error deleting user:", error);
+      console.error('Error deleting user:', error);
     }
   };
 
   return (
     <>
       <ThemeSwitcher />
-      <div className="Custom__body--bg m-0 p-2 " style={{ height: "100vh" }}>
-        <div className="users-container row mx-auto  justify-content-center align-items-center text-center">
-          <h2 className=" main-color mb-3 pb-2">Users</h2>
+      <div className='Custom__body--bg m-0 p-2 ' style={{ height: '100vh' }}>
+        <div className='users-container row mx-auto  justify-content-center align-items-center text-center'>
+          <h2 className=' main-color mb-3 pb-2'>Users</h2>
           {users.map((user) => (
-            <div className="user-item" key={user.id}>
-              <h2 className="user-name ">{user.name}</h2>
+            <div className='user-item' key={user.id}>
+              <h2 className='user-name '>{user.name}</h2>
               <button
-                className="delete-btn"
-                onClick={() => deleteUser(user.id)}
-              >
+                className='delete-btn'
+                onClick={() => deleteUser(user.id)}>
                 Delete
               </button>
             </div>

@@ -1,11 +1,11 @@
 import React from 'react';
-import Header from '../../Header/Header';
+import Header from '../../../components/Header/Header';
+import Footer from '../../../components/Footer/Footer';
 import labImg from '../../assets/img/ACV/lab.jpeg';
-import Footer from '../../Footer/Footer';
-import { Card } from '../../Components/Card/Card';
-import Go2TopBtn from '../../Components/Go2Top_Btn/Go2Top_Btn';
-import LandingPractice from '../../Components/Landing/PracticeLanding';
-import PracticeTitle from '../../Components/PracticeTitle/PracticeTitle';
+import { Card } from '../../../components/Card/Card';
+import Go2TopBtn from '../../../components/Go2Top_Btn/Go2Top_Btn';
+import LandingPractice from '../../../components/Landing/PracticeLanding';
+import PracticeTitle from '../../../components/PracticeTitle/PracticeTitle';
 export default function Click_Jacking_Labs() {
   const Labs = [
     {

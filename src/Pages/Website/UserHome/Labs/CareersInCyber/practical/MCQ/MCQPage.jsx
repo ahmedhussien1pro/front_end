@@ -1,13 +1,13 @@
-import { useParams } from "react-router-dom";
-import { useEffect, useState } from "react";
-import MCQQuiz from "../../../../Components/MCQ_Form/MCQQuiz";
-import DigitalForensicsExaminer from "../MCQData/DigitalForensicsExaminer.json";
-import IncidentResponder from "../MCQData/IncidentResponder.json";
-import MalwareAnalyst from "../MCQData/MalwareAnalyst.json";
-import PenetrationTester from "../MCQData/PenetrationTester.json";
-import RedTeamer from "../MCQData/RedTeamer.json";
-import SecurityAnalyst from "../MCQData/SecurityAnalyst.json";
-import SecurityEngineer from "../MCQData/SecurityEngineer.json";
+import { useParams } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import MCQQuiz from '../../../../../components/MCQ_Form/MCQQuiz';
+import DigitalForensicsExaminer from '../MCQData/DigitalForensicsExaminer.json';
+import IncidentResponder from '../MCQData/IncidentResponder.json';
+import MalwareAnalyst from '../MCQData/MalwareAnalyst.json';
+import PenetrationTester from '../MCQData/PenetrationTester.json';
+import RedTeamer from '../MCQData/RedTeamer.json';
+import SecurityAnalyst from '../MCQData/SecurityAnalyst.json';
+import SecurityEngineer from '../MCQData/SecurityEngineer.json';
 
 const MCQDataMap = {
   Digital_Forensics_Examiner: DigitalForensicsExaminer,
@@ -22,19 +22,19 @@ const MCQDataMap = {
 export default function MCQPage() {
   const { category } = useParams();
 
-  const formattedCategory = category?.replace(/\s+/g, "_");
+  const formattedCategory = category?.replace(/\s+/g, '_');
 
   const [MCQData, setMCQData] = useState(null);
 
   useEffect(() => {
-    console.log("Available categories:", Object.keys(MCQDataMap));
-    console.log("Received category:", category);
-    console.log("Formatted category:", formattedCategory);
+    console.log('Available categories:', Object.keys(MCQDataMap));
+    console.log('Received category:', category);
+    console.log('Formatted category:', formattedCategory);
 
     if (formattedCategory && MCQDataMap[formattedCategory]) {
       setMCQData(MCQDataMap[formattedCategory]);
     } else {
-      console.error("Category not found in JSON:", formattedCategory);
+      console.error('Category not found in JSON:', formattedCategory);
     }
   }, [formattedCategory, category]);
 

@@ -4,11 +4,11 @@ import CrackerImage from '../../../../assets/img/Hashing/Cracker.jpg';
 import ComparatorImage from '../../../../assets/img/Hashing/Comparator.jpg';
 import GeneratorImage from '../../../../assets/img/Hashing/Generator.jpg';
 import SaltingImage from '../../../../assets/img/Hashing/Salting.jpg';
-import { Card } from '../../../../Components/Card/Card';
-import GoBackBtn from '../../../../Components/GoBack_Btn/GoBack_Btn';
-import ShowHintBtn from '../../../../Components/ShowHint_Btn/ShowHint_Btn';
-import Go2TopBtn from '../../../../Components/Go2Top_Btn/Go2Top_Btn';
-import ThemeSwitcher from '../../../../Components/ThemeSwitcher/ThemeSwitcher';
+import { Card } from '../../../../../components/Card/Card';
+import GoBackBtn from '../../../../../components/GoBack_Btn/GoBack_Btn';
+import ShowHintBtn from '../../../../../components/ShowHint_Btn/ShowHint_Btn';
+import Go2TopBtn from '../../../../../components/Go2Top_Btn/Go2Top_Btn';
+import ThemeSwitcher from '../../../../../components/ThemeSwitcher/ThemeSwitcher';
 const HashingLab = () => {
   const hintMessage = `
     <ul style="text-align: left; font-size: 16px; line-height: 1.8;">

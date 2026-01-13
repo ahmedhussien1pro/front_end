@@ -1,6 +1,6 @@
-import MCQQuiz from "../../../../Components/MCQ_Form/MCQQuiz";
-import Data from "./Ob_Data.json";
-import "./Ob_quiz.css";
+import MCQQuiz from '../../../../../components/MCQ_Form/MCQQuiz';
+import Data from './Ob_Data.json';
+import './Ob_quiz.css';
 
 export default function Ob_Second_Lab() {
   return (

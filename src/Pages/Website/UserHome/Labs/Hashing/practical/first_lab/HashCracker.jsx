@@ -11,10 +11,10 @@ import {
   faPlus,
 } from '@fortawesome/free-solid-svg-icons';
 // import "./First_Lab.css";
-import GoBackBtn from '../../../../Components/GoBack_Btn/GoBack_Btn';
-import ShowHintBtn from '../../../../Components/ShowHint_Btn/ShowHint_Btn';
-import Go2TopBtn from '../../../../Components/Go2Top_Btn/Go2Top_Btn';
-import ThemeSwitcher from '../../../../Components/ThemeSwitcher/ThemeSwitcher';
+import GoBackBtn from '../../../../../components/GoBack_Btn/GoBack_Btn';
+import ShowHintBtn from '../../../../../components/ShowHint_Btn/ShowHint_Btn';
+import Go2TopBtn from '../../../../../components/Go2Top_Btn/Go2Top_Btn';
+import ThemeSwitcher from '../../../../../components/ThemeSwitcher/ThemeSwitcher';
 const HashCracker = () => {
   const [hash, setHash] = useState('');
   const [result, setResult] = useState('');

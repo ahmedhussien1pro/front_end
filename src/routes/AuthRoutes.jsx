@@ -1,15 +1,15 @@
 import { Route } from 'react-router-dom';
 import UserHome from '../Pages/Website/UserHome/UserHome.jsx';
-import ContentCreatorDashboard from '../Components/Dashboards/ContentCreator/ContentCreator.jsx';
-import ContentPreview from '../Components/Dashboards/ContentCreator/PreviewPage/ContentPreview.jsx';
-import LabsPreview from '../Components/Dashboards/ContentCreator/PreviewPage/LabsPagePreview';
-import AddContent from '../Components/Dashboards/ContentCreator/EditorPage/AddContent.jsx';
-import AddCourse from '../Components/Dashboards/ContentCreator/EditorPage/AddCourse.jsx';
-import AddLab from '../Components/Dashboards/ContentCreator/EditorPage/AddLab.jsx';
-import DraftPage from '../Components/Dashboards/ContentCreator/DraftsPage/DraftsPage.jsx';
+import ContentCreatorDashboard from '../Pages/Dashboards/ContentCreator/ContentCreator.jsx';
+import ContentPreview from '../Pages/Dashboards/ContentCreator/PreviewPage/ContentPreview.jsx';
+import LabsPreview from '../Pages/Dashboards/ContentCreator/PreviewPage/LabsPagePreview';
+import AddContent from '../Pages/Dashboards/ContentCreator/EditorPage/AddContent.jsx';
+import AddCourse from '../Pages/Dashboards/ContentCreator/EditorPage/AddCourse.jsx';
+import AddLab from '../Pages/Dashboards/ContentCreator/EditorPage/AddLab.jsx';
+import DraftPage from '../Pages/Dashboards/ContentCreator/DraftsPage/DraftsPage.jsx';
 
-import TraineeDashboard from '../Components/Dashboards/Trainee/TraineeDashboard.jsx';
-import Profile from '../Components/Dashboards/Profile/UserProfile.jsx';
+import TraineeDashboard from '../Pages/Dashboards/Trainee/TraineeDashboard.jsx';
+import Profile from '../Pages/Dashboards/Profile/UserProfile.jsx';
 import LearningPaths from '../Pages/Website/Paths/Paths.jsx';
 import OurPaths from '../Pages/Website/CareerPaths/CareerPaths.jsx';
 import AllLabs from '../Pages/Website/AllLabs/AllLabs.jsx';

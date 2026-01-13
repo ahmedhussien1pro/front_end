@@ -1,12 +1,12 @@
 import React from 'react';
-import Header from '../../Header/Header';
+import Header from '../../../components/Header/Header';
+import Footer from '../../../components/Footer/Footer';
 import courseImage from '../../assets/img/JWT attacks/course_image.png';
-import Footer from '../../Footer/Footer';
-import '../../Components/Topics CSS/topics.css';
+import '../../../components/Topics CSS/topics.css';
 import exampleImage1 from '../../assets/img/JWT attacks/image_1.webp';
 import exampleImage2 from '../../assets/img/JWT attacks/image_2.webp';
-import UseFaqSection from '../../Components/UseFaqSection/UseFaqSection.jsx';
-import CourseLanding from '../../Components/Landing/CourseLanding.jsx';
+import UseFaqSection from '../../../components/UseFaqSection/UseFaqSection.jsx';
+import CourseLanding from '../../../components/Landing/CourseLanding.jsx';
 export default function JWTAttacks() {
   const { faqSectionRef, handleGoToLab } = UseFaqSection();
   const data = {

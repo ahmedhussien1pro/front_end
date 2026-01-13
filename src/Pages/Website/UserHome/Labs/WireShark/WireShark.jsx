@@ -1,8 +1,7 @@
 import React from 'react';
-import '../../Components/Topics CSS/topics.css';
-import Header from '../../Header/Header';
+import Header from '../../../components/Header/Header';
+import Footer from '../../../components/Footer/Footer';
 import courseImage from '../../assets/img/wireshark/course_image.png';
-import Footer from '../../Footer/Footer';
 import exampleImage1 from '../../assets/img/wireshark/course_image.png';
 import exampleImage2 from '../../assets/img/wireshark/1.png';
 import exampleImage3 from '../../assets/img/wireshark/3.png';
@@ -33,8 +32,8 @@ import exampleImage27 from '../../assets/img/wireshark/27.png';
 import exampleImage28 from '../../assets/img/wireshark/28.png';
 import exampleImage29 from '../../assets/img/wireshark/29.png';
 import exampleImage30 from '../../assets/img/wireshark/30.png';
-import UseFaqSection from '../../Components/UseFaqSection/UseFaqSection.jsx';
-import CourseLanding from '../../Components/Landing/CourseLanding.jsx';
+import UseFaqSection from '../../../components/UseFaqSection/UseFaqSection.jsx';
+import CourseLanding from '../../../components/Landing/CourseLanding.jsx';
 
 export default function WireShark() {
   const { faqSectionRef, handleGoToLab } = UseFaqSection();

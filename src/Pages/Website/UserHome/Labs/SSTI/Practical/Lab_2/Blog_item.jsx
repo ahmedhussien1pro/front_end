@@ -1,20 +1,20 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
-import "./Blog_item.css";
-import image_1 from "../../../../assets/img/practical_lab2/image_1.png";
-import icon from "../../../../assets/img/practical_lab2/icon.png";
-import Footer from "../../../../Footer/Footer";
-import GoBackBtn from "../../../../Components/GoBack_Btn/GoBack_Btn";
-import ShowHint from "../../../../Components/ShowHint_Btn/ShowHint_Btn";
-import ThemeSwitcher from "../../../../Components/ThemeSwitcher/ThemeSwitcher";
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import './Blog_item.css';
+import image_1 from '../../../../assets/img/practical_lab2/image_1.png';
+import icon from '../../../../assets/img/practical_lab2/icon.png';
+import Footer from '../../../../../components/Footer/Footer';
+import GoBackBtn from '../../../../../components/GoBack_Btn/GoBack_Btn';
+import ShowHint from '../../../../../components/ShowHint_Btn/ShowHint_Btn';
+import ThemeSwitcher from '../../../../../components/ThemeSwitcher/ThemeSwitcher';
 
 export default function BlogItem() {
-  const [resetmessage, setResetMessage] = useState("");
-  const [form, setForm] = useState({ name: "", content: "" });
+  const [resetmessage, setResetMessage] = useState('');
+  const [form, setForm] = useState({ name: '', content: '' });
   const [comments, setComments] = useState([]);
-  const [err, setErr] = useState("");
+  const [err, setErr] = useState('');
   const [loading, setLoading] = useState(false);
-  const [html, setHtml] = useState("");
+  const [html, setHtml] = useState('');
   const hintMessage = `
     <div style={{ textAlign: "left", fontSize: "1rem", lineHeight: "1.5", color: "#333" }}>
       <p>Enter the following into the comment box:</p>
@@ -33,7 +33,7 @@ export default function BlogItem() {
     setLoading(true);
     try {
       const response = await axios.post(
-        "https://digitopia-project-backend.vercel.app/api/SSTI1Comments",
+        'https://digitopia-project-backend.vercel.app/api/SSTI1Comments',
         {
           comment,
           name,
@@ -43,7 +43,7 @@ export default function BlogItem() {
       if (response.status === 200) {
         setHtml(response.data);
       } else {
-        setHtml("");
+        setHtml('');
       }
       const newComment = {
         id: Date.now(),
@@ -51,23 +51,23 @@ export default function BlogItem() {
         content: response.data.content,
       };
       setComments((prevComments) => [...prevComments, newComment]);
-      setErr("");
+      setErr('');
       fetchComments();
     } catch (err) {
-      setErr("Failed to submit the comment");
-      console.error("Error submitting comment:", err);
+      setErr('Failed to submit the comment');
+      console.error('Error submitting comment:', err);
     } finally {
       setLoading(false);
     }
   };
   useEffect(() => {
-    setForm({ name: "", content: "" });
+    setForm({ name: '', content: '' });
   }, [comments]);
 
   async function fetchComments() {
     try {
       const response = await axios.get(
-        "https://digitopia-project-backend.vercel.app/api/SSTI1Comments"
+        'https://digitopia-project-backend.vercel.app/api/SSTI1Comments'
       );
 
       if (Array.isArray(response.data)) {
@@ -82,8 +82,8 @@ export default function BlogItem() {
         setComments([]); // In case the response is not an array
       }
     } catch (error) {
-      setErr("Failed to fetch comments.");
-      console.error("Error fetching comments:", error);
+      setErr('Failed to fetch comments.');
+      console.error('Error fetching comments:', error);
       setComments([]); // Set comments to an empty array in case of error
     }
     console.log(); // Check if the comments are in the expected structure
@@ -92,16 +92,16 @@ export default function BlogItem() {
   const labreset = async () => {
     try {
       const response = await axios.get(
-        "https://digitopia-project-backend.vercel.app/api/SSTIlab1Reset"
+        'https://digitopia-project-backend.vercel.app/api/SSTIlab1Reset'
       );
       fetchComments();
       if (response.status === 200) {
         setResetMessage(response.data.message);
-        setHtml("");
+        setHtml('');
       }
     } catch (error) {
-      console.error("Error resetting:", error);
-      setResetMessage("Error: Could not reset.");
+      console.error('Error resetting:', error);
+      setResetMessage('Error: Could not reset.');
     }
   };
 
@@ -111,15 +111,15 @@ export default function BlogItem() {
 
   return (
     <>
-      <div className="course-blog-item">
+      <div className='course-blog-item'>
         <GoBackBtn />
         <ShowHint hintText={hintMessage} />
         <ThemeSwitcher />
-        <div className="container">
-          <div className="row-practice">
-            <div className="card-blog-item">
-              <img src={image_1} alt="" />
-              <div className="card-text-blog-item">
+        <div className='container'>
+          <div className='row-practice'>
+            <div className='card-blog-item'>
+              <img src={image_1} alt='' />
+              <div className='card-text-blog-item'>
                 <h2>Robots in Our Lives</h2>
                 <p>
                   The development of robots has significantly transformed our
@@ -185,44 +185,42 @@ export default function BlogItem() {
 
               <form onSubmit={handleSubmit}>
                 <textarea
-                  name="content"
-                  id="content"
-                  placeholder="Write Your Comment..."
-                  required
-                ></textarea>
+                  name='content'
+                  id='content'
+                  placeholder='Write Your Comment...'
+                  required></textarea>
                 <input
-                  type="name"
-                  name="name"
-                  placeholder="Write Your Name"
-                  className="form_input"
+                  type='name'
+                  name='name'
+                  placeholder='Write Your Name'
+                  className='form_input'
                 />
-                <button type="submit" disabled={loading}>
-                  {loading ? "Submitting..." : "Submit"}
+                <button type='submit' disabled={loading}>
+                  {loading ? 'Submitting...' : 'Submit'}
                 </button>
-                {err && <span className="error">{err}</span>}
+                {err && <span className='error'>{err}</span>}
               </form>
               <button
                 onClick={labreset}
-                className="reset-btn"
+                className='reset-btn'
                 style={{
-                  width: "fit-content",
-                  marginTop: "20px",
-                  marginLeft: "20px",
-                  borderRadius: "5px",
-                  left: "0",
-                }}
-              >
+                  width: 'fit-content',
+                  marginTop: '20px',
+                  marginLeft: '20px',
+                  borderRadius: '5px',
+                  left: '0',
+                }}>
                 Reset
               </button>
               {html && <div dangerouslySetInnerHTML={{ __html: html }}></div>}
-              <div className="comment-section">
+              <div className='comment-section'>
                 {comments?.map((comment) => (
-                  <div key={comment.id} className="comment-card">
-                    <div className="comment-header">
-                      <img src={icon} className="icon" alt="Card" />
-                      <p className="name">{comment.name || "Anonymous"}</p>
+                  <div key={comment.id} className='comment-card'>
+                    <div className='comment-header'>
+                      <img src={icon} className='icon' alt='Card' />
+                      <p className='name'>{comment.name || 'Anonymous'}</p>
                     </div>
-                    <p className="comment-text">{comment.content}</p>
+                    <p className='comment-text'>{comment.content}</p>
                   </div>
                 ))}
               </div>

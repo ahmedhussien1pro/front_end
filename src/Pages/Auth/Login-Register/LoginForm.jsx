@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import Swal from 'sweetalert2';
 import { useNavigate, Link } from 'react-router-dom';
-import ThemeSwitcher from '../../Website/UserHome/Components/ThemeSwitcher/ThemeSwitcher';
+import ThemeSwitcher from '../../Website/components/ThemeSwitcher/ThemeSwitcher';
 import './style.css';
 import axios from 'axios';
 import Cookie from 'cookie-universal';
-import Preloader from '../../Website/Preloader/Preloader';
+import Preloader from '../../Website/components/Preloader/Preloader';
 
 export default function AuthForm() {
   const navigate = useNavigate();

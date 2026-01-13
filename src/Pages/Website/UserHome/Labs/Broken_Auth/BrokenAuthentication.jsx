@@ -1,12 +1,12 @@
 import React from 'react';
-import Header from '../../Header/Header';
-import Footer from '../../Footer/Footer';
+import Header from '../../../components/Header/Header';
+import Footer from '../../../components/Footer/Footer';
 import './BrokenAuthentication.css';
-import '../../Components/Topics CSS/topics.css';
+import '../../../components/Topics CSS/topics.css';
 import courseImage from '../../assets/img/Broken Authentication/broken-authentication.png';
-import UseFaqSection from '../../Components/UseFaqSection/UseFaqSection.jsx';
-import CourseLanding from '../../Components/Landing/CourseLanding.jsx';
-import GoTop from '../../Components/Go2Top_Btn/Go2Top_Btn';
+import UseFaqSection from '../../../components/UseFaqSection/UseFaqSection.jsx';
+import CourseLanding from '../../../components/Landing/CourseLanding.jsx';
+import GoTop from '../../../components/Go2Top_Btn/Go2Top_Btn';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 

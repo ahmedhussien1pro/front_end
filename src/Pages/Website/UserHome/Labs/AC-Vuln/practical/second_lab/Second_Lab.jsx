@@ -1,10 +1,10 @@
-import React from "react";
-import "../Lab_Style.css";
-import ProductList from "../../../../Components/ProductList/ProductList";
-import GoBackBtn from "../../../../Components/GoBack_Btn/GoBack_Btn";
-import products from "../data.json";
-import ShowHintBtn from "../../../../Components/ShowHint_Btn/ShowHint_Btn";
-import Go2TopBtn from "../../../../Components/Go2Top_Btn/Go2Top_Btn";
+import React from 'react';
+import '../Lab_Style.css';
+import ProductList from '../../../../../components/ProductList/ProductList';
+import GoBackBtn from '../../../../../components/GoBack_Btn/GoBack_Btn';
+import products from '../data.json';
+import ShowHintBtn from '../../../../../components/ShowHint_Btn/ShowHint_Btn';
+import Go2TopBtn from '../../../../../components/Go2Top_Btn/Go2Top_Btn';
 
 export default function Second_Lab() {
   const hintMessage = `
@@ -42,8 +42,8 @@ export default function Second_Lab() {
     <>
       <GoBackBtn />
       <ShowHintBtn hintText={hintMessage} />
-      <div className="container">
-        <h1 style={{ textAlign: "center", marginBlock: "50px" }}>Products</h1>
+      <div className='container'>
+        <h1 style={{ textAlign: 'center', marginBlock: '50px' }}>Products</h1>
         <ProductList products={products} />
         <Go2TopBtn />
       </div>

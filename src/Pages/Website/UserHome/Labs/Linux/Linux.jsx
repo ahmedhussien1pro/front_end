@@ -1,14 +1,13 @@
 import React from 'react';
-import '../../Components/Topics CSS/topics.css';
-import Header from '../../Header/Header';
-import courseImage from '../../assets/img/linux/linux_logo.png';
-import Footer from '../../Footer/Footer';
-import UseFaqSection from '../../Components/UseFaqSection/UseFaqSection.jsx';
-import CourseLanding from '../../Components/Landing/CourseLanding.jsx';
-import Go2TopBtn from '../../Components/Go2Top_Btn/Go2Top_Btn.jsx';
+import Header from '../../../components/Header/Header';
+import Footer from '../../../components/Footer/Footer';
+import UseFaqSection from '../../../components/UseFaqSection/UseFaqSection.jsx';
+import CourseLanding from '../../../components/Landing/CourseLanding.jsx';
+import Go2TopBtn from '../../../components/Go2Top_Btn/Go2Top_Btn.jsx';
+import CyberCurriculum from '../../../components/CyberCurriculum/CyberCurriculum.jsx';
 // Import JSON Data
+import courseImage from '../../assets/img/linux/linux_logo.png';
 import contentData from './linux_fundamentals_content.json';
-import CyberCurriculum from '../../Components/CyberCurriculum/CyberCurriculum.jsx';
 const imageMap = {
   courseImage,
 };

@@ -3,8 +3,8 @@ import Swal from 'sweetalert2';
 import axios from 'axios';
 import Cookie from 'cookie-universal';
 import { useNavigate } from 'react-router-dom';
-import Preloader from '../../Website/Preloader/Preloader';
-import ThemeSwitcher from '../../Website/UserHome/Components/ThemeSwitcher/ThemeSwitcher';
+import Preloader from '../../Website/components/Preloader/Preloader';
+import ThemeSwitcher from '../../Website/components/ThemeSwitcher/ThemeSwitcher';
 
 export default function Authenticate() {
   const [form, setForm] = useState({

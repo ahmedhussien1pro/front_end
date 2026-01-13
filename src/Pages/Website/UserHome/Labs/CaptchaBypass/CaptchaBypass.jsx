@@ -1,10 +1,9 @@
 import React from 'react';
-import Header from '../../Header/Header';
+import Header from '../../../components/Header/Header';
+import Footer from '../../../components/Footer/Footer';
 import courseImage from '../../assets/img/Captcha Bypass/course_image.png';
-import Footer from '../../Footer/Footer';
-import '../../Components/Topics CSS/topics.css';
-import UseFaqSection from '../../Components/UseFaqSection/UseFaqSection.jsx';
-import CourseLanding from '../../Components/Landing/CourseLanding.jsx';
+import UseFaqSection from '../../../components/UseFaqSection/UseFaqSection.jsx';
+import CourseLanding from '../../../components/Landing/CourseLanding.jsx';
 export default function CaptchaBypass() {
   const { faqSectionRef, handleGoToLab } = UseFaqSection();
   const data = {

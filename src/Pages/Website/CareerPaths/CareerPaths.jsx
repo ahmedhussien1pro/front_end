@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import ThemeSwitcher from '../../Website/UserHome/Components/ThemeSwitcher/ThemeSwitcher';
+import ThemeSwitcher from '../components/ThemeSwitcher/ThemeSwitcher';
 import {
   Box,
   TextField,

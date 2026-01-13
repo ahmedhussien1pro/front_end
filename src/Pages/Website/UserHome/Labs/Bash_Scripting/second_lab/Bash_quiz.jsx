@@ -1,4 +1,4 @@
-import CompleteQuestion from '../../../Components/CompleteQuestion/CompleteQuestion';
+import CompleteQuestion from '../../../../components/CompleteQuestion/CompleteQuestion';
 import Data from './second_Data.json';
 import './Bash_quiz.css';
 

@@ -1,47 +1,47 @@
-import React, { useEffect, useState } from "react";
-import "./Tours.css";
-import Header from "../../../Header/Header";
-import tajMahalImage from "../../../assets/img/seven_lab/Picture5.jpg";
-import Alert from "./Alert";
+import React, { useEffect, useState } from 'react';
+import './Tours.css';
+import Header from '../../../../components/Header/Header';
+import tajMahalImage from '../../../assets/img/seven_lab/Picture5.jpg';
+import Alert from './Alert';
 
 export default function TajMahal() {
-  const [selectedCountry, setSelectedCountry] = useState("");
-  const [countries] = useState(["Mexico", "USA", "Canada"]);
+  const [selectedCountry, setSelectedCountry] = useState('');
+  const [countries] = useState(['Mexico', 'USA', 'Canada']);
   const [showCountries, setShowCountries] = useState(false);
-  const [alertMessage, setAlertMessage] = useState("");
+  const [alertMessage, setAlertMessage] = useState('');
   const [showAlert, setShowAlert] = useState(false);
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
-    const storeId = params.get("storeId");
+    const storeId = params.get('storeId');
 
     if (storeId) {
       const alertMessageMatch = storeId.match(/alert\("([^"]+)"\)/);
       const customAlertMessage = alertMessageMatch
         ? alertMessageMatch[1]
-        : "No alert message found";
+        : 'No alert message found';
 
       setAlertMessage(customAlertMessage);
       setShowAlert(true);
-      setSelectedCountry(storeId.split("</select>")[0].trim());
+      setSelectedCountry(storeId.split('</select>')[0].trim());
       setShowCountries(true);
     }
   }, []);
 
   const handleCloseAlert = () => {
     setShowAlert(false);
-    setAlertMessage("");
+    setAlertMessage('');
   };
 
   return (
     <>
       <Header />
-      <div className="tour-container">
+      <div className='tour-container'>
         <h1>The Taj Mahal</h1>
 
-        <img src={tajMahalImage} alt="Taj Mahal" className="tour-image" />
+        <img src={tajMahalImage} alt='Taj Mahal' className='tour-image' />
 
-        <p className="tour-description">
+        <p className='tour-description'>
           The Taj Mahal is a symbol of eternal love, built by the Mughal emperor
           Shah Jahan in memory of his beloved wife Mumtaz Mahal. Completed in
           1653, this stunning white marble mausoleum stands as one of the most
@@ -79,29 +79,28 @@ export default function TajMahal() {
           heritage.
         </p>
 
-        <div className="reservation-section">
+        <div className='reservation-section'>
           <h2>Reserve Your Journey</h2>
-          <label htmlFor="country-select">
+          <label htmlFor='country-select'>
             Select your country of departure:
           </label>
           <select
-            id="country-select"
-            className="country-select"
+            id='country-select'
+            className='country-select'
             value={selectedCountry}
-            onChange={(e) => setSelectedCountry(e.target.value)}
-          >
-            <option value="" disabled>
+            onChange={(e) => setSelectedCountry(e.target.value)}>
+            <option value='' disabled>
               -- Select a Country --
             </option>
-            <option value="india">India</option>
-            <option value="usa">USA</option>
-            <option value="uk">UK</option>
+            <option value='india'>India</option>
+            <option value='usa'>USA</option>
+            <option value='uk'>UK</option>
           </select>
-          <button className="reservation-button">Reserve Now</button>
+          <button className='reservation-button'>Reserve Now</button>
         </div>
 
         {showCountries && (
-          <div className="available-countries">
+          <div className='available-countries'>
             {countries.map((country) => (
               <option key={country} value={country}>
                 {country}

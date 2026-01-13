@@ -1,10 +1,9 @@
 import React from 'react';
-import Header from '../../Header/Header';
+import Header from '../../../components/Header/Header';
+import Footer from '../../../components/Footer/Footer';
 import courseImage from '../../assets/img/Server Side Template Injection/course_image.png';
-import Footer from '../../Footer/Footer';
-import '../../Components/Topics CSS/topics.css';
-import UseFaqSection from '../../Components/UseFaqSection/UseFaqSection.jsx';
-import CourseLanding from '../../Components/Landing/CourseLanding.jsx';
+import UseFaqSection from '../../../components/UseFaqSection/UseFaqSection.jsx';
+import CourseLanding from '../../../components/Landing/CourseLanding.jsx';
 import exampleImage10 from '../../assets/img/Server Side Template Injection/10.jpg';
 import exampleImage11 from '../../assets/img/Server Side Template Injection/11.jpg';
 

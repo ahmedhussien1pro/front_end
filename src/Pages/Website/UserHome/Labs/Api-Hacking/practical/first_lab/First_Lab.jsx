@@ -1,5 +1,5 @@
-import MCQQuiz from "../../../../Components/MCQ_Form/MCQQuiz";
-import MCQData from "./MCQData";
+import MCQQuiz from '../../../../../components/MCQ_Form/MCQQuiz';
+import MCQData from './MCQData';
 export default function FirstLab() {
   return (
     <>

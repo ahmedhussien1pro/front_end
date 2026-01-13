@@ -1,14 +1,14 @@
 import React from 'react';
-import Header from '../../Header/Header';
-import Footer from '../../Footer/Footer';
-import '../../Components/Topics CSS/topics.css';
+import Header from '../../../components/Header/Header';
+import Footer from '../../../components/Footer/Footer';
+import '../../../components/Topics CSS/topics.css';
 import courseImage from '../../assets/img/Obfuscation/course_image.png';
 import exampleImage1 from '../../assets/img/Obfuscation/1.png';
 import exampleImage2 from '../../assets/img/Obfuscation/2.png';
 import exampleImage3 from '../../assets/img/Obfuscation/3.png';
 import exampleImage4 from '../../assets/img/Obfuscation/4.png';
-import UseFaqSection from '../../Components/UseFaqSection/UseFaqSection.jsx';
-import CourseLanding from '../../Components/Landing/CourseLanding.jsx';
+import UseFaqSection from '../../../components/UseFaqSection/UseFaqSection.jsx';
+import CourseLanding from '../../../components/Landing/CourseLanding.jsx';
 
 export default function Obfuscation() {
   const { faqSectionRef, handleGoToLab } = UseFaqSection();

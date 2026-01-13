@@ -1,11 +1,10 @@
 import React from 'react';
-import './XSS.css';
-import Header from '../../Header/Header';
+import Header from '../../../components/Header/Header';
 import lab_Cover from '../../assets/img/Cross_Site_Scripting/labs_cover.jpg';
-import Footer from '../../Footer/Footer';
-import { Card } from '../../Components/Card/Card';
-import LandingPractice from '../../Components/Landing/PracticeLanding';
-import PracticeTitle from '../../Components/PracticeTitle/PracticeTitle';
+import Footer from '../../../components/Footer/Footer';
+import { Card } from '../../../components/Card/Card';
+import LandingPractice from '../../../components/Landing/PracticeLanding';
+import PracticeTitle from '../../../components/PracticeTitle/PracticeTitle';
 export default function XSS_lab() {
   const Labs = [
     {

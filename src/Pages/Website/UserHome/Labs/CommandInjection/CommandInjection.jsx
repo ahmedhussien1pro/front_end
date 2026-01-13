@@ -1,12 +1,11 @@
 import React from 'react';
-import Header from '../../Header/Header';
+import Header from '../../../components/Header/Header';
 import courseImage from '../../assets/img/Command Injection/Icon_Command_Injection.png';
-import Footer from '../../Footer/Footer';
-import '../../Components/Topics CSS/topics.css';
+import Footer from '../../../components/Footer/Footer';
 import './CommandInjection.css';
-import UseFaqSection from '../../Components/UseFaqSection/UseFaqSection.jsx';
-import CourseLanding from '../../Components/Landing/CourseLanding.jsx';
-import GoTop from '../../Components/Go2Top_Btn/Go2Top_Btn';
+import UseFaqSection from '../../../components/UseFaqSection/UseFaqSection.jsx';
+import CourseLanding from '../../../components/Landing/CourseLanding.jsx';
+import GoTop from '../../../components/Go2Top_Btn/Go2Top_Btn';
 import exampleImage1 from '../../assets/img/Command Injection/1.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';

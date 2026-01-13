@@ -1,11 +1,10 @@
 import React from 'react';
-import '../Page_Styles/Lab.css';
-import Header from '../../Header/Header';
+import Header from '../../../components/Header/Header';
+import Footer from '../../../components/Footer/Footer';
 import image from '../../assets//img/File Inclusion/card_image.png';
-import { Card } from '../../Components/Card/Card';
-import Footer from '../../Footer/Footer';
-import LandingPractice from '../../Components/Landing/PracticeLanding';
-import PracticeTitle from '../../Components/PracticeTitle/PracticeTitle';
+import { Card } from '../../../components/Card/Card';
+import LandingPractice from '../../../components/Landing/PracticeLanding';
+import PracticeTitle from '../../../components/PracticeTitle/PracticeTitle';
 
 export default function FileInclusion_lab() {
   const Labs = [

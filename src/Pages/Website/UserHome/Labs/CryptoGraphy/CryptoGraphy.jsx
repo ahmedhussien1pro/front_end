@@ -1,8 +1,7 @@
 import React from 'react';
-import '../../Components/Topics CSS/topics.css';
-import Header from '../../Header/Header';
+import Header from '../../../components/Header/Header';
+import Footer from '../../../components/Footer/Footer';
 import courseImage from '../../assets/img/Cryptography/course_image.png';
-import Footer from '../../Footer/Footer';
 import exampleImage1 from '../../assets/img/Cryptography/1.png';
 import exampleImage2 from '../../assets/img/Cryptography/2.png';
 import exampleImage3 from '../../assets/img/Cryptography/3.svg';
@@ -12,8 +11,8 @@ import exampleImage6 from '../../assets/img/Cryptography/6.svg';
 import exampleImage7 from '../../assets/img/Cryptography/7.svg';
 import exampleImage8 from '../../assets/img/Cryptography/8.svg';
 import exampleImage9 from '../../assets/img/Cryptography/9.svg';
-import UseFaqSection from '../../Components/UseFaqSection/UseFaqSection.jsx';
-import CourseLanding from '../../Components/Landing/CourseLanding.jsx';
+import UseFaqSection from '../../../components/UseFaqSection/UseFaqSection.jsx';
+import CourseLanding from '../../../components/Landing/CourseLanding.jsx';
 export default function CryptoGraphy() {
   const { faqSectionRef, handleGoToLab } = UseFaqSection();
   const data = {

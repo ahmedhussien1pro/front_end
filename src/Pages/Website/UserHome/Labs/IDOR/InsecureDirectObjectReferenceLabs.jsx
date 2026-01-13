@@ -1,10 +1,10 @@
 import React from 'react';
-import Header from '../../Header/Header';
-import Footer from '../../Footer/Footer';
+import Header from '../../../components/Header/Header';
+import Footer from '../../../components/Footer/Footer';
 import Idor_cover from '../../assets/img/IDOR/IDOR_Cover.jpg';
-import { Card } from '../../Components/Card/Card';
-import LandingPractice from '../../Components/Landing/PracticeLanding';
-import PracticeTitle from '../../Components/PracticeTitle/PracticeTitle';
+import { Card } from '../../../components/Card/Card';
+import LandingPractice from '../../../components/Landing/PracticeLanding';
+import PracticeTitle from '../../../components/PracticeTitle/PracticeTitle';
 
 export default function InsecureDirectObjectReferenceLabs() {
   const Labs = [

@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
-import "./IDOR_Lab3.css";
-import GoBack from "../../../Components/GoBack_Btn/GoBack_Btn";
-import ShowHint from "../../../Components/ShowHint_Btn/ShowHint_Btn";
-import ThemeSwitcher from "../../../Components/ThemeSwitcher/ThemeSwitcher";
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import './IDOR_Lab3.css';
+import GoBack from '../../../../components/GoBack_Btn/GoBack_Btn';
+import ShowHint from '../../../../components/ShowHint_Btn/ShowHint_Btn';
+import ThemeSwitcher from '../../../../components/ThemeSwitcher/ThemeSwitcher';
 
 export default function IDORLabComponent() {
   const hintMessage = `
@@ -13,29 +13,29 @@ export default function IDORLabComponent() {
 
   `;
 
-  const [account, setAccount] = useState({ name: "", balance: 0 });
+  const [account, setAccount] = useState({ name: '', balance: 0 });
   const [users, setUsers] = useState([]);
-  const [transferAmount, setTransferAmount] = useState("");
-  const [recipientId, setRecipientId] = useState("");
-  const [message, setMessage] = useState("");
+  const [transferAmount, setTransferAmount] = useState('');
+  const [recipientId, setRecipientId] = useState('');
+  const [message, setMessage] = useState('');
   const userId = 1;
-  const apiUrl = "https://digitopia-project-backend.vercel.app/api";
+  const apiUrl = 'https://digitopia-project-backend.vercel.app/api';
 
   useEffect(() => {
     axios
       .patch(`${apiUrl}/accounts`, { updated: true })
-      .then(() => console.log("PATCH request successful"))
+      .then(() => console.log('PATCH request successful'))
       .catch((error) =>
-        console.error("Failed to execute PATCH request:", error)
+        console.error('Failed to execute PATCH request:', error)
       );
     axios
       .get(`${apiUrl}/account/${userId}`)
       .then((response) => setAccount(response.data.account))
-      .catch((error) => console.error("Failed to fetch account:", error));
+      .catch((error) => console.error('Failed to fetch account:', error));
     axios
       .get(`${apiUrl}/accounts`)
       .then((response) => setUsers(response.data.money))
-      .catch((error) => console.error("Failed to fetch accounts:", error));
+      .catch((error) => console.error('Failed to fetch accounts:', error));
   }, [userId]);
 
   const handleTransfer = (e) => {
@@ -49,12 +49,12 @@ export default function IDORLabComponent() {
           recipientId,
           userId,
         },
-        { headers: { "Content-Type": "application/json" } }
+        { headers: { 'Content-Type': 'application/json' } }
       )
       .then((response) => {
         setMessage(response.data.message);
-        setTransferAmount("");
-        setRecipientId("");
+        setTransferAmount('');
+        setRecipientId('');
         axios
           .get(`${apiUrl}/account/${userId}`)
           .then((response) => setAccount(response.data.account));
@@ -64,9 +64,9 @@ export default function IDORLabComponent() {
           .then((response) => setUsers(response.data.money));
       })
       .catch((error) => {
-        const errorMsg = error.response?.data?.message || "Transfer failed";
+        const errorMsg = error.response?.data?.message || 'Transfer failed';
         setMessage(errorMsg);
-        console.error("Transfer error:", error);
+        console.error('Transfer error:', error);
       });
   };
 
@@ -75,25 +75,24 @@ export default function IDORLabComponent() {
       <GoBack />
       <ShowHint hintText={hintMessage} />
       <ThemeSwitcher />
-      <div className="idor-lab3-center">
-        <div className="idorlab-container">
-          <div className="idorlab-header">
+      <div className='idor-lab3-center'>
+        <div className='idorlab-container'>
+          <div className='idorlab-header'>
             <h1>Money Transfer</h1>
             <button
-              className="btn btn-secondary btn-sm"
+              className='btn btn-secondary btn-sm'
               onClick={() => {
-                setTransferAmount("");
-                setRecipientId("");
-                setMessage("");
-              }}
-            >
+                setTransferAmount('');
+                setRecipientId('');
+                setMessage('');
+              }}>
               Reset
             </button>
           </div>
 
-          <div className="idorlab-account-info">
-            <div className="card-transfer">
-              <div className="card-header-transfer">
+          <div className='idorlab-account-info'>
+            <div className='card-transfer'>
+              <div className='card-header-transfer'>
                 Account Name: <b>{account.name}</b> <br />
                 Balance: <b>{account.balance} $</b>
               </div>
@@ -103,45 +102,44 @@ export default function IDORLabComponent() {
           {message && (
             <div
               className={`alert ${
-                message.includes("success") ? "alert-success" : "alert-danger"
-              }`}
-            >
+                message.includes('success') ? 'alert-success' : 'alert-danger'
+              }`}>
               {message}
             </div>
           )}
 
-          <form onSubmit={handleTransfer} className="idorlab-transfer-form">
-            <div className="form-group-lab3">
-              <label className="transferAmount" htmlFor="transfer_amount">
+          <form onSubmit={handleTransfer} className='idorlab-transfer-form'>
+            <div className='form-group-lab3'>
+              <label className='transferAmount' htmlFor='transfer_amount'>
                 Transfer Amount:
               </label>
               <input
-                className="idor-number"
-                type="number"
-                id="transfer_amount"
+                className='idor-number'
+                type='number'
+                id='transfer_amount'
                 value={transferAmount}
                 onChange={(e) => setTransferAmount(e.target.value)}
                 required
               />
 
-              <label className="transferAmount" htmlFor="recipient_id">
+              <label className='transferAmount' htmlFor='recipient_id'>
                 Recipient ID:
               </label>
               <input
-                className="idor-number"
-                type="number"
-                id="recipient_id"
+                className='idor-number'
+                type='number'
+                id='recipient_id'
                 value={recipientId}
                 onChange={(e) => setRecipientId(e.target.value)}
                 required
               />
             </div>
-            <button type="submit" className="Idor-button">
+            <button type='submit' className='Idor-button'>
               Transfer
             </button>
           </form>
 
-          <table className=" table-style-bg">
+          <table className=' table-style-bg'>
             <thead>
               <tr>
                 <th>ID</th>

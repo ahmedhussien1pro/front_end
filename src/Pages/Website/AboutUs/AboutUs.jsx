@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import Header from '../Header/HeaderHome';
-import Team from '../Team/TeamSection';
-import HeroTeam from '../HeroTeamSection/HeroTeamSection';
-import Footer from '../../Website/UserHome/Footer/Footer';
-import Go2TopBtn from '../UserHome/Components/Go2Top_Btn/Go2Top_Btn';
-import Preloader from '../Preloader/Preloader';
+import Header from '../components/Header/Header';
+import Team from '../components/Team/TeamSection';
+import HeroTeam from '../components/HeroTeamSection/HeroTeamSection';
+import Footer from '../components/Footer/Footer';
+import Go2TopBtn from '../components/Go2Top_Btn/Go2Top_Btn';
+import Preloader from '../components/Preloader/Preloader';
 export default function HomePage() {
   const [loading, setLoading] = useState(true);
 

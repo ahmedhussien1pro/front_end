@@ -1,10 +1,10 @@
 import React from 'react';
-import '../../Components/Topics CSS/topics.css';
-import Header from '../../Header/Header';
+import '../../../components/Topics CSS/topics.css';
+import Header from '../../../components/Header/Header';
 import courseImage from '../../assets/img/bash/full_colored_dark (1).png';
-import UseFaqSection from '../../Components/UseFaqSection/UseFaqSection.jsx';
-import CourseLanding from '../../Components/Landing/CourseLanding.jsx';
-import Footer from '../../Footer/Footer';
+import UseFaqSection from '../../../components/UseFaqSection/UseFaqSection.jsx';
+import CourseLanding from '../../../components/Landing/CourseLanding.jsx';
+import Footer from '../../../components/Footer/Footer';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import exampleImage1 from '../../assets/img/bash/carbon-8.png';
 import exampleImage2 from '../../assets/img/bash/carbon-9.png';
@@ -25,7 +25,7 @@ import exampleImage16 from '../../assets/img/bash/carbon-17.png';
 import exampleImage17 from '../../assets/img/bash/carbon-25.png';
 import exampleImage18 from '../../assets/img/bash/first.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import ThemeSwitcher from '../../Components/ThemeSwitcher/ThemeSwitcher.jsx';
+import ThemeSwitcher from '../../../components/ThemeSwitcher/ThemeSwitcher.jsx';
 
 export default function Bash() {
   const { faqSectionRef, handleGoToLab } = UseFaqSection();

@@ -3,7 +3,7 @@ import { Navigate, Outlet, useNavigate } from 'react-router-dom';
 import Cookie from 'cookie-universal';
 import Error403 from './Page-403/403';
 import axios from 'axios';
-import Preloader from '../Website/Preloader/Preloader';
+import Preloader from '../Website/components/Preloader/Preloader';
 export default function RequireAuth({ allowedRole }) {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -39,7 +39,7 @@ export default function RequireAuth({ allowedRole }) {
     };
 
     fetchUserData();
-  }, [token, navigate]);
+  }, [token, navigate, cookie]);
 
   if (loading) return <Preloader loading={loading} />;
 

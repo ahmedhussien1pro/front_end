@@ -8,11 +8,11 @@ import {
   faSyncAlt,
   faInfoCircle,
 } from '@fortawesome/free-solid-svg-icons';
-import GoBackBtn from '../../../../Components/GoBack_Btn/GoBack_Btn';
-import ShowHintBtn from '../../../../Components/ShowHint_Btn/ShowHint_Btn';
-import Go2TopBtn from '../../../../Components/Go2Top_Btn/Go2Top_Btn';
+import GoBackBtn from '../../../../../components/GoBack_Btn/GoBack_Btn';
+import ShowHintBtn from '../../../../../components/ShowHint_Btn/ShowHint_Btn';
+import Go2TopBtn from '../../../../../components/Go2Top_Btn/Go2Top_Btn';
 // import "./First_Lab.css";
-import ThemeSwitcher from '../../../../Components/ThemeSwitcher/ThemeSwitcher';
+import ThemeSwitcher from '../../../../../components/ThemeSwitcher/ThemeSwitcher';
 const HashComparator = () => {
   const [hash1, setHash1] = useState('');
   const [hash2, setHash2] = useState('');

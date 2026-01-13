@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import Courses from './Components/Courses/Courses';
-import Footer from './Footer/Footer';
-import Header from './Header/Header';
-import Landing from './Components/Landing/LearnLanding';
-import Preloader from '../Preloader/Preloader';
+import Courses from '../components/Courses/Courses';
+import Footer from '../components/Footer/Footer';
+import Header from '../components/Header/Header';
+import Landing from '../components/Landing/LearnLanding';
+import Preloader from '../components/Preloader/Preloader';
 export default function UserHome() {
   const [loading, setLoading] = useState(true);
   useEffect(() => {

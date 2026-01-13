@@ -1,12 +1,11 @@
-import React, { useEffect, useState } from "react";
-import "./Second_lab.css";
-import image_1 from "../../../assets/img/practical_lab2/image_1.png";
-import icon from "../../../assets/img/practical_lab2/icon.png";
-import Footer from "../../../Footer/Footer";
-import axios from "axios";
-import GoBackBtn from "../../../Components/GoBack_Btn/GoBack_Btn";
-import ShowHint from "../../../Components/ShowHint_Btn/ShowHint_Btn";
-import ThemeSwitcher from "../../../Components/ThemeSwitcher/ThemeSwitcher";
+import React, { useEffect, useState } from 'react';
+import './Second_lab.css';
+import image_1 from '../../../assets/img/practical_lab2/image_1.png';
+import icon from '../../../assets/img/practical_lab2/icon.png';
+import axios from 'axios';
+import GoBackBtn from '../../../../components/GoBack_Btn/GoBack_Btn';
+import ShowHint from '../../../../components/ShowHint_Btn/ShowHint_Btn';
+import ThemeSwitcher from '../../../../components/ThemeSwitcher/ThemeSwitcher';
 
 export default function Second_lab_XSS() {
   const hintMessage = `
@@ -21,20 +20,20 @@ export default function Second_lab_XSS() {
     </div>
   `;
   const [form, setForm] = useState({
-    email: "",
-    content: "",
+    email: '',
+    content: '',
   });
   const [data, setData] = useState([]);
   const [comments, setComments] = useState([]);
-  const [scriptOutput, setScriptOutput] = useState("");
-  const [err, setErr] = useState("");
-  const [loading, setLoading] = useState(false);
+  const [scriptOutput, setScriptOutput] = useState('');
+  const [err, setErr] = useState('');
+  const [setLoading] = useState(false);
   const fetchData = () => {
     try {
       const respone = axios.delete(
-        "https://digitopia-project-backend.vercel.app/api/comment"
+        'https://digitopia-project-backend.vercel.app/api/comment'
       );
-      console.log("Done");
+      console.log('Done');
       setData(respone.data);
     } catch (err) {
       setLoading(false);
@@ -42,7 +41,7 @@ export default function Second_lab_XSS() {
         setErr(err.response.data);
         console.error(err.response.data);
       } else {
-        setErr("Network Error");
+        setErr('Network Error');
         console.error(err);
       }
     } finally {
@@ -51,19 +50,19 @@ export default function Second_lab_XSS() {
   };
 
   const handleSubmit = (e) => {
-    axios.delete("https://digitopia-project-backend.vercel.app/api/comment");
+    axios.delete('https://digitopia-project-backend.vercel.app/api/comment');
     e.preventDefault();
     const content = e.target.content.value;
     const email = e.target.email.value;
 
     // Allow scripts if the content contains <script> tags
-    if (content.includes("<script>") && content.includes("</script>")) {
+    if (content.includes('<script>') && content.includes('</script>')) {
       const scriptContent = content
-        .replace("<script>", "")
-        .replace("</script>", "");
+        .replace('<script>', '')
+        .replace('</script>', '');
       const newComment = {
         id: Date.now(),
-        email: email || "Anonymous",
+        email: email || 'Anonymous',
         content: scriptContent,
         isScript: true,
       };
@@ -72,15 +71,15 @@ export default function Second_lab_XSS() {
         // Run the script in a controlled environment
         const result = eval(scriptContent);
         setScriptOutput(
-          result !== undefined ? result.toString() : "Script executed."
+          result !== undefined ? result.toString() : 'Script executed.'
         );
       } catch (err) {
         setScriptOutput(`Error: ${err.message}`);
       }
-    } else if (content.startsWith("<") && content.endsWith(">")) {
+    } else if (content.startsWith('<') && content.endsWith('>')) {
       const newComment = {
         id: Date.now(),
-        email: email || "Anonymous",
+        email: email || 'Anonymous',
         content: content,
         isHTML: true,
       };
@@ -91,18 +90,18 @@ export default function Second_lab_XSS() {
       if (content) {
         const newComment = {
           id: Date.now(),
-          email: email || "Anonymous",
+          email: email || 'Anonymous',
           content: content,
           isHTML: false,
         };
         setComments((prevComments) => [...prevComments, newComment]);
-        setErr("");
+        setErr('');
       } else {
-        setErr("Please enter a comment.");
+        setErr('Please enter a comment.');
       }
     }
     // Reset the form after submission
-    setForm({ email: "", content: "" });
+    setForm({ email: '', content: '' });
   };
   useEffect(() => {
     fetchData();
@@ -111,15 +110,15 @@ export default function Second_lab_XSS() {
   return (
     <>
       {/* Start Courses  */}
-      <div className="course-Second_lab">
+      <div className='course-Second_lab'>
         <GoBackBtn />
         <ShowHint hintText={hintMessage} />
         <ThemeSwitcher />
-        <div className="container-Second_lab">
-          <div className="row-practice">
-            <div className="card-Second_lab">
-              <img className="robot-image" src={image_1} alt="" />
-              <div className="card-text-Second_lab">
+        <div className='container-Second_lab'>
+          <div className='row-practice'>
+            <div className='card-Second_lab'>
+              <img className='robot-image' src={image_1} alt='' />
+              <div className='card-text-Second_lab'>
                 <h2>Robots in Our Lives</h2>
                 <p>
                   The development of robots has significantly transformed our
@@ -184,9 +183,9 @@ export default function Second_lab_XSS() {
               </div>
               <form onSubmit={handleSubmit}>
                 <textarea
-                  name="content"
-                  id="content"
-                  placeholder="Write Your Comment......"
+                  name='content'
+                  id='content'
+                  placeholder='Write Your Comment......'
                   required
                   value={form.content}
                   onChange={(e) =>
@@ -194,59 +193,60 @@ export default function Second_lab_XSS() {
                   }
                 />
                 <input
-                  type="email"
-                  name="email"
-                  placeholder="Write Your Email"
-                  className="form_input"
+                  type='email'
+                  name='email'
+                  placeholder='Write Your Email'
+                  className='form_input'
                   value={form.email}
                   onChange={(e) => setForm({ ...form, email: e.target.value })}
                 />
-                <button type="submit" className="button-btn-primary">
+                <button type='submit' className='button-btn-primary'>
                   Submit
                 </button>
-                {err && <span className="error">{err}</span>}
+                {err && <span className='error'>{err}</span>}
               </form>
-              <div className="comment-section">
+              <div className='comment-section'>
                 {comments?.map((comment) => (
-                  <div key={comment.id} className="comment-card">
-                    <div className="comment-header">
-                      <img src={icon} className="icon-image" alt="Card" />
-                      <p className="name">{comment.email || "Anonymous"}</p>
+                  <div key={comment.id} className='comment-card'>
+                    <div className='comment-header'>
+                      <img src={icon} className='icon-image' alt='Card' />
+                      <p className='name'>{comment.email || 'Anonymous'}</p>
                     </div>
                     {comment.isHTML ? (
                       <p
-                        className="comment-text"
-                        dangerouslySetInnerHTML={{ __html: comment.content }}
-                      ></p>
+                        className='comment-text'
+                        dangerouslySetInnerHTML={{
+                          __html: comment.content,
+                        }}></p>
                     ) : (
-                      <p className="comment-text">
+                      <p className='comment-text'>
                         {comment.content || scriptOutput}
                       </p>
                     )}
                   </div>
                 ))}
                 {data?.map((item) => (
-                  <div key={item.id} className="comment-card">
-                    <div className="comment-header">
-                      <img src={icon} className="icon-image" alt="Card" />
-                      <p className="name">{item.email}</p>
+                  <div key={item.id} className='comment-card'>
+                    <div className='comment-header'>
+                      <img src={icon} className='icon-image' alt='Card' />
+                      <p className='name'>{item.email}</p>
                     </div>
-                    <p className="comment-text">{item.posts}</p>
+                    <p className='comment-text'>{item.posts}</p>
                   </div>
                 ))}
-                <div className="comment-card">
-                  <div className="comment-header">
-                    <img src={icon} className="icon-image" alt="Card" />
-                    <p className="name">anonymous</p>
+                <div className='comment-card'>
+                  <div className='comment-header'>
+                    <img src={icon} className='icon-image' alt='Card' />
+                    <p className='name'>anonymous</p>
                   </div>
-                  <p className="comment-text">comment 1</p>
+                  <p className='comment-text'>comment 1</p>
                 </div>
-                <div className="comment-card">
-                  <div className="comment-header">
-                    <img src={icon} className="icon-image" alt="Card" />
-                    <p className="name">anonymous</p>
+                <div className='comment-card'>
+                  <div className='comment-header'>
+                    <img src={icon} className='icon-image' alt='Card' />
+                    <p className='name'>anonymous</p>
                   </div>
-                  <p className="comment-text">comment 2</p>
+                  <p className='comment-text'>comment 2</p>
                 </div>
               </div>
             </div>

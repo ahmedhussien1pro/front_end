@@ -1,17 +1,17 @@
 import React from 'react';
-import Header from '../../Header/Header';
-import Footer from '../../Footer/Footer';
-import '../../Components/Topics CSS/topics.css';
+import Header from '../../../components/Header/Header';
+import Footer from '../../../components/Footer/Footer';
+import '../../../components/Topics CSS/topics.css';
 import courseImage from '../../assets/img/Api_Hacking/courseImage.png';
-import Banner from '../../Components/Banner/Banner.jsx';
-import UseFaqSection from '../../Components/UseFaqSection/UseFaqSection.jsx';
-import CourseLanding from '../../Components/Landing/CourseLanding.jsx';
-import Go2TopBtn from '../../Components/Go2Top_Btn/Go2Top_Btn.jsx';
+import Banner from '../../../components/Banner/Banner.jsx';
+import UseFaqSection from '../../../components/UseFaqSection/UseFaqSection.jsx';
+import CourseLanding from '../../../components/Landing/CourseLanding.jsx';
+import Go2TopBtn from '../../../components/Go2Top_Btn/Go2Top_Btn.jsx';
 import image1 from '../../assets/img/Api_Hacking/image1.png';
 import image4 from '../../assets/img/Api_Hacking/image4.jpg';
 import image3 from '../../assets/img/Api_Hacking/image3.jpg';
 import contentData from './api_hacking_content.json';
-import CyberCurriculum from '../../Components/CyberCurriculum/CyberCurriculum.jsx';
+import CyberCurriculum from '../../../components/CyberCurriculum/CyberCurriculum.jsx';
 const imageMap = {
   courseImage: courseImage,
   image1: image1,

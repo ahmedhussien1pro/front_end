@@ -1,15 +1,14 @@
 import React from 'react';
-import Header from '../../Header/Header';
-import '../../Components/Topics CSS/topics.css';
+import Header from '../../../components/Header/Header';
+import Footer from '../../../components/Footer/Footer';
 import courseImage from '../../assets/img/cookies/course_image.png';
-import CourseLanding from '../../Components/Landing/CourseLanding.jsx';
-import Go2TopBtn from '../../Components/Go2Top_Btn/Go2Top_Btn.jsx';
+import CourseLanding from '../../../components/Landing/CourseLanding.jsx';
+import Go2TopBtn from '../../../components/Go2Top_Btn/Go2Top_Btn.jsx';
 import InLab3 from '../../assets/img/inLab3.png';
-import Footer from '../../Footer/Footer';
 // Import JSON Data
 import contentData from './cookies_content.json';
-import UseFaqSection from '../../Components/UseFaqSection/UseFaqSection.jsx';
-import CyberCurriculum from '../../Components/CyberCurriculum/CyberCurriculum.jsx';
+import UseFaqSection from '../../../components/UseFaqSection/UseFaqSection.jsx';
+import CyberCurriculum from '../../../components/CyberCurriculum/CyberCurriculum.jsx';
 const imageMap = {
   courseImage,
   InLab3,

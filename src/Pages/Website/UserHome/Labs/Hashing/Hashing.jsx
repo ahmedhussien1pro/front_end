@@ -1,15 +1,14 @@
 import React from 'react';
-import Header from '../../Header/Header';
-import Footer from '../../Footer/Footer';
-import '../../Components/Topics CSS/topics.css';
-import Banner from '../../Components/Banner/Banner';
+import Header from '../../../components/Header/Header';
+import Footer from '../../../components/Footer/Footer';
+import Banner from '../../../components/Banner/Banner';
 import courseImage from '../../assets/img/Hashing/courseImage.png';
 import HashingVsEncryption from '../../assets/img/Hashing/hashing-vs-encryption.png';
-import UseFaqSection from '../../Components/UseFaqSection/UseFaqSection.jsx';
-import CourseLanding from '../../Components/Landing/CourseLanding.jsx';
+import UseFaqSection from '../../../components/UseFaqSection/UseFaqSection.jsx';
+import CourseLanding from '../../../components/Landing/CourseLanding.jsx';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import Go2TopBtn from '../../Components/Go2Top_Btn/Go2Top_Btn.jsx';
+import Go2TopBtn from '../../../components/Go2Top_Btn/Go2Top_Btn.jsx';
 export default function Hashing() {
   const { faqSectionRef, handleGoToLab } = UseFaqSection();
   const data = {

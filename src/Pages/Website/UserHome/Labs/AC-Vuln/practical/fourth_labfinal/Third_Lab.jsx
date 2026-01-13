@@ -1,18 +1,18 @@
-import React, { useEffect, useState } from "react";
-import "../Lab_Style.css";
-import { Link } from "react-router-dom";
-import ProductList from "../../../../ProductList/ProductList";
-import GoBackBtn from "../../../../Components/GoBack_Btn/GoBack_Btn";
-import ShowHintBtn from "../../../../Components/ShowHint_Btn/ShowHint_Btn";
-import Go2TopBtn from "../../../../Components/Go2Top_Btn/Go2Top_Btn";
-import products from "../data.json";
+import React, { useEffect, useState } from 'react';
+import '../Lab_Style.css';
+import { Link } from 'react-router-dom';
+import ProductList from '../../../../ProductList/ProductList';
+import GoBackBtn from '../../../../../components/GoBack_Btn/GoBack_Btn';
+import ShowHintBtn from '../../../../../components/ShowHint_Btn/ShowHint_Btn';
+import Go2TopBtn from '../../../../../components/Go2Top_Btn/Go2Top_Btn';
+import products from '../data.json';
 
 export default function Third_Lab() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   useEffect(() => {
-    const loggedInStatus = localStorage.getItem("isLoggedIn");
-    if (loggedInStatus === "true") {
+    const loggedInStatus = localStorage.getItem('isLoggedIn');
+    if (loggedInStatus === 'true') {
       setIsLoggedIn(true);
     }
   }, []);
@@ -32,7 +32,7 @@ export default function Third_Lab() {
     <>
       <GoBackBtn />
       <ShowHintBtn hintText={hintMessage} />
-      <div className="container">
+      <div className='container'>
         {/* <h2 className="lab-header">Products</h2> */}
         <Link to={`/AC-Vuln/AC_Vuln_labs/third_lab/login`}>Login</Link>
         {isLoggedIn && (

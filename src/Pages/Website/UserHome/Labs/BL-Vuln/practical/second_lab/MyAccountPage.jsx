@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Navigation from "./Navigation";
 import UserImage from "../defultUser.jpg";
-import ThemeSwitcher from "../../../../Components/ThemeSwitcher/ThemeSwitcher";
+import ThemeSwitcher from "../../../../../components/ThemeSwitcher/ThemeSwitcher";
 const MyAccountPage = () => {
   const [user, setUser] = useState({
     email: "",

@@ -1,5 +1,5 @@
-import MCQQuiz from "../../../../Components/MCQ_Form/MCQQuiz";
-import MCQData from "./data.json";
+import MCQQuiz from '../../../../../components/MCQ_Form/MCQQuiz';
+import MCQData from './data.json';
 export default function Drone() {
   return (
     <>

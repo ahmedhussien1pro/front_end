@@ -1,13 +1,12 @@
 import React from 'react';
-import './XSS.css';
-import '../../Components/Topics CSS/topics.css';
-import Header from '../../Header/Header';
+import '../../../components/Topics CSS/topics.css';
+import Header from '../../../components/Header/Header';
 import courseImage from '../../assets/img/Cross_Site_Scripting/Broken Authentication.webp';
 import { Link } from 'react-router-dom';
-import Footer from '../../Footer/Footer';
-import UseFaqSection from '../../Components/UseFaqSection/UseFaqSection.jsx';
-import CourseLanding from '../../Components/Landing/CourseLanding.jsx';
-import GoTop from '../../Components/Go2Top_Btn/Go2Top_Btn';
+import Footer from '../../../components/Footer/Footer';
+import UseFaqSection from '../../../components/UseFaqSection/UseFaqSection.jsx';
+import CourseLanding from '../../../components/Landing/CourseLanding.jsx';
+import GoTop from '../../../components/Go2Top_Btn/Go2Top_Btn';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 export default function XSS() {

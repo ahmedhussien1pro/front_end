@@ -1,8 +1,8 @@
 import React from 'react';
-import Header from '../../Header/Header';
-import Footer from '../../Footer/Footer';
-import Banner from '../../Components/Banner/Banner';
-import '../../Components/Topics CSS/topics.css';
+import Header from '../../../components/Header/Header';
+import Footer from '../../../components/Footer/Footer';
+import Banner from '../../../components/Banner/Banner';
+import '../../../components/Topics CSS/topics.css';
 import courseImage from '../../assets/img/CareersInCyber/courseImage.png';
 import CareerImag from '../../assets/img/CareersInCyber/courseImage.png';
 import RedTeamerImg from '../../assets/img/CareersInCyber/Red Teamer.png';
@@ -12,10 +12,10 @@ import DigitalForensicsExaminerImg from '../../assets/img/CareersInCyber/Digital
 import IncidentResponderImg from '../../assets/img/CareersInCyber/Incident Responder.png';
 import SecurityEngineerImg from '../../assets/img/CareersInCyber/Security Engineer.png';
 import SecurityAnalystImg from '../../assets/img/CareersInCyber/Security Analyst.png';
-import UseFaqSection from '../../Components/UseFaqSection/UseFaqSection.jsx';
-import CourseLanding from '../../Components/Landing/CourseLanding.jsx';
-import Go2TopBtn from '../../Components/Go2Top_Btn/Go2Top_Btn.jsx';
-import CyberCurriculum from '../../Components/CyberCurriculum/CyberCurriculum.jsx';
+import UseFaqSection from '../../../components/UseFaqSection/UseFaqSection.jsx';
+import CourseLanding from '../../../components/Landing/CourseLanding.jsx';
+import Go2TopBtn from '../../../components/Go2Top_Btn/Go2Top_Btn.jsx';
+import CyberCurriculum from '../../../components/CyberCurriculum/CyberCurriculum.jsx';
 // Import JSON Data
 import contentData from './careers_in_cyber_content.json';
 const imageMap = {

@@ -1,15 +1,14 @@
 import React from 'react';
 import './UnrestrictedFileUpload.css';
-import Header from '../../Header/Header';
-import Footer from '../../Footer/Footer';
-import '../../Components/Topics CSS/topics.css';
+import Header from '../../../components/Header/Header';
+import Footer from '../../../components/Footer/Footer';
 import photo2 from '../../assets/img/Unrestricted File Upload/Post&GetImage.png';
 import code1 from '../../assets/img/Unrestricted File Upload/code1FileUpload.png';
 import code2 from '../../assets/img/Unrestricted File Upload/code2FileUpload.png';
 import code3 from '../../assets/img/Unrestricted File Upload/code3FileUpload.png';
 import courseImage from '../../assets/img/Unrestricted File Upload/FileUploadIcon.png';
-import UseFaqSection from '../../Components/UseFaqSection/UseFaqSection.jsx';
-import CourseLanding from '../../Components/Landing/CourseLanding.jsx';
+import UseFaqSection from '../../../components/UseFaqSection/UseFaqSection.jsx';
+import CourseLanding from '../../../components/Landing/CourseLanding.jsx';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 export default function UnrestrictedFileUpload() {
