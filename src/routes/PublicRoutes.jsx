@@ -10,6 +10,7 @@ import AboutUs from '../Pages//Website/AboutUs/AboutUs.jsx';
 import ComingSoon from '../Pages/Website/ComingSoon/ComingSoon.jsx';
 import SubscriptionPlans from '../Pages/Website/SubscriptionPlans/SubscriptionPlans.jsx';
 import AdminDashboard from '../Pages/Dashboards/Admin/AdminDashboard';
+import ApiTest from '../Components/ApiTest.jsx';
 const PublicRoutes = (
   <>
     <Route path='/' element={<HomePage />} />
@@ -24,6 +25,7 @@ const PublicRoutes = (
     <Route path='/privacy-policy' element={<PrivacyPolicy />} />
     <Route path='/data-deletion' element={<DataDeletion />} />
     <Route path='/dashboard/admin' element={<AdminDashboard />} />
+    <Route path='/api-test' element={<ApiTest />} />
   </>
 );
 
