@@ -4,7 +4,7 @@ import axios from 'axios';
 const api = axios.create({
   baseURL:
     process.env.REACT_APP_API_URL ||
-    'test-backend-production-82fc.up.railway.app/api/v1',
+    'https://test-backend-production-82fc.up.railway.app/api/v1',
   timeout: parseInt(process.env.REACT_APP_API_TIMEOUT) || 30000,
   headers: {
     'Content-Type': 'application/json',
