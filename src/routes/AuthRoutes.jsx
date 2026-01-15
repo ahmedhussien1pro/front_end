@@ -13,6 +13,10 @@ import Profile from '../Pages/Dashboards/Profile/UserProfile.jsx';
 import LearningPaths from '../Pages/Website/Paths/Paths.jsx';
 import OurPaths from '../Pages/Website/CareerPaths/CareerPaths.jsx';
 import AllLabs from '../Pages/Website/AllLabs/AllLabs.jsx';
+import AuthCallback from '../Pages/Auth/AuthCallback.jsx';
+import VerifyEmail from '../Pages/Auth/VerifyEmail';
+import ForgotPassword from '../Pages/Auth/ForgotPassword';
+import ResetPassword from '../Pages/Auth/ResetPassword';
 const AuthRoutes = (
   <>
     <Route
@@ -28,11 +32,14 @@ const AuthRoutes = (
     <Route path='/create/course' element={<AddCourse />} />
     <Route path='/create/lab' element={<AddLab />} />
     <Route path='/dashboard/profile' element={<Profile />} />
-
     <Route path='/home' element={<UserHome />} />
     <Route path='/labs/all-labs' element={<AllLabs />} />
     <Route path='/career-paths' element={<OurPaths />} />
     <Route path='/cybersec/learning-paths' element={<LearningPaths />} />
+    <Route path='/verify-email' element={<VerifyEmail />} />
+    <Route path='/forgot-password' element={<ForgotPassword />} />
+    <Route path='/reset-password' element={<ResetPassword />} />
+    <Route path='/auth/callback' element={<AuthCallback />} />
   </>
 );
 

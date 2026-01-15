@@ -44,7 +44,7 @@ export default function AuthForm() {
         Swal.fire({
           icon: 'success',
           title: 'Welcome Back!',
-          text: `Hi ${form.email}!`,
+          text: `Hi ${form.name}!`,
           confirmButtonColor: 'var(--main-color)',
           timer: 2000,
         }).then(() => {
